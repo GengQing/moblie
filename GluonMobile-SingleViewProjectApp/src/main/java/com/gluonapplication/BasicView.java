@@ -44,7 +44,7 @@ public class BasicView extends View {
                 }
 
         );
-        VBox controls = new VBox(15.0, label, button, webView);
+        VBox controls = new VBox(20.0, button, label, webView);
         controls.setAlignment(Pos.CENTER);
 
 
