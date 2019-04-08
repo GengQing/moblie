@@ -22,9 +22,6 @@ public class BasicView extends View {
     public BasicView() {
 
 
-        Label label = new Label("中文");
-
-
         WebView webView = new WebView();
         WebEngine engine = webView.getEngine();
 
@@ -34,20 +31,19 @@ public class BasicView extends View {
 
         engine.loadContent(content, "text/html;charset=utf-8");
 
-        Button button = new Button("Change the World!");
+        Button button = new Button("Next");
         button.setGraphic(new Icon(MaterialDesignIcon.LANGUAGE));
         button.setOnAction(e -> {
                     MathBlock m = FormulaExtractor.getInstance().getOneBlock();
-
-                    label.setText(m.getTitle());
                     String formula = content.replace("math_formula_to_replace",
-                            m.toContent());
+                            m.toContent()).replace("title_to_replace", m.getTitle());
+
                     engine.loadContent(formula);
 
                 }
 
         );
-        VBox controls = new VBox(20.0, button, label, webView);
+        VBox controls = new VBox(15.0, button, webView);
         controls.setAlignment(Pos.CENTER);
 
 
