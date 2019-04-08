@@ -78,6 +78,14 @@ public class MathBlock {
         return contents;
     }
 
+    public String toContent() {
+        StringBuilder builder = new StringBuilder("\n");
+        contents.forEach(s -> builder.append(s));
+        String s = builder.toString();
+        System.out.println(s);
+        return s;
+    }
+
     public void setContents(List<String> contents) {
         this.contents = contents;
     }

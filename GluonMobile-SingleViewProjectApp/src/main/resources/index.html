@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width">
     <title>MathJax</title>
     <script type="text/javascript" async
@@ -11,14 +11,15 @@
          var index = 5;
          function echo()
          {
-            document.getElementById('math').innerHTML = '$$a^2=3.14$$';
+            document.getElementById('math').innerHTML = '中文';
             MathJax.Hub.Queue(["Typeset", MathJax.Hub, math])
          }
+
     </script>
 
 </head>
 <body>
-<button onclick="echo()">show</button>
+<button onclick="echo()">展示</button>
 <p id="math">
     math_formula_to_replace
 </p>

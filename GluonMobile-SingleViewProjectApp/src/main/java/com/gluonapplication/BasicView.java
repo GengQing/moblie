@@ -13,6 +13,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
+import java.nio.charset.Charset;
 import java.util.Arrays;
 
 public class BasicView extends View {
@@ -21,24 +22,26 @@ public class BasicView extends View {
     public BasicView() {
 
 
-        Label label = new Label("Hello World!");
+        Label label = new Label("中文");
 
 
         WebView webView = new WebView();
         WebEngine engine = webView.getEngine();
 
+
         String content = Utils.loadString("/index.html");
 
 
-        engine.loadContent(content);
+        engine.loadContent(content, "text/html;charset=utf-8");
 
         Button button = new Button("Change the World!");
         button.setGraphic(new Icon(MaterialDesignIcon.LANGUAGE));
         button.setOnAction(e -> {
                     MathBlock m = FormulaExtractor.getInstance().getOneBlock();
+
                     label.setText(m.getTitle());
                     String formula = content.replace("math_formula_to_replace",
-                            Arrays.toString(m.getContents().toArray()));
+                            m.toContent());
                     engine.loadContent(formula);
 
                 }
@@ -51,6 +54,7 @@ public class BasicView extends View {
         setCenter(controls);
 
     }
+
 
     @Override
     protected void updateAppBar(AppBar appBar) {

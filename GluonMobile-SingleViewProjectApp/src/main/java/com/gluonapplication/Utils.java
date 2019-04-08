@@ -15,7 +15,7 @@ public class Utils {
 
     public static String loadString(String resourceLocation) {
         InputStream inputStream = GluonApplication.class.getResourceAsStream(resourceLocation);
-        return convert(inputStream, Charset.defaultCharset());
+        return convert(inputStream, Charset.forName("UTF8"));
     }
 
     public static String convert(InputStream inputStream, Charset charset) {
@@ -52,6 +52,6 @@ public class Utils {
 
     public static List loadContent(String fileLocation) {
         InputStream stream = GluonApplication.class.getResourceAsStream(fileLocation);
-        return convertToList(stream, Charset.defaultCharset());
+        return convertToList(stream, Charset.forName("UTF8"));
     }
 }
