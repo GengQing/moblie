@@ -1,5 +1,7 @@
 package com.gluonapplication.math;
 
+import com.gluonapplication.Utils;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -131,11 +133,9 @@ public class FormulaExtractor {
         return count;
     }
 
-    private List<String> readAllLines() throws URISyntaxException, IOException {
+    private List<String> readAllLines() {
         String fileLocation = "/math02.md";
-        URL resource = getClass().getResource(fileLocation);
-        Path path = Paths.get(resource.toURI());
-        List list = Files.readAllLines(path);
+        List list = Utils.loadContent(fileLocation);
         return list;
     }
 

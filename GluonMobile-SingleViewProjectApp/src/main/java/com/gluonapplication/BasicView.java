@@ -11,10 +11,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-import java.io.*;
-import java.net.URL;
-import java.nio.charset.Charset;
-
 public class BasicView extends View {
 
     public BasicView() {
@@ -24,15 +20,11 @@ public class BasicView extends View {
 
         WebView webView = new WebView();
         WebEngine engine = webView.getEngine();
-        InputStream html = GluonApplication.class.getResourceAsStream("/index.html");
 
-        try {
+        String content = Utils.loadString("/index.html");
 
-            engine.loadContent(convert(html, Charset.defaultCharset()));
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        engine.loadContent(content);
 
         Button button = new Button("Change the World!");
         button.setGraphic(new Icon(MaterialDesignIcon.LANGUAGE));
@@ -60,17 +52,4 @@ public class BasicView extends View {
     }
 
 
-    public String convert(InputStream inputStream, Charset charset) throws IOException {
-
-        StringBuilder stringBuilder = new StringBuilder();
-        String line = null;
-
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, charset))) {
-            while ((line = bufferedReader.readLine()) != null) {
-                stringBuilder.append(line);
-            }
-        }
-
-        return stringBuilder.toString();
-    }
 }
