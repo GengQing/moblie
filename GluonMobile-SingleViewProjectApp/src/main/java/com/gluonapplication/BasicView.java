@@ -1,5 +1,7 @@
 package com.gluonapplication;
 
+import com.gluonapplication.math.FormulaExtractor;
+import com.gluonapplication.math.MathBlock;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.control.Icon;
 import com.gluonhq.charm.glisten.mvc.View;
@@ -11,11 +13,15 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
+import java.util.Arrays;
+
 public class BasicView extends View {
+
 
     public BasicView() {
 
-        Label label = new Label("Hello JavaFX World!");
+
+        Label label = new Label("Hello World!");
 
 
         WebView webView = new WebView();
@@ -29,10 +35,12 @@ public class BasicView extends View {
         Button button = new Button("Change the World!");
         button.setGraphic(new Icon(MaterialDesignIcon.LANGUAGE));
         button.setOnAction(e -> {
+                    MathBlock m = FormulaExtractor.getInstance().getOneBlock();
+                    label.setText(m.getTitle());
+                    String formula = content.replace("math_formula_to_replace",
+                            Arrays.toString(m.getContents().toArray()));
+                    engine.loadContent(formula);
 
-                    label.setText("Hello JavaFX Universe!");
-                    engine.executeScript("document.getElementById('math').innerHTML = '$$a^2=3.14$$';" +
-                            "MathJax.Hub.Queue([\"Typeset\", MathJax.Hub, math])");
                 }
 
         );

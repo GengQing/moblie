@@ -196,4 +196,11 @@ public class FormulaExtractor {
         return list;
 
     }
+
+    public MathBlock getOneBlock() {
+        List<String> keys = new ArrayList<>(getBlockMap().keySet());
+        Random random = new Random();
+        int i = random.nextInt(keys.size());
+        return getBlockMap().get(keys.get(i));
+    }
 }
