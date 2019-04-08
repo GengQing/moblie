@@ -149,6 +149,7 @@ public class FormulaExtractor {
                 started = true;
                 mathBlock = new MathBlock();
                 mathBlock.setStartLineNo(i);
+                mathBlock.getContents().add(line);
                 setTitle(mathBlock, lines, i);
                 continue;
             }

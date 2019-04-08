@@ -9,19 +9,20 @@
     </script>
     <script>
          var index = 5;
-         function echo()
-         {
-            document.getElementById('math').innerHTML = '中文';
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub, math])
+         function show() {
+            document.getElementById('math').style.display = 'block';
          }
-
     </script>
-
 </head>
 <body>
-<button onclick="echo()">展示</button>
+<button onclick="show()">展示</button>
 <p id="math">
     math_formula_to_replace
 </p>
+<script>
+    document.getElementById('math').style.display = 'none';
+
+
+</script>
 </body>
 </html>
