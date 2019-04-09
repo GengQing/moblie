@@ -9,7 +9,7 @@ import java.util.List;
 
 public class MathBlock {
 
-    public static List<String> EQAULITY_BLOCK = Arrays.asList("## 泰勒公式", "## 高阶导数");
+    public static List<String> EQUALITY_BLOCK = Arrays.asList("## 泰勒公式", "## 高阶导数");
 
     private String title;
 
@@ -34,7 +34,7 @@ public class MathBlock {
             return type;
         }
 
-        if (EQAULITY_BLOCK.contains(title)) {
+        if (EQUALITY_BLOCK.contains(title)) {
             return Type.EQAULITY;
         }
 
@@ -88,7 +88,6 @@ public class MathBlock {
         StringBuilder builder = new StringBuilder("\n");
         contents.forEach(s -> builder.append(s));
         String s = builder.toString();
-        System.out.println(s);
         return s;
     }
 

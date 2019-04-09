@@ -36,16 +36,11 @@ public class BasicView extends View {
         Button button = new Button("Next");
         button.setGraphic(new Icon(/*MaterialDesignIcon.LANGUAGE*/));
         button.setOnAction(e -> {
-                    MathBlock m = mathBlockExtractor.getMathBlockByTitle("## 导数");
+                    MathBlock m = mathBlockExtractor.getOneMathBlock();
                     String html;
                     if (m.type().equals(Type.ALIGNED)) {
                         System.out.printf(m.toJson());
                         html = HtmlTemplate.generateFormulaHtml(m.getTitle(), m.toJson());
-                        try {
-                            Files.write(Paths.get("tmp.html"), Arrays.asList(html));
-                        } catch (IOException e1) {
-                            e1.printStackTrace();
-                        }
                     } else {
                         html = HtmlTemplate.generateBlockHtml(m.getTitle(), m.toContent());
                     }
