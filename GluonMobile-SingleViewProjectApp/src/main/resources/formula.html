@@ -10,10 +10,14 @@
         </script>
     <script>
         var jsonList = JSON_TO_REPLACE;
-        var index = 1;
+        var index = 0;
 
-        function show() {
-            document.getElementById('right').style.display = 'block';
+        function showAnswer() {
+            var formula = jsonList[index];
+            document.getElementById('formula').innerText = "$$" + formula.left + "=" + formula.right + "$$";
+            index++;
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+
         }
 
         function showFormula() {
@@ -21,10 +25,7 @@
 
             if (index < length) {
                 var formula = jsonList[index];
-                document.getElementById('left').innerHTML = "$$ " + formula.left + " $$";
-                document.getElementById('right').innerHTML = " = $$" + formula.right + "$$";
-                document.getElementById('right').style.display = 'none';
-                index++;
+                document.getElementById('formula').innerText = "$$" + formula.left + "$$";
                 MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
             } else {
                 document.getElementById('left').innerHTML = "OVER";
@@ -39,31 +40,21 @@
         <label> TITLE_TO_REPLACE </label>
     </p>
 
-    <p>
-        <button onclick="show()">显示答案</button>
 
-    </p>
     <p>
         <button onclick="showFormula()">下个公式</button>
     </p>
 
     <p>
-        <table>
-            <tr>
-                <td id="left">
-                    formula.left
-                </td>
-                <td id="right" style="display:none">
-                    right
-                </td>
-            </tr>
-        </table>
-
+        <button onclick="showAnswer()">显示答案</button>
     </p>
+
+    <p id="formula" onclick="showFormula()">
+        开始答题
+    </p>
+
     <script>
-        var formulaOne = jsonList[0];
-        document.getElementById('left').innerHTML = "$$ " + formulaOne.left + " $$";
-        document.getElementById('right').innerHTML = " = $$" + formulaOne.right + "$$";
+
     </script>
 </body>
 
