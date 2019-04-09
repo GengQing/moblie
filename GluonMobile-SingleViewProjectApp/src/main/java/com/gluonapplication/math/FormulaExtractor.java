@@ -1,7 +1,5 @@
 package com.gluonapplication.math;
 
-import com.gluonapplication.Utils;
-
 import java.util.*;
 
 /**

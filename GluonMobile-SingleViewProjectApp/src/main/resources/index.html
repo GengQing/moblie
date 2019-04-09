@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width">
     <title>MathJax</title>
     <script type="text/javascript" async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
-    </script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+        </script>
     <script>
-         function show() {
+        var jsonList = [{ "left": "\sin' x", "right": "\cos x" }]
+        var index = 0;
+        function show() {
             document.getElementById('math').style.display = 'block';
-         }
+            document.getElementById('right').style.display = 'block';
+        }
+
+        function showFormula() {
+            var length = jsonList.length;
+
+            if (index < length) {
+                var formula = jsonList[index];
+                document.getElementById('left').innerHTML = "$$ " + formula.left + " $$";
+                document.getElementById('right').innerHTML = " = $$" + formula.right + "$$";
+                document.getElementById('right').style.display = 'none';
+                index++;
+                MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+            } else {
+                document.getElementById('left').innerHTML = "OVER";
+                document.getElementById('right').innerHTML = "";
+            }
+        }
     </script>
 </head>
+
 <body>
-<p>
-    <label> title_to_replace </label>
-</p>
+    <p>
+        <label> title_to_replace </label>
+    </p>
 
-<p>
-<button onclick="show()">展示</button>
-</p>
+    <p>
+        <button onclick="show()">展示</button>
+    </p>
 
-<p id="math" style="display:none">
-    $$
-    math_formula_to_replace
-    $$
-</p>
+    <p id="math" style="display:none">
+        $$
+        math_formula_to_replace
+        $$
+    </p>
+    <p>
+        <table>
+            <tr>
+                <td id="left">
+                    formula.left
+                </td>
+                <td id="right" style="display:none">
+                    formula.right
+                </td>
+            </tr>
+            <tr>
+                <button onclick="showFormula()">Next</button>
+            </tr>
+        </table>
+
+    </p>
 </body>
+
 </html>

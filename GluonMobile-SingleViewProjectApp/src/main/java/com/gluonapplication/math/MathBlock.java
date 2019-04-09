@@ -1,7 +1,10 @@
 package com.gluonapplication.math;
 
+import javax.json.*;
+import javax.json.spi.JsonProvider;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class MathBlock {
@@ -16,6 +19,9 @@ public class MathBlock {
     private Type type;
 
     public List<String> contents;
+
+
+    private List<Formula> formulas;
 
     public MathBlock() {
         contents = new ArrayList<>();
@@ -84,6 +90,24 @@ public class MathBlock {
         String s = builder.toString();
         System.out.println(s);
         return s;
+    }
+
+    public List<Formula> getFormulas() {
+        if (formulas == null) {
+            formulas = FormulaExtractor.getInstance().extractAlignedFormula(this);
+            Collections.shuffle(formulas);
+        }
+        return formulas;
+    }
+
+    public String toJson() {
+        JsonArrayBuilder arrayBuilder = JsonProvider.provider().createArrayBuilder();
+
+        for (Formula formula : getFormulas()) {
+            arrayBuilder.add(formula.toBuilder());
+        }
+        return arrayBuilder.build().toString();
+
     }
 
     public void setContents(List<String> contents) {
