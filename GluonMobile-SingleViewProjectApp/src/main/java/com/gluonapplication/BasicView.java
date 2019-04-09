@@ -32,7 +32,7 @@ public class BasicView extends View {
         engine.loadContent(content, "text/html;charset=utf-8");
 
         Button button = new Button("Next");
-        button.setGraphic(new Icon(MaterialDesignIcon.LANGUAGE));
+        button.setGraphic(new Icon(/*MaterialDesignIcon.LANGUAGE*/));
         button.setOnAction(e -> {
                     MathBlock m = FormulaExtractor.getInstance().getOneBlock();
                     String formula = content.replace("math_formula_to_replace",
@@ -44,7 +44,7 @@ public class BasicView extends View {
 
         );
         VBox controls = new VBox(15.0, button, webView);
-        controls.setAlignment(Pos.CENTER);
+        controls.setAlignment(Pos.BOTTOM_LEFT);
 
 
         setCenter(controls);
