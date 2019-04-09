@@ -13,11 +13,7 @@
         var index = 0;
 
         function showAnswer() {
-            var formula = jsonList[index];
-            document.getElementById('formula').innerText = "$$" + formula.left + "=" + formula.right + "$$";
-            index++;
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub, "formula"]);
-
+            document.getElementById('formula_right').style.display = 'block';
         }
 
         function showFormula() {
@@ -25,12 +21,15 @@
 
             if (index < length) {
                 var formula = jsonList[index];
-                document.getElementById('formula').innerText = "$$" + formula.left + "$$";
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub, "formula"]);
+                document.getElementById('formula').innerText = "$$" + formula.left + "=$$";
+                document.getElementById('formula_right').innerText =  "$$" + formula.right + "$$";
+                document.getElementById('formula_right').style.display = "none";
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
             } else {
-                document.getElementById('left').innerHTML = "OVER";
-                document.getElementById('right').innerHTML = "";
+                document.getElementById('formula').innerHTML = "OVER";
+                document.getElementById('formula_right').innerHTML = "";
             }
+            index++;
         }
     </script>
 </head>
@@ -51,6 +50,10 @@
 
     <p id="formula" onclick="showFormula()">
         开始答题
+    </p>
+
+    <p id="formula_right" style="display:none">
+
     </p>
 
     <script>
