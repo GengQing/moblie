@@ -9,7 +9,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
         </script>
     <script>
-        var jsonList = [{ "left": "\sin' x", "right": "\cos x" }]
+        var jsonList = JSON_TO_REPLACE;
         var index = 1;
 
         function show() {
@@ -36,18 +36,17 @@
 
 <body>
     <p>
-        <label> title_to_replace </label>
+        <label> TITLE_TO_REPLACE </label>
     </p>
 
     <p>
         <button onclick="show()">显示答案</button>
+
+    </p>
+    <p>
+        <button onclick="showFormula()">下个公式</button>
     </p>
 
-    <p id="math" style="display:none">
-        $$
-        math_formula_to_replace
-        $$
-    </p>
     <p>
         <table>
             <tr>
@@ -57,9 +56,6 @@
                 <td id="right" style="display:none">
                     right
                 </td>
-            </tr>
-            <tr>
-                <button onclick="showFormula()">下个公式</button>
             </tr>
         </table>
 

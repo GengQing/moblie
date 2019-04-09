@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MathJax</title>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+        </script>
+    <script>
+        function show() {
+            document.getElementById('math').style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        <label> TITLE_TO_REPLACE </label>
+    </p>
+
+    <p>
+        <button onclick="show()">显示答案</button>
+    </p>
+
+    <p id="math" style="display:none">
+        $$
+        MATH_FORMULA_TO_REPLACE
+        $$
+    </p>
+</body>
+
+</html>

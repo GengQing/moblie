@@ -1,20 +1,21 @@
 package com.gluonapplication;
 
-import com.gluonapplication.math.FormulaExtractor;
 import com.gluonapplication.math.MathBlock;
 import com.gluonapplication.math.MathBlockExtractor;
+import com.gluonapplication.math.Type;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.control.Icon;
 import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-import java.nio.charset.Charset;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Arrays;
 
 public class BasicView extends View {
@@ -22,7 +23,6 @@ public class BasicView extends View {
 
     private MathBlockExtractor mathBlockExtractor;
 
-    private String htmlTemplate;
 
     public BasicView() {
 
@@ -30,18 +30,26 @@ public class BasicView extends View {
         WebView webView = new WebView();
         WebEngine engine = webView.getEngine();
 
-        htmlTemplate = Utils.loadString("/index.html");
 
-        engine.loadContent(htmlTemplate, "text/html;charset=utf-8");
+        engine.loadContent(HtmlTemplate.blockHtmlTemplate, "text/html;charset=utf-8");
 
         Button button = new Button("Next");
         button.setGraphic(new Icon(/*MaterialDesignIcon.LANGUAGE*/));
         button.setOnAction(e -> {
-                    MathBlock m = mathBlockExtractor.getOneMathBlock();
-                    String formula = htmlTemplate.replace("math_formula_to_replace",
-                            m.toContent()).replace("title_to_replace", m.getTitle());
-
-                    engine.loadContent(formula);
+                    MathBlock m = mathBlockExtractor.getMathBlockByTitle("## 导数");
+                    String html;
+                    if (m.type().equals(Type.ALIGNED)) {
+                        System.out.printf(m.toJson());
+                        html = HtmlTemplate.generateFormulaHtml(m.getTitle(), m.toJson());
+                        try {
+                            Files.write(Paths.get("tmp.html"), Arrays.asList(html));
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                    } else {
+                        html = HtmlTemplate.generateBlockHtml(m.getTitle(), m.toContent());
+                    }
+                    engine.loadContent(html);
 
                 }
 
