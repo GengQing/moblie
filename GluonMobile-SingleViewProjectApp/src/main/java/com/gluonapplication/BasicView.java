@@ -2,6 +2,7 @@ package com.gluonapplication;
 
 import com.gluonapplication.math.FormulaExtractor;
 import com.gluonapplication.math.MathBlock;
+import com.gluonapplication.math.MathBlockExtractor;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.control.Icon;
 import com.gluonhq.charm.glisten.mvc.View;
@@ -19,23 +20,25 @@ import java.util.Arrays;
 public class BasicView extends View {
 
 
+    private MathBlockExtractor mathBlockExtractor;
+
+    private String htmlTemplate;
+
     public BasicView() {
 
-
+        mathBlockExtractor = new MathBlockExtractor("/math02.md");
         WebView webView = new WebView();
         WebEngine engine = webView.getEngine();
 
+        htmlTemplate = Utils.loadString("/index.html");
 
-        String content = Utils.loadString("/index.html");
-
-
-        engine.loadContent(content, "text/html;charset=utf-8");
+        engine.loadContent(htmlTemplate, "text/html;charset=utf-8");
 
         Button button = new Button("Next");
         button.setGraphic(new Icon(/*MaterialDesignIcon.LANGUAGE*/));
         button.setOnAction(e -> {
-                    MathBlock m = FormulaExtractor.getInstance().getOneBlock();
-                    String formula = content.replace("math_formula_to_replace",
+                    MathBlock m = mathBlockExtractor.getOneMathBlock();
+                    String formula = htmlTemplate.replace("math_formula_to_replace",
                             m.toContent()).replace("title_to_replace", m.getTitle());
 
                     engine.loadContent(formula);

@@ -50,7 +50,7 @@ public class Utils {
         return list;
     }
 
-    public static List loadContent(String fileLocation) {
+    public static List<String> readAllLines(String fileLocation) {
         InputStream stream = GluonApplication.class.getResourceAsStream(fileLocation);
         return convertToList(stream, Charset.forName("UTF8"));
     }

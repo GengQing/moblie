@@ -7,6 +7,7 @@ import java.util.*;
 /**
  * Created by Geng Qing on 2019-03-26
  **/
+@Deprecated
 public class FormulaExtractor {
 
     public static final String BLOCK = "BLOCK";
@@ -129,11 +130,11 @@ public class FormulaExtractor {
 
     private List<String> readAllLines() {
         String fileLocation = "/math02.md";
-        List list = Utils.loadContent(fileLocation);
+        List list = Utils.readAllLines(fileLocation);
         return list;
     }
 
-    protected ArrayList<MathBlock> splitMathBlock() throws Exception {
+    protected ArrayList<MathBlock> splitMathBlock() {
 
         ArrayList<MathBlock> allBlocks = new ArrayList<>();
 
