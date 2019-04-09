@@ -43,7 +43,7 @@ public class BasicView extends View {
                     label.setText("NEXT");
                     MathBlock m = mathBlockExtractor.getOneMathBlock();
                     String html;
-                    if (m.type().equals(Type.ALIGNED)) {
+                    if (m.type().equals(Type.ALIGNED) || m.type().equals(Type.EQUALITY)) {
                         html = HtmlTemplate.generateFormulaHtml(m.getTitle(), m.toJson());
                     } else {
                         html = HtmlTemplate.generateBlockHtml(m.getTitle(), m.toContent());
