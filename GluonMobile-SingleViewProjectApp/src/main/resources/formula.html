@@ -16,7 +16,7 @@
             var formula = jsonList[index];
             document.getElementById('formula').innerText = "$$" + formula.left + "=" + formula.right + "$$";
             index++;
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, "formula"]);
 
         }
 
@@ -26,7 +26,7 @@
             if (index < length) {
                 var formula = jsonList[index];
                 document.getElementById('formula').innerText = "$$" + formula.left + "$$";
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, "formula"]);
             } else {
                 document.getElementById('left').innerHTML = "OVER";
                 document.getElementById('right').innerHTML = "";
