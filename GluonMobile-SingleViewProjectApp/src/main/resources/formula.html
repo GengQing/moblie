@@ -10,9 +10,9 @@
         </script>
     <script>
         var jsonList = [{ "left": "\sin' x", "right": "\cos x" }]
-        var index = 0;
+        var index = 1;
+
         function show() {
-            document.getElementById('math').style.display = 'block';
             document.getElementById('right').style.display = 'block';
         }
 
@@ -40,7 +40,7 @@
     </p>
 
     <p>
-        <button onclick="show()">展示</button>
+        <button onclick="show()">显示答案</button>
     </p>
 
     <p id="math" style="display:none">
@@ -55,15 +55,20 @@
                     formula.left
                 </td>
                 <td id="right" style="display:none">
-                    formula.right
+                    right
                 </td>
             </tr>
             <tr>
-                <button onclick="showFormula()">Next</button>
+                <button onclick="showFormula()">下个公式</button>
             </tr>
         </table>
 
     </p>
+    <script>
+        var formulaOne = jsonList[0];
+        document.getElementById('left').innerHTML = "$$ " + formulaOne.left + " $$";
+        document.getElementById('right').innerHTML = " = $$" + formulaOne.right + "$$";
+    </script>
 </body>
 
 </html>
