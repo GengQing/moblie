@@ -20,7 +20,7 @@ public class Utils {
 
     public static String convert(InputStream inputStream, Charset charset) {
 
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder("\n");
         String line = null;
 
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, charset))) {
