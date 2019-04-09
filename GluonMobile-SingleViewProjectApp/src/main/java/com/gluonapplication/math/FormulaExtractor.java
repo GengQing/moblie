@@ -37,7 +37,7 @@ public class FormulaExtractor {
                 case ALIGNED:
                     formulas.addAll(extractAlignedFormula(block));
                     break;
-                case EQAULITY:
+                case EQUALITY:
                     for (String s : block.contents) {
                         int i = s.indexOf("=");
                         if (i <= 0) {

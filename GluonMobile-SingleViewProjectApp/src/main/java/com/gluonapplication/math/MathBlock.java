@@ -35,7 +35,7 @@ public class MathBlock {
         }
 
         if (EQUALITY_BLOCK.contains(title)) {
-            return Type.EQAULITY;
+            return Type.EQUALITY;
         }
 
         for (String str : this.getContents()) {
