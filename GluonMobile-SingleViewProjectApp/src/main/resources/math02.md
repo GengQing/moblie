@@ -305,34 +305,19 @@ r=r(\theta),x=r(\theta)\cos\theta,y=r(\theta)\sin\theta, \\
 ds=\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
-### 曲线绕x轴旋转体积
+### 曲线与x轴面积公式两种
 
 $$
-V=\pi\int_a^b y^2(x)dx
+S=\int_a^b y(x) dx, (y(x)\ge 0)\\
+\ \\
+
+S=\int_{t1}^{t2}y(t)x'(t)dt
 $$
 
-### 曲线绕y轴旋转体积两种
+### 极坐标曲边扇形面积
 
 $$
-V=2\pi\int_a^b x|y(x)|dx\\
-
-V=\pi \int_a^b x^2(y)dy
-$$
-
-### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
-
-$$
-V= \int_a^b f(x) dx
-$$
-
-### 曲线绕x轴旋转体侧面积三种
-
-$$
-S=2\pi\int_a^b|y(x)|\sqrt{1+y'^2(x)}dx\\
-
-S=2\pi\int_{t1}^{t2}|y(t)|\sqrt{x'^2(t)+y'^2(t)}dt, x=x(t),y=y(t)\\
-
-S=2\pi\int_a^b r(\theta)\sin\theta\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
+S=\frac 12 \int_{\theta1}^{\theta2}[r(\theta)]^2d\theta\\
 $$
 
 ### 弧长公式三种
@@ -343,14 +328,40 @@ L=\int_{t_1}^{t_2}\sqrt{x'^2(t)+y'^2(t)}dt , x=x(t),y=y(t)\\
 L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2(\theta)}d\theta\\
 $$
 
-### 平面面积公式三种
+### 曲线绕x轴旋转体积
 
 $$
-S=\int_a^b|f(x)-g(x)|dx \\
-\ \\
-S=\frac 12 \int_{\theta1}^{\theta2}[r(\theta)]^2d\theta\\
-\ \\
-S=\int_{t1}^{t2}y(t)x'(t)dt
+V=\pi\int_a^b y^2(x)dx
+$$
+
+### 曲线绕y轴旋转体积两种
+
+$$
+V=2\pi\int_a^b xy(x)dx, (y(x)\ge 0)\\
+
+V=\pi \int_a^b x^2(y)dy
+$$
+
+### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
+
+$$
+V= \int_a^b f(x) dx
+$$
+
+### 曲线绕x轴旋转体侧面积两种
+
+$$
+S=2\pi\int_a^b|y(x)|\sqrt{1+y'^2(x)}dx\\
+
+S=2\pi\int_{t1}^{t2}|y(t)|\sqrt{x'^2(t)+y'^2(t)}dt, x=x(t),y=y(t)\\
+$$
+
+
+
+### 旋转体侧面积
+
+$$
+S=2\pi\int_a^b r(\theta)\sin\theta\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
 ### 函数的平均值
