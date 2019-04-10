@@ -205,16 +205,15 @@ $$
 [u^v]'=u^v(u'\frac{v}{u}+v'\ln u)
 $$
 
-
 ### 高阶导数
 
 $$
 (uv)^{(n)}=\sum_{k=0}^n C_n^k u^{(n-k)} v^{(k)}\\
-
+\ \\
 (\sin x)^{(n)} = \sin (x +n\times\frac{\pi}{2})\\
-
+\ \\
 (\cos x)^{(n)} = \cos (x +n\times\frac{\pi}{2})\\
-
+\ \\
 (\frac{1}{1+x})^{(n)} = \frac{(-1)^n n!}{(1+x)^{n+1}}\\
 
 $$
@@ -295,23 +294,20 @@ $$
 \int_a^{+\infty}x^ke^{-\lambda x}dx \Leftrightarrow \lambda>0,k>0 \\
 $$
 
-### 三种弧微分
+### 定积分的运用
 
 $$
-ds=\sqrt{1+f'^2(x)}dx,\\
-ds=\sqrt{x'^2(t)+y'^2(t)}dt \\
-
-r=r(\theta),x=r(\theta)\cos\theta,y=r(\theta)\sin\theta, \\
-ds=\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
+当积分函数在积分区间有\lt 0时,需要分段\\
+积分,函数\lt 0的段函数要取反转换成正值.
 $$
 
-### 曲线与x轴面积公式两种
+### 曲线与$x$轴面积公式两种($y$轴取反函数同理)
 
 $$
 S=\int_a^b y(x) dx, (y(x)\ge 0)\\
 \ \\
 
-S=\int_{t1}^{t2}y(t)x'(t)dt
+S=\int_{t1}^{t2}y(t)x'(t)dt, (y(t)\ge 0)
 $$
 
 ### 极坐标曲边扇形面积
@@ -320,21 +316,29 @@ $$
 S=\frac 12 \int_{\theta1}^{\theta2}[r(\theta)]^2d\theta\\
 $$
 
+### 弧微分三种
+
+$$
+ds=\sqrt{1+f'^2(x)}dx,\\
+ds=\sqrt{x'^2(t)+y'^2(t)}dt \\
+ds=\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
+$$
+
 ### 弧长公式三种
 
 $$
 L=\int_a^b\sqrt{1+y'(x)^2}dx \\
-L=\int_{t_1}^{t_2}\sqrt{x'^2(t)+y'^2(t)}dt , x=x(t),y=y(t)\\
+L=\int_{t_1}^{t_2}\sqrt{x'^2(t)+y'^2(t)}dt\\
 L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2(\theta)}d\theta\\
 $$
 
-### 曲线绕x轴旋转体积
+### 曲线绕$x$轴旋转体积
 
 $$
 V=\pi\int_a^b y^2(x)dx
 $$
 
-### 曲线绕y轴旋转体积两种
+### 曲线绕$y$轴旋转体积两种
 
 $$
 V=2\pi\int_a^b xy(x)dx, (y(x)\ge 0)\\
@@ -348,20 +352,12 @@ $$
 V= \int_a^b f(x) dx
 $$
 
-### 曲线绕x轴旋转体侧面积两种
+### 曲线绕$x$轴旋转体侧面积两种
 
 $$
 S=2\pi\int_a^b|y(x)|\sqrt{1+y'^2(x)}dx\\
 
 S=2\pi\int_{t1}^{t2}|y(t)|\sqrt{x'^2(t)+y'^2(t)}dt, x=x(t),y=y(t)\\
-$$
-
-
-
-### 旋转体侧面积
-
-$$
-S=2\pi\int_a^b r(\theta)\sin\theta\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
 ### 函数的平均值
@@ -373,7 +369,8 @@ $$
 ### 密度均匀形心质心公式
 
 $$
-密度均匀薄片y=f(x)是薄片上边界曲线, 可利用对称性计算出其中一个坐标 \\
+密度均匀薄片y=f(x)是薄片上边界曲线,\\
+可利用对称性计算出其中一个坐标 \\
 横坐标x=\frac {\int_a^b xf(x)dx}{\int_a^b f(x)dx}\\
 \ \\
 纵坐标y=\frac {\frac 12 \int_a^b f^2(x)dx}{\int_a^b f(x)dx}
@@ -394,7 +391,7 @@ $$
 ### 二重积分区间原点对称性质
 
 $$
-\iint f(x)dxdy=
+\iint f(x,y)dxdy=
 \begin{cases}
 2\iint f(x)dxdy, \in D_1,
 f(-x,-y)=f(x,y)\\
@@ -402,7 +399,7 @@ f(-x,-y)=f(x,y)\\
 \end{cases}
 $$
 
-### 二重积分区间关于y轴对称性质
+### 二重积分区间关于$y$轴对称性质
 
 $$
 \iint f(x,y)dxdy=
@@ -412,7 +409,7 @@ $$
 \end{cases}
 $$
 
-### 二重积分区间关于x轴对称性质
+### 二重积分区间关于$x$轴对称性质
 
 $$
 \iint f(x,y)dxy=
@@ -423,7 +420,7 @@ $$
 
 $$
 
-### 二重积分区间关于y=x对称
+### 二重积分区间关于$y=x$对称
 
 $$
 \iint f(x,y)dx=\iint f(y,x)dxdy
@@ -432,7 +429,8 @@ $$
 ### 二阶常系数线性齐次微分方程及特征方程
 
 $$
-y''+py+q=f(x), \lambda^2+p\lambda+q=0,
+y''+py+q=f(x)\\
+\lambda^2+p\lambda+q=0
 $$
 
 ### 二常线非齐特解-多项式
