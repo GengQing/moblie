@@ -295,13 +295,11 @@ $$
 \int_a^{+\infty}x^ke^{-\lambda x}dx \Leftrightarrow \lambda>0,k>0 \\
 $$
 
-### 三种弧微分
+### 弧微分三种
 
 $$
 ds=\sqrt{1+f'^2(x)}dx,\\
 ds=\sqrt{x'^2(t)+y'^2(t)}dt \\
-
-r=r(\theta),x=r(\theta)\cos\theta,y=r(\theta)\sin\theta, \\
 ds=\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
@@ -311,24 +309,24 @@ $$
 V=\pi\int_a^b y^2(x)dx
 $$
 
-### 曲线绕y轴旋转体积
+### 曲线绕y轴旋转体积两种
 
 $$
-V=2\pi\int_a^b x|f(x)|dx\\
+V=2\pi\int_a^b x|y(x)|dx\\
 
-V=\pi \int_a^b f^2(y)dy
+V=\pi \int_a^b x^2(y)dy
 $$
 
 ### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
 
 $$
-V= \int_a^b f(x) dx
+V= \int_a^b y(x) dx
 $$
 
 ### 曲线绕x轴旋转体侧面积
 
 $$
-S=2\pi\int_a^b|f(x)|\sqrt{1+f'^2(x)}dx
+S=2\pi\int_a^b|y(x)|\sqrt{1+y'^2(x)}dx
 $$
 
 ### 曲线绕x轴旋转体侧面积-参数方程
@@ -344,15 +342,15 @@ $$
 S=2\pi\int_a^b r(\theta)\sin\theta\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
-### 三种弧长公式
+### 弧长公式三种
 
 $$
-L=\int_a^b\sqrt{1+f'(x)^2}dx \\
+L=\int_a^b\sqrt{1+y'(x)^2}dx \\
 L=\int_{t_1}^{t_2}\sqrt{x'^2(t)+y'^2(t)}dt , x=x(t),y=y(t)\\
 L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2(\theta)}d\theta\\
 $$
 
-### 三种平面面积公式
+### 平面面积公式三种
 
 $$
 S=\int_a^b|f(x)-g(x)|dx \\
