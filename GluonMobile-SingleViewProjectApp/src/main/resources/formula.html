@@ -30,6 +30,7 @@
                 document.getElementById('formula_right').innerHTML = "";
             }
             index++;
+            document.getElementById('next').innerText = "下个公式";
         }
     </script>
 </head>
@@ -41,7 +42,7 @@
 
 
     <p>
-        <button onclick="showFormula()">开始答题</button>
+        <button id="next" onclick="showFormula()">开始答题</button>
     </p>
 
     <p>
@@ -49,7 +50,7 @@
     </p>
 
     <p id="formula" onclick="showFormula()">
-        开始答题
+
     </p>
 
     <p id="formula_right" style="display:none">
