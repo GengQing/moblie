@@ -4,7 +4,6 @@ import com.gluonapplication.math.MathBlock;
 import com.gluonapplication.math.MathBlockExtractor;
 import com.gluonapplication.math.Type;
 import com.gluonhq.charm.glisten.control.AppBar;
-import com.gluonhq.charm.glisten.control.Icon;
 import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import javafx.geometry.Pos;
@@ -13,11 +12,6 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Arrays;
 
 public class BasicView extends View {
 
