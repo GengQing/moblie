@@ -36,9 +36,9 @@ $$
 
 $$
 \begin{aligned}
-&\sin(0) = 0& &\sin(\frac {\pi}6)=\frac12& &\sin(\frac {\pi}4)=\frac{\sqrt2}2& &\sin(\frac {\pi}3)=\frac{\sqrt3}2& 
+&\sin(0) = 0& &\sin(\frac {\pi}6)=\frac12& &\sin(\frac {\pi}4)=\frac{\sqrt2}2& &\sin(\frac {\pi}3)=\frac{\sqrt3}2&
 &\sin(\frac {\pi}2)=1&\\
-&\cos(0) = 1& &\cos(\frac {\pi}6)=\frac{\sqrt3}2& &\cos(\frac {\pi}4)=\frac{\sqrt2}2& &\cos(\frac {\pi}3)=\frac12& 
+&\cos(0) = 1& &\cos(\frac {\pi}6)=\frac{\sqrt3}2& &\cos(\frac {\pi}4)=\frac{\sqrt2}2& &\cos(\frac {\pi}3)=\frac12&
 &\cos(\frac {\pi}2)=0&\\
 &\tan(0) = 0& &\tan(\frac {\pi}6)=\frac{\sqrt3}3& &\tan(\frac {\pi}4)=1&  &\tan(\frac {\pi}3)=\sqrt3& 
 &\tan(\frac {\pi}2)=+\infty&\\
@@ -230,7 +230,7 @@ $$
 
 ### 参数方式求导
 
-$$ 
+$$
 x=x(t), y=y(t), \frac{dy}{dx}=\frac{y'(t)}{x'(t)}
 $$
 
