@@ -1,4 +1,7 @@
-### 多项式展开
+## 公式大全
+
+### 多项式展开公式
+
 $$
 \begin{aligned}
 a^n-b^n&=(a-b)[a^{n-1}+a^{n-2}b+a^{n-3}b^2+\cdots+b^{n-1}]\\
@@ -11,10 +14,7 @@ a^3+b^3&=(a+b)(a^2-ab+b^2)\\
 \end{aligned}
 $$
 
-### 三角函数公式
-
-
-##### 奇变偶不变, 符号看象限.
+### 三角函数公式,奇变偶不变,符号看象限
 
 $$
 (n\frac{\pi}{2} \pm a)\\
@@ -27,15 +27,12 @@ $$
 
 \cos(\pi - a) = -\cos a\\
 
+\sin x \ge 0, x\in[0,\pi],即在第一和第二象限为正值,第三四象限为负值 \\
+
+\cos x \ge 0, x\in[0,\pi/2] ,[\frac{3\pi}{2},2\pi], 即一和四象限为正值, 二三象限为负值\\
 $$
 
-根据函数图形可知:
-- $\sin x \ge 0, x\in[0,\pi]$,即在第一和第二象限为正值,第三四象限为负值
-- $\cos x \ge 0, x\in[0,\pi/2] ,[\frac{3\pi}{2},2\pi]$, 即一和四象限为正值, 二三象限为负值
-
-总结: 正弦余弦象限先横再竖为正, 正弦上半轴,余弦右半轴为正
-
-- 特殊三角函数值
+### 特殊三角函数值
 
 $$
 \begin{aligned}
@@ -47,12 +44,15 @@ $$
 &\tan(\frac {\pi}2)=+\infty&\\
 \end{aligned}
 $$
-##### 三角函数公式
+
+### 三角函数和差乘积
+
 $$
 \sin x + \cos x = \sqrt 2\sin(x+\frac {\pi}{4})
 $$
 
-### 排列组合
+### 排列组合公式
+
 $$
 C_n^k=\frac{n*(n-1)\cdots(n-k+1)}{k!}\\
 \ \\
@@ -62,10 +62,10 @@ C_5^3=\frac{5\times4\times3}{3\times2\times1}\\
 \ \\
 C_n^0=1, C_n^n=1
 
-
 $$
-### 重要不等式
-* 算数平均值大于等于几何平均值
+
+
+### 不等式公式
 
 $$
 \frac{a+b}{2} \ge \sqrt{ab}\\
@@ -74,7 +74,7 @@ ab \le (\frac {a+b}2)^2\\
 \ \\
 {a+b} \ge 2\sqrt{ab}\\
 \ \\
-\frac {a_1+\ldots + a_n}{n} \ge \sqrt{a_1 \times \ldots \times a_n}\\
+\frac {a_1+\ldots + a_n}{n} \ge \sqrt[n]{a_1 \times \ldots \times a_n}\\
 \ \\
 x \ge \sin x (x\ge0)\\
 \ \\
@@ -82,58 +82,49 @@ x \ge \sin x (x\ge0)\\
 
 $$
 
-* 不等式运算法则
 
-不等式两边乘以负数, 不等号变号
+### 不等式两边乘以负数, 不等号变号
 
 $$
 a>b \Rightarrow -a<-b
 $$
 
-两边同号时取倒数, 不等号变号
+### 两边同号时取倒数, 不等号变号
 
 $$
 a>b>0 \Rightarrow \frac1a<\frac1b\\
-
-a<b<0 \Rightarrow \frac1a>\frac1b
+\ \\
+a \lt b \lt 0 \Rightarrow \frac1a>\frac1b
 $$
 
-* 幂函数:
+### 基本初等函数
 
 $$
-y=x^{\mu}
-$$
-* 指数函数
+y=x^{\mu} \\
 
-$$
-y=a^x,(a>0 \& a \neq 1)
-$$
-* 对数函数
+y=a^x,(a>0 \& a \neq 1) \\
 
-$$
-y=\log_a x,(a > 0 \& a \neq 1);  a=e,y=\ln x
-$$
-* 三角函数
+y=\log_a x,(a > 0 \& a \neq 1);  a=e,y=\ln x\\
 
-$$
-y=\sin x, x\in (-\infty,+\infty),y\in[-1,-1], f(-x)=-f(x), f(x+2\pi)=f(x)
-$$
-* 反三角函数
+y=\sin x, x\in (-\infty,+\infty),y\in[-1,-1], f(-x)=-f(x), f(x+2\pi)=f(x) \\
 
-$$
 y=\arcsin x, x \in [-1,1], y \in[-\frac \pi 2, \frac\pi 2]
 $$
-## 基本初等函数公式
+
+### 基本初等函数公式
+
 $$
 \log_a x = \frac {\ln x} {\ln a}
 $$
 
-## 三角函数的周期
+### 三角函数的周期
+
 $$
 
 f(x)=A\sin(Bx+C)+D, T=\frac {2\pi} B
 $$
-## 泰勒公式
+
+### 泰勒公式
 
 $$
 e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
@@ -144,11 +135,9 @@ e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
 
 \frac{1}{1+x} = 1-x+x^2-x^3+...\\
 
-
 \ln (1-x) = -x-\frac{1}{2}x^2- \frac{1}{3}x^3 + \cdots\\
 
 \ln (1+x) = x-\frac{1}{2}x^2+ \frac{1}{3}x^3 + \cdots\\
-
 
 \tan x=x+\frac{x^3}{3}+\cdots\\
 
@@ -159,7 +148,8 @@ e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
 \cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4+\cdots\\
 $$
 
-## 等价无穷小
+### 等价无穷小
+
 $$
 \sin x  \sim  x, \tan x  \sim  x\\
 
@@ -176,7 +166,7 @@ e^x-1 \sim x, a^x-1 \sim x\ln a \\
 \sqrt {1+x}-1 \sim \frac x2, (1+x)^a-1 \sim ax\\
 $$
 
-## 导数
+### 导数公式
 
 $$
 \begin{aligned}
@@ -192,7 +182,9 @@ $$
 \end{aligned}
 
 $$
-## 导数四则运算
+
+### 导数四则运算
+
 $$
 (u\pm v)' = u' \pm v'\\
 (Cv)'=Cv'\\
@@ -201,20 +193,20 @@ $$
 (uvw)'=u'vw+uv'w+uvw'\\
 $$
 
-## 复合函数求导
+### 复合函数求导
 
 $$
 y=f[g(x)],y'(x)=f'(u)g'(x)
 $$
 
-## 幂指函数导数
+### 幂指函数导数
 
 $$
 [u^v]'=u^v(u'\frac{v}{u}+v'\ln u)
 $$
 
 
-## 高阶导数
+### 高阶导数
 
 $$
 (uv)^{(n)}=\sum_{k=0}^n C_n^k u^{(n-k)} v^{(k)}\\
@@ -227,7 +219,7 @@ $$
 
 $$
 
-##### 一阶导数只包含y,求二阶导数
+### 一阶导数只包含y,求二阶导数
 
 $$
 \frac {dy}{dx} =f(y)\\
@@ -237,13 +229,13 @@ $$
 =f'(y)f(y)
 $$
 
-## 参数方式求导
+### 参数方式求导
 
 $$ 
 x=x(t), y=y(t), \frac{dy}{dx}=\frac{y'(t)}{x'(t)}
 $$
 
-## 积分
+### 积分
 
 $$
 \begin{aligned}
@@ -260,13 +252,17 @@ $$
 &\int\frac 1{x^2-a^2}dx=\frac 1{2a}\ln |\frac{x-a}{x+a}|+C \\
 \end{aligned}
 $$
-#### 补充积分
+
+### 补充积分
+
 $$
 \int \sin^2 x dx = \frac12 x- \frac14 \sin 2x +C\\
 
 \int \cos^2 x dx = \frac12 x+ \frac14 \sin 2x +C
 $$
-##### 华里士公式
+
+### 华里士公式
+
 $$
 当n为奇数，乘以1；n为偶数，乘以\frac \pi2  \\
 \int_0^{\frac \pi 2} \sin^nxdx=\int_0^{\frac \pi 2}\cos^nxdx=\frac {(n-1)!!} {n!!} *(\frac \pi2 \| 1)\\
@@ -276,19 +272,21 @@ $$
 \int_0^{\pi} xf(\sin x)dx = \frac{\pi}{2} \int_0^{\pi} f(\sin x)dx
 $$
 
-##### 周期函数积分
+### 周期函数积分
+
 $$
 \int_a^{a+T} f(x)dx = \int_0^T f(x)dx\\
 
 \int_a^{a+nT} f(x)dx = n\int_0^T f(x)dx
 $$
 
-## 变上限积分
+### 变上限积分
+
 $$
 \int_0^x f(x-t)dt = \int_0^x f(t)dt
 $$
 
-## 反常积分收敛冲要条件
+### 反常积分收敛冲要条件
 
 $$
 \int_a^{+\infty} \frac 1 {x^p}dx \Leftrightarrow p>1,a>0 \\
@@ -297,8 +295,8 @@ $$
 \int_a^{+\infty}x^ke^{-\lambda x}dx \Leftrightarrow \lambda>0,k>0 \\
 $$
 
-## 积分应用
-### 弧微分与极坐标转换成参数方程
+### 三种弧微分
+
 $$
 ds=\sqrt{1+f'^2(x)}dx,\\
 ds=\sqrt{x'^2(t)+y'^2(t)}dt \\
@@ -307,84 +305,71 @@ r=r(\theta),x=r(\theta)\cos\theta,y=r(\theta)\sin\theta, \\
 ds=\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
-### 旋转体积
-    1. f(x)绕x轴旋转体积
+### 曲线绕x轴旋转体积
+
 $$
-V=\pi\int_a^b f^2(x)dx
+V=\pi\int_a^b y^2(x)dx
 $$
 
-    2. f(x)绕y轴旋转体积
+### 曲线绕y轴旋转体积
+
 $$
 V=2\pi\int_a^b x|f(x)|dx\\
 
 V=\pi \int_a^b f^2(y)dy
 $$
 
-    3. 截面面积已知的体积(关键是寻找恰当的截面面积公式)
+### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
+
 $$
 V= \int_a^b f(x) dx
 $$
 
-### f(x)绕x轴旋转体侧面积
+### 曲线绕x轴旋转体侧面积
 
-    1. x轴直角坐标侧面积
-    
 $$
 S=2\pi\int_a^b|f(x)|\sqrt{1+f'^2(x)}dx
 $$
-    2. x轴参数方程侧面积
+
+### 曲线绕x轴旋转体侧面积-参数方程
+
 $$
 S=2\pi\int_{t1}^{t2}|y(t)|\sqrt{x'^2(t)+y'^2(t)}dt
 , x=x(t),y=y(t)
 $$
 
-    3. 侧面积:极坐标可以转化成参数方程
+### 曲线绕x轴旋转体侧面积-极坐标
+
 $$
 S=2\pi\int_a^b r(\theta)\sin\theta\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
-### 弧长
-
-    1. 弧长公式
-$$
-L=\int_a^b\sqrt{1+f'(x)^2}dx
-$$
-    2. 弧长参数方程
-$$
-S=\int_{t_1}^{t_2}\sqrt{x'^2(t)+y'^2(t)}dt
-, x=x(t),y=y(t)
-$$
-    3. 弧长极坐标函数转化成参数方程
-$$
-x=r(\theta) \cos \theta,y=r(\theta) \sin \theta\\
-
-s=\int_{\theta_1}^{\theta_2}
-\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
-$$
-
-### 平面面积
+### 三种弧长公式
 
 $$
-S=\int_a^b|f(x)-g(x)|dx, 
+L=\int_a^b\sqrt{1+f'(x)^2}dx \\
+L=\int_{t_1}^{t_2}\sqrt{x'^2(t)+y'^2(t)}dt , x=x(t),y=y(t)\\
+L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2(\theta)}d\theta\\
 $$
 
-    1. 平面面积:极坐标，二重积分化极坐标,交换积分次数得
+### 三种平面面积公式
+
 $$
-S=\iint dxdy=\iint rdrd\theta=\frac 12 \int_{\theta1}^{\theta2}[r(\theta)]^2d\theta
-$$
-    2. 平面面积:参数方程，换元积分
-$$
+S=\int_a^b|f(x)-g(x)|dx \\
+\ \\
+S=\frac 12 \int_{\theta1}^{\theta2}[r(\theta)]^2d\theta\\
+\ \\
 S=\int_{t1}^{t2}y(t)x'(t)dt
 $$
 
-
-
 ### f(x)函数的平均值
+
 $$
 avg=\frac 1 {(b-a)}\int_a^bf(x)dx
 $$
 
 ### 密度均匀形心质心公式
+
 $$
 密度均匀薄片y=f(x)是薄片上边界曲线, 可利用对称性计算出其中一个坐标 \\
 横坐标x=\frac {\int_a^b xf(x)dx}{\int_a^b f(x)dx}\\
@@ -393,9 +378,7 @@ $$
 
 $$
 
-### 积分性质
-
-- 一重积分区间原点对称性质
+### 一元积分区间原点对称性质
 
 $$
  \int_{-a}^{a}f(x)dx=
@@ -405,18 +388,19 @@ $$
 \end{cases}
 \ \\
 $$
-* 二重积分区间原点对称性质
+
+### 二重积分区间原点对称性质
 
 $$
 \iint f(x)dxdy=
 \begin{cases}
-2\iint f(x)dxdy, \in D_1, 
+2\iint f(x)dxdy, \in D_1,
 f(-x,-y)=f(x,y)\\
 0, f(-x,-y)=-f(x,y)
 \end{cases}
 $$
 
-- 二重积分区间关于y轴对称性质
+### 二重积分区间关于y轴对称性质
 
 $$
 \iint f(x,y)dxdy=
@@ -426,7 +410,7 @@ $$
 \end{cases}
 $$
 
-- 二重积分区间关于x轴对称性质
+### 二重积分区间关于x轴对称性质
 
 $$
 \iint f(x,y)dxy=
@@ -437,22 +421,22 @@ $$
 
 $$
 
-- 二重积分区间关于y=x对称, D11第一象限上半部分
+### 二重积分区间关于y=x对称
 
 $$
-\iint f(x,y)dx=\iint f(y,x)dxdy, 
+\iint f(x,y)dx=\iint f(y,x)dxdy
 $$
 
+### 二阶常系数线性齐次微分方程及特征方程
 
-### 二阶常系数线性微分方程
-
-    1. 二阶常系数线性齐次微分方程及特征方程
 $$
 y''+py+q=f(x), \lambda^2+p\lambda+q=0,
 $$
-    2. 二阶常系数线性非齐次方式特解,待定系数法
+
+### 二阶常系数线性非齐次方式特解,待定系数法
+
 $$
-f(x)=ax^2+bx+c, 特解:y^*=x^k(cx^2+dx+f),\\
+f(x)=ax^2+bx+c, 特解:y^*=x^k(cx^2+dx+f),
 k=\begin{cases}
 0, 0不是特征根\\
 1, 0是单根\\
@@ -470,30 +454,33 @@ k=\begin{cases}
 f(x)=e^{ax}(bx+c),y^*=x^ke^{ax}(Dx+C),k同上 \\
 \ \\
 f(x)=e^{ax}(H_{n1}(x)\cos bx+L_{n2}(x)\sin bx),\\
- y^*=x^ke^{ax}(M_n(x)\cos {bx}+F_n(x)\sin bx), n=max(n1,n2)\\
+ y^*=x^ke^{ax}(M_n(x)\cos {bx}+F_n(x)\sin bx), n=\max(n1,n2)\\
 k=\begin{cases}
 0, a\pm ib不是特征根\\
 1, a\pm ib 是特种根\\
 \end{cases}
 $$
-### 一阶微分方程
 
-    1. 变量可分离微分方程
+### 变量可分离微分方程
+
 $$
 g(y)dy=f(x)dx \Rightarrow \int g(y)dy = \int f(x)dx
 $$
 
-    2. 齐次微分方程
+### 齐次微分方程
+
 $$
 \frac{dy}{dx}=f(\frac yx)\\
 
 令u=\frac yx\\
 
-\int \frac 1{f(u)-u} = \int \frac 1x dx
+\int \frac 1{f(u)-u} du = \int \frac 1x dx
 $$
-    3. 一阶线性微分方程
+
+### 一阶线性微分方程
+
 $$
-y'+p(x)y=q(x) \ [x'+p(y)x=q(y)]\\
+y'+p(x)y=q(x) \ or \ (x'+p(y)x=q(y))\\
 
 令:u(x)=e^{\int p(x)dx}\\
 
@@ -502,7 +489,9 @@ y'+p(x)y=q(x) \ [x'+p(y)x=q(y)]\\
 \therefore yu(x)=\int q(x)u(x)dx+C
 
 $$
-    4. 可降阶的高阶微方程
+
+### 可降阶的高阶微方程
+
 $$
 
 y^{(n)} = f(x) \\
@@ -514,4 +503,3 @@ y^{(n)} = f(x) \\
 \Rightarrow \cdots
 
 $$
-
