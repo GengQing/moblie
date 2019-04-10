@@ -295,11 +295,13 @@ $$
 \int_a^{+\infty}x^ke^{-\lambda x}dx \Leftrightarrow \lambda>0,k>0 \\
 $$
 
-### 弧微分三种
+### 三种弧微分
 
 $$
 ds=\sqrt{1+f'^2(x)}dx,\\
 ds=\sqrt{x'^2(t)+y'^2(t)}dt \\
+
+r=r(\theta),x=r(\theta)\cos\theta,y=r(\theta)\sin\theta, \\
 ds=\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
@@ -320,25 +322,16 @@ $$
 ### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
 
 $$
-V= \int_a^b y(x) dx
+V= \int_a^b f(x) dx
 $$
 
-### 曲线绕x轴旋转体侧面积
+### 曲线绕x轴旋转体侧面积三种
 
 $$
-S=2\pi\int_a^b|y(x)|\sqrt{1+y'^2(x)}dx
-$$
+S=2\pi\int_a^b|y(x)|\sqrt{1+y'^2(x)}dx\\
 
-### 曲线绕x轴旋转体侧面积-参数方程
+S=2\pi\int_{t1}^{t2}|y(t)|\sqrt{x'^2(t)+y'^2(t)}dt, x=x(t),y=y(t)\\
 
-$$
-S=2\pi\int_{t1}^{t2}|y(t)|\sqrt{x'^2(t)+y'^2(t)}dt
-, x=x(t),y=y(t)
-$$
-
-### 曲线绕x轴旋转体侧面积-极坐标
-
-$$
 S=2\pi\int_a^b r(\theta)\sin\theta\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
 $$
 
@@ -360,7 +353,7 @@ S=\frac 12 \int_{\theta1}^{\theta2}[r(\theta)]^2d\theta\\
 S=\int_{t1}^{t2}y(t)x'(t)dt
 $$
 
-### f(x)函数的平均值
+### 函数的平均值
 
 $$
 avg=\frac 1 {(b-a)}\int_a^bf(x)dx
@@ -431,7 +424,7 @@ $$
 y''+py+q=f(x), \lambda^2+p\lambda+q=0,
 $$
 
-### 二阶常系数线性非齐次方式特解,待定系数法
+### 二常线非齐特解-多项式
 
 $$
 f(x)=ax^2+bx+c, 特解:y^*=x^k(cx^2+dx+f),
@@ -441,6 +434,11 @@ k=\begin{cases}
 2, 0是二重根
 \end{cases}\\
 \ \\
+$$
+
+### 二常线非齐特解-指数函数
+
+$$
 f(x)=e^{ax},y^*=Cx^ke^{ax},
 k=\begin{cases}
 0, a不是特征根\\
@@ -448,9 +446,22 @@ k=\begin{cases}
 2, a是二重根
 \end{cases}\\
 \ \\
+$$
 
-f(x)=e^{ax}(bx+c),y^*=x^ke^{ax}(Dx+C),k同上 \\
+### 二常线非齐特解-多项式和指数函数
+
+$$
+f(x)=e^{ax}(bx+c),y^*=x^ke^{ax}(Dx+C),k=\begin{cases}
+0, a不是特征根\\
+1, a是单根\\
+2, a是二重根
+\end{cases}\\ \\
 \ \\
+$$
+
+### 二常线非齐特解-多项式-指数函数-三角函数
+
+$$
 f(x)=e^{ax}(H_{n1}(x)\cos bx+L_{n2}(x)\sin bx),\\
  y^*=x^ke^{ax}(M_n(x)\cos {bx}+F_n(x)\sin bx), n=\max(n1,n2)\\
 k=\begin{cases}
@@ -470,7 +481,7 @@ $$
 $$
 \frac{dy}{dx}=f(\frac yx)\\
 
-令u=\frac yx\\
+u=\frac yx\\
 
 \int \frac 1{f(u)-u} du = \int \frac 1x dx
 $$
@@ -479,12 +490,11 @@ $$
 
 $$
 y'+p(x)y=q(x) \ or \ (x'+p(y)x=q(y))\\
-
-令:u(x)=e^{\int p(x)dx}\\
+u(x)=e^{\int p(x)dx}\\
 
 [yu(x)]'=q(x)u(x)\\
 
-\therefore yu(x)=\int q(x)u(x)dx+C
+yu(x)=\int q(x)u(x)dx+C
 
 $$
 
