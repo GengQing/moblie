@@ -5,11 +5,9 @@ import com.gluonapplication.math.MathBlockExtractor;
 import com.gluonapplication.math.Type;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.mvc.View;
-import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuItem;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
@@ -22,14 +20,14 @@ public class BasicView extends View {
 
     public BasicView() {
 
-        mathBlockExtractor = new MathBlockExtractor("/math02.md");
+        mathBlockExtractor = new MathBlockExtractor("/Formula.md");
         WebView webView = new WebView();
         WebEngine engine = webView.getEngine();
 
 
         engine.loadContent(HtmlTemplate.blockHtmlTemplate, "text/html;charset=utf-8");
 
-        Label label = new Label("SHOW MATH");
+        Label label = new Label("SHOW FORMULA");
 
         Button button = new Button();
         button.setWrapText(true);
@@ -54,7 +52,6 @@ public class BasicView extends View {
 
 
         setCenter(controls);
-        getApplication().getAppBar();
 
     }
 

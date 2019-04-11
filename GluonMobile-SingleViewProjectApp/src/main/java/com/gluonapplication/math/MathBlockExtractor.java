@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class MathBlockExtractor {
 
-    public static final String SEP = "$$";
+    public static final String SEP = "###";
 
     public Map<String, MathBlock> allMathBlocks = new HashMap<>();
 
@@ -31,12 +31,13 @@ public class MathBlockExtractor {
                 continue;
             }
 
-            if (isSplitLine(line) && queue.contains(SEP)) { // 分段行, 成对出现
-                MathBlock mathBlock = createOneBlock(queue);
-                allMathBlocks.put(mathBlock.getTitle(), mathBlock);
-            } else {
-                queue.add(line);
+            if (isTitleLine(line)) { // 标题行
+                if (!queue.isEmpty()) {
+                    MathBlock mathBlock = createOneBlock(queue);
+                    allMathBlocks.put(mathBlock.getTitle(), mathBlock);
+                }
             }
+            queue.add(line);
         }
 
         blockList.addAll(allMathBlocks.values());
@@ -47,25 +48,15 @@ public class MathBlockExtractor {
 
     private MathBlock createOneBlock(final Queue<String> queue) {
         MathBlock mathBlock = new MathBlock();
-        String title = null;
-        while (!queue.isEmpty()) {
-            String s = queue.poll();
-            if (isSplitLine(s)) {
-                mathBlock.getContents().addAll(queue);
-                queue.clear();
-                break;
-            } else {
-                title = s;
-            }
-
-        }
-
-        mathBlock.setTitle(title.substring(4));
+        String title = queue.poll();
+        mathBlock.getContents().addAll(queue);
+        queue.clear();
+        mathBlock.setTitle(title.substring(4));// remove ###
         return mathBlock;
     }
 
-    private boolean isSplitLine(String line) {
-        return SEP.equals(line);
+    private boolean isTitleLine(String line) {
+        return line.startsWith(SEP);
     }
 
     public MathBlock getMathBlockByTitle(String title) {
