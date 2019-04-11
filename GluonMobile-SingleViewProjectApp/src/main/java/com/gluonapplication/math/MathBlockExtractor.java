@@ -59,7 +59,8 @@ public class MathBlockExtractor {
             }
 
         }
-        mathBlock.setTitle(title);
+
+        mathBlock.setTitle(title.substring(4));
         return mathBlock;
     }
 

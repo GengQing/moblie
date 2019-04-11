@@ -493,12 +493,9 @@ $$
 ### 一阶线性微分方程
 
 $$
-y'+p(x)y=q(x), (x'+p(y)x=q(y))\\
-u(x)=e^{\int p(x)dx}\\
-
-[yu(x)]'=q(x)u(x)\\
-
-yu(x)=\int q(x)u(x)dx+C
+y'+p(x)y=q(x), (x'+p(y)x=q(y)) \\
+u=e^{\int p(x)dx}\\
+yu=\int q(x)u(x)dx+C
 
 $$
 
