@@ -491,7 +491,7 @@ u=\frac yx\\
 \int \frac 1{f(u)-u} du = \int \frac 1x dx
 $$
 
-### 一阶线性微分方程
+### 一阶线性微分方程及其解
 
 $$
 y'+p(x)y=q(x), (x'+p(y)x=q(y)) \\
