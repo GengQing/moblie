@@ -10,7 +10,7 @@ import java.util.List;
 public class MathBlock {
 
     public static List<String> EQUALITY_BLOCK =
-            Arrays.asList("### 泰勒公式", "### 高阶导数", "### 补充积分");
+            Arrays.asList("### 泰勒公式", "### 高阶导数");
 
     private String title;
 
@@ -94,7 +94,7 @@ public class MathBlock {
 
     public List<Formula> getFormulas() {
         if (formulas == null) {
-            formulas = FormulaExtractor.getInstance().extractAlignedFormula(this);
+            formulas = FormulaExtractor.getInstance().extractDerivativeByTitle(this);
             Collections.shuffle(formulas);
         }
         return formulas;

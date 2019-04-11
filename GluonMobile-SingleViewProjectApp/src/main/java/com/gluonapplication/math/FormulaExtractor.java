@@ -27,9 +27,9 @@ public class FormulaExtractor {
     private FormulaExtractor() {
     }
 
-    public ArrayList<Formula> extractDerivativeByTitle(String title, MathBlock block) {
+    public ArrayList<Formula> extractDerivativeByTitle(MathBlock block) {
 
-        ArrayList<Formula> formulas = allFormulas.get(title);
+        ArrayList<Formula> formulas = allFormulas.get(block.getTitle());
         if (formulas == null) {
             formulas = new ArrayList<>();
             Type type = block.type();
@@ -55,7 +55,7 @@ public class FormulaExtractor {
 
 
             Collections.shuffle(formulas);
-            allFormulas.put(title, formulas);
+            allFormulas.put(block.getTitle(), formulas);
 
         }
         return formulas;
