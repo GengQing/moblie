@@ -10,7 +10,7 @@ import java.util.List;
 public class MathBlock {
 
     public static List<String> EQUALITY_BLOCK =
-            Arrays.asList("### 泰勒公式", "### 高阶导数");
+            Arrays.asList("泰勒公式", "高阶导数", "补充积分", "排列组合公式", "导数四则运算");
 
     private String title;
 
@@ -36,7 +36,8 @@ public class MathBlock {
         }
 
         if (EQUALITY_BLOCK.contains(title)) {
-            return Type.EQUALITY;
+            type = Type.EQUALITY;
+            return type;
         }
 
         for (String str : this.getContents()) {

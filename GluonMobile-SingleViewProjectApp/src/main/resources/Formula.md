@@ -58,7 +58,8 @@ C_n^k=C_n^{n-k}\\
 \ \\
 C_5^3=\frac{5\times4\times3}{3\times2\times1}\\
 \ \\
-C_n^0=1, C_n^n=1
+C_n^0=1 \\
+C_n^n=1
 
 $$
 
