@@ -9,6 +9,7 @@ import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
@@ -53,15 +54,17 @@ public class BasicView extends View {
 
 
         setCenter(controls);
+        getApplication().getAppBar();
 
     }
 
 
     @Override
     protected void updateAppBar(AppBar appBar) {
-        appBar.setNavIcon(MaterialDesignIcon.MENU.button(e -> System.out.println("Menu")));
-        appBar.setTitleText("Basic View");
-        appBar.getActionItems().add(MaterialDesignIcon.SEARCH.button(e -> System.out.println("Search")));
+//        appBar.setNavIcon(MaterialDesignIcon.MENU.button(e -> System.out.println("Menu")));
+        appBar.setTitleText("MATH");
+//        appBar.getActionItems().add(MaterialDesignIcon.SEARCH.button(e -> System.out.println("Search")));
+//        appBar.getMenuItems().add(new MenuItem("积分"));
     }
 
 
