@@ -341,35 +341,35 @@ $$
 ### 曲线绕$x$轴旋转体积
 
 $$
-V=\pi\int_a^b y^2(x)dx
+V=\pi\int_a^b y^2dx, y=y(x)
 $$
 
 ### 曲线绕$y$轴旋转体积两种
 
 $$
-V=2\pi\int_a^b xy(x)dx, (y(x)\ge 0)\\
+V=2\pi\int_a^b xydx, y=y(x)\ge 0\\
 
-V=\pi \int_a^b x^2(y)dy
+V=\pi \int_{y_1}^{y_2} x^2dy, x=x(y)
 $$
 
 ### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
 
 $$
-V= \int_a^b f(x) dx
+V= \int_a^b S(x) dx
 $$
 
 ### 曲线绕$x$轴旋转体侧面积两种
 
 $$
-S=2\pi\int_a^b|y(x)|\sqrt{1+y'^2(x)}dx\\
+S=2\pi\int_a^b|y|\sqrt{1+y'^2}dx,y=y(x)\\
 
-S=2\pi\int_{t1}^{t2}|y(t)|\sqrt{x'^2(t)+y'^2(t)}dt, x=x(t),y=y(t)\\
+S=2\pi\int_{t1}^{t2}|y|\sqrt{x'^2+y'^2}dt, x=x(t),y=y(t)\\
 $$
 
 ### 函数的平均值
 
 $$
-avg=\frac 1 {(b-a)}\int_a^bf(x)dx
+average=\frac 1 {(b-a)}\int_a^bf(x)dx
 $$
 
 ### 密度均匀形心质心公式
@@ -434,7 +434,7 @@ $$
 ### 二阶常系数线性齐次微分方程及特征方程
 
 $$
-y''+py+q=f(x)\\
+y''+py'+qy=f(x)\\
 \lambda^2+p\lambda+q=0
 $$
 
