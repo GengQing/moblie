@@ -145,6 +145,15 @@ e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
 \cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4+\cdots\\
 $$
 
+### 重要极限
+
+$$
+\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
+\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
+\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)\\
+\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)
+$$
+
 ### 等价无穷小
 
 $$
