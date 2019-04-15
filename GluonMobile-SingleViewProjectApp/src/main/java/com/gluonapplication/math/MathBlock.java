@@ -2,10 +2,7 @@ package com.gluonapplication.math;
 
 import javax.json.*;
 import javax.json.spi.JsonProvider;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class MathBlock {
 
@@ -87,8 +84,8 @@ public class MathBlock {
     }
 
     public String toContent() {
-        StringBuilder builder = new StringBuilder("\n");
-        contents.forEach(s -> builder.append(s));
+        StringJoiner builder = new StringJoiner("<br/>");
+        contents.forEach(s -> builder.add(s));
         String s = builder.toString();
         return s;
     }
