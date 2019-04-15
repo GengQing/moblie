@@ -310,32 +310,32 @@ $$
 ### 曲线与$x$轴面积公式两种($y$轴取反函数同理)
 
 $$
-S=\int_a^b y(x) dx, (y(x)\ge 0)\\
+S=\int_a^b y dx, (y=y(x)\ge 0)\\
 \ \\
 
-S=\int_{t1}^{t2}y(t)x'(t)dt, (y(t)\ge 0)
+S=\int_{t1}^{t2}yx'dt, (y=y(t)\ge 0, x=x(t))
 $$
 
 ### 极坐标曲边扇形面积
 
 $$
-S=\frac 12 \int_{\theta1}^{\theta2}[r(\theta)]^2d\theta\\
+S=\frac 12 \int_{\theta1}^{\theta2}r^2d\theta, r=r(\theta)\\
 $$
 
 ### 弧微分三种
 
 $$
-ds=\sqrt{1+f'^2(x)}dx,\\
-ds=\sqrt{x'^2(t)+y'^2(t)}dt \\
-ds=\sqrt{r^2(\theta)+r'^2(\theta)}d\theta
+ds=\sqrt{1+y'^2}dx,y=y(x)\\
+ds=\sqrt{x'^2+y'^2}dt, y=y(t), x=x(t)\\
+ds=\sqrt{r^2+r'^2}d\theta,r=r(\theta)
 $$
 
 ### 弧长公式三种
 
 $$
-L=\int_a^b\sqrt{1+y'(x)^2}dx \\
-L=\int_{t_1}^{t_2}\sqrt{x'^2(t)+y'^2(t)}dt\\
-L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2(\theta)}d\theta\\
+L=\int_a^b\sqrt{1+y'^2}dx ,y=y(x)\\
+L=\int_{t_1}^{t_2}\sqrt{x'^2+y'^2}dt, y=y(t), x=x(t)\\
+L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2}d\theta,r=r(\theta)\\
 $$
 
 ### 曲线绕$x$轴旋转体积
