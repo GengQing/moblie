@@ -214,14 +214,14 @@ $$
 ### 高阶导数
 
 $$
-(uv)^{(n)}=\sum_{k=0}^n C_n^k u^{(n-k)} v^{(k)}\\
+(uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}\\
 \ \\
-(\sin x)^{(n)} = \sin (x +n\times\frac{\pi}{2})\\
+(\sin ax)^{(n)} = a^n\sin (ax +frac{n\pi}{2})\\
 \ \\
-(\cos x)^{(n)} = \cos (x +n\times\frac{\pi}{2})\\
+(\cos ax)^{(n)} = a^n\cos (ax +frac{n\pi}{2})\\
 \ \\
-(\frac{1}{1+x})^{(n)} = \frac{(-1)^n n!}{(1+x)^{n+1}}\\
-
+(\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
+((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}
 $$
 
 ### 一阶导数只包含y,求二阶导数
@@ -237,7 +237,26 @@ $$
 ### 参数方式求导
 
 $$
-x=x(t), y=y(t), \frac{dy}{dx}=\frac{y'(t)}{x'(t)}
+x=x(t), y=y(t),\\
+y'_x=\frac{y'_t}{x'_t}\\
+y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}
+$$
+
+### 极坐标转换成参数方程
+
+$$
+r=r(\theta)\\
+x=r\cos \theta\\
+y=r\sin \theta
+$$
+
+### 反函数求导
+
+$$
+\frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
+\varphi '(y)=\frac 1{f'(x)}\\
+\varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
+
 $$
 
 ### 积分
