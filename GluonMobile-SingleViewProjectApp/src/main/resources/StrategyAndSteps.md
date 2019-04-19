@@ -355,7 +355,7 @@ $$
 $$
 
 
-3. sinx与cosx凑微分, 偶数次方,降为奇数次方
+3. $\sin x 与\cos x$凑微分, 偶数次方,降为奇数次方
 
 $$
 \sin^{2k+1}x\cos^n x,u=\cos x,\\
@@ -446,7 +446,7 @@ $$
 - 转化成有理函数 万能公式
 
 $$
-u=\tan \frac x2(-\pi \lt x lt \pi),
+u=\tan \frac x2(-\pi \lt x \lt \pi),
 \sin x = \frac{2u}{1+u^2},
 \cos x = \frac{1-u^2}{1+u^2}
 $$
@@ -454,8 +454,9 @@ $$
 - 待定系数法
 
 $$
-\frac {C\sin x + D\cos x}{A\sin x + B\cos x} = \frac h{C\cos x - D\sin x}{A\sin x + B\cos x} +
-\frac k{A\sin x + B\cos x}{A\sin x + B\cos x}
+\frac {C\sin x + D\cos x}{A\sin x + B\cos x} =
+ \frac {h(A\cos x - B\sin x)}{A\sin x + B\cos x} +
+\frac {k(A\sin x + B\cos x)}{A\sin x + B\cos x}
 $$
 
 ### 无理函数分式积分
