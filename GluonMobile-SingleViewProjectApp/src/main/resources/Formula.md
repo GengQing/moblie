@@ -111,7 +111,12 @@ $$
 ### 基本初等函数公式
 
 $$
-\log_a x = \frac {\ln x} {\ln a}
+\log_a x = \frac {\ln x} {\ln a}\\
+a^{m+n}=a^m a^n\\
+a^{mn}=(a^m)^n=(a^n)^m\\
+a^{m-n}=\frac {a^m}{a^n}
+
+
 $$
 
 ### 三角函数的周期
