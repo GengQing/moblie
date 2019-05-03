@@ -265,21 +265,20 @@ y'_x=\frac{y'_t}{x'_t}\\
 y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}
 $$
 
-### 极坐标转换成参数方程
-
-$$
-r=r(\theta)\\
-x=r\cos \theta\\
-y=r\sin \theta
-$$
-
 ### 反函数求导
 
 $$
 \frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
 \varphi '(y)=\frac 1{f'(x)}\\
 \varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
+$$
 
+### 极坐标转换成参数方程
+
+$$
+r=r(\theta)\\
+x=r\cos \theta\\
+y=r\sin \theta
 $$
 
 ### 积分
@@ -311,10 +310,14 @@ $$
 ### 华里士公式
 
 $$
-当n为奇数，乘以1；n为偶数，乘以\frac \pi2  \\
-\int_0^{\frac \pi 2} \sin^nxdx=\int_0^{\frac \pi 2}\cos^nxdx=\frac {(n-1)!!} {n!!} *(\frac \pi2 \| 1)\\
-\  \\
 \int_0^{\frac \pi 2} f(\sin x)dx=\int_0^{\frac \pi 2}f(\cos x)dx\\
+
+\int_0^{\frac \pi 2} \sin^nxdx=\int_0^{\frac \pi 2}\cos^nxdx = 
+\begin{cases}
+\frac {(n-1)!!} {n!!} \cdot \frac \pi2 (n为偶数）\\
+\ \\
+\frac {(n-1)!!} {n!!} (n为奇数)\\
+\end{cases}
 \  \\
 \int_0^{\pi} xf(\sin x)dx = \frac{\pi}{2} \int_0^{\pi} f(\sin x)dx
 $$
