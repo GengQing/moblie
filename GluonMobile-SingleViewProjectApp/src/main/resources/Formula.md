@@ -316,6 +316,7 @@ $$
 \begin{cases}
 \frac {(n-1)!!} {n!!} \cdot \frac \pi2 (n为偶数）\\
 \ \\
+\ \\
 \frac {(n-1)!!} {n!!} (n为奇数)\\
 \end{cases}
 \  \\
@@ -343,6 +344,12 @@ $$
 \int_a^{+\infty} \frac 1{x\ln^p x}dx \Leftrightarrow p>1, a>1 \\
 \int_a^b \frac 1{(x-a)^p}dx \Leftrightarrow p<1 \\
 \int_a^{+\infty}x^ke^{-\lambda x}dx \Leftrightarrow \lambda>0,k>0 \\
+$$
+
+### 重要反常积分
+
+$$
+\int_{+\infty}^{+\infty}e^{-2x}dx=2\int_{0}^{+\infty}e^{-2x}=\sqrt{\pi}
 $$
 
 ### 定积分的运用
@@ -436,6 +443,7 @@ $$
 0,f(-x)=-f(x)\\
 \end{cases}
 \ \\
+反常积分必须满足在右半区间收敛的条件
 $$
 
 ### 二重积分区间原点对称性质
