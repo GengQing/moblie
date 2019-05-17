@@ -8,7 +8,7 @@ a^3-b^3&=(a-b)(a^2+ab+b^2)\\
 
 a^3+b^3&=(a+b)(a^2-ab+b^2)\\
 
-(a+b)^n&=\sum_{r=0}^n C_n^r a^{n-r}b^r
+(a+b)^n&=\sum_{r=0}^n C_n^r a^{n-r}b^r=C_n^0a^n+C_n^1a^{n-1}b+C_n^2a^{n-2}b^2+\cdots+C_n^nb^n
 \end{aligned}
 $$
 

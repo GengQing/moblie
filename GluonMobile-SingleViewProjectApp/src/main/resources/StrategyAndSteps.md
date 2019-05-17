@@ -439,14 +439,16 @@ $$
 积化和差得和差，余弦在后要相加；异名函数取正弦，正弦相乘取负号。
 
 $$
-\sin A\cos B=\frac 12[\sin(A+B)+\sin(A-B)]\\
+\sin Ax\cos Bx=\frac 12[\sin(A+B)x+\sin(A-B)x]\\
 
 \ \\
 
-\cos A\cos B=\frac 12[\cos(A+B)+\cos(A-B)]\\
+\cos Ax\cos Bx=\frac 12[\cos(A+B)x+\cos(A-B)x]\\
 \ \\
 
-\sin A\sin B=-\frac 12[\cos(A+B)-\cos(A-B)]\\
+\sin Ax\sin Bx=-\frac 12[\cos(A+B)x-\cos(A-B)x]\\
+\ \\
+\cos 2x = 2\cos^2 x -1 = 1-2\sin^2x
 
 $$
 
@@ -531,6 +533,10 @@ $$
 
 1. 检查积分区间是否包含奇点,如有有那么就是反常积分
 
+### 反函数积分技巧
+
+1. 用原来的函数做变量替换,
+
 ### 偏导数注意事项
 
 1. 偏导记号是一个整体记号, 不能看做是分子与分母之商.
@@ -558,12 +564,13 @@ $$
 ### 含参变量带绝对值符号的定积分
 
 $$
-\int_a^b |f(t)-x| dt = 
-\begin{cases} 
-\int_a^b |f(t)-x| dt (x\le a) \\
-\int_a^x |f(t)-x| dt + \int_x^b |f(t)-x| dx (a \lt x \lt b)\\
-\int_a^b |f(t)-x| dx (x \ge b)
-
+\int_a^b |f(t)-g(x)| dt =
+\begin{cases}
+\int_a^b |f(t)-g(x)| dt \ (x\le a) \\
+\ \\
+\int_a^x |f(t)-g(x)| dt + \int_x^b |f(t)-g(x)| dx \ (a \lt x \lt b)\\
+\ \\
+\int_a^b |f(t)-g(x)| dx \ (x \ge b)
 
 \end{cases}
 
