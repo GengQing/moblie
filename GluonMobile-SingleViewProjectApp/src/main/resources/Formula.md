@@ -481,7 +481,7 @@ $$
 ### 二重积分区间关于$y=x$对称
 
 $$
-\iint f(x,y)dx=\iint f(y,x)dxdy
+\iint f(x,y)dxdy=\iint f(y,x)dxdy
 $$
 
 ### 二阶常系数线性齐次微分方程及特征方程
