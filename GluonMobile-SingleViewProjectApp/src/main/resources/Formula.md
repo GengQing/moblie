@@ -323,7 +323,11 @@ $$
 \int_0^{\pi} xf(\sin x)dx = \frac{\pi}{2} \int_0^{\pi} f(\sin x)dx
 \ \\
 \ \\
-\int_0^{\pi} sin^{n}xdx=2\int_0^{\frac {\pi} 2}sin^{n}xdx
+\int_0^{\pi} sin^{n}xdx=2\int_0^{\frac {\pi} 2}sin^{n}xdx\\
+\ \\
+\int_0^{\pi} cos^{2n}xdx=2\int_0^{\frac {\pi} 2}cos^{2n}xdx
+\ \\
+\int_0^{\pi} cos^{2n-1}xdx=0
 $$
 
 ### 周期函数积分
@@ -446,6 +450,7 @@ $$
 0,f(-x)=-f(x)\\
 \end{cases}
 \ \\
+\int_{-a+n}^{a+n}f(x-n)dx=\int_{-a}^{a}f(x)dx\\
 反常积分必须满足在右半区间收敛的条件
 $$
 
