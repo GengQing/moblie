@@ -321,6 +321,9 @@ $$
 \end{cases}
 \  \\
 \int_0^{\pi} xf(\sin x)dx = \frac{\pi}{2} \int_0^{\pi} f(\sin x)dx
+\ \\
+\ \\
+\int_0^{\pi} sin^nxdx=2\int_0^{\frac {\pi} 2}sin^nxdx
 $$
 
 ### 周期函数积分
