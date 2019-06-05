@@ -344,15 +344,17 @@ $$
 \int_0^x f(x-t)dt = \int_0^x f(t)dt
 $$
 
-### 无穷反常积分收敛冲要条件
+### 无穷反常积分收敛充分条件
 
 $$
-\int_a^{+\infty} \frac 1 {x^p}dx \Leftrightarrow p>1,a>0 \\
-\int_a^{+\infty} \frac 1{x\ln^p x}dx \Leftrightarrow p>1, a>1 \\
-\int_a^{+\infty}x^ke^{-\lambda x}dx \Leftrightarrow \lambda>0,k>0 \\
+\int_a^{+\infty} \frac 1 {x^p}dx \Leftarrow p>1,a>0 \\
+\ \\
+\int_a^{+\infty} \frac 1{x\ln^p x}dx \Leftarrow p>1, a>1 \\
+\ \\
+\int_a^{+\infty}x^ke^{-\lambda x}dx \Leftarrow \lambda>0,k>0 \\
 $$
 
-### 瑕积分收敛冲要条件
+### 瑕积分收敛充分条件
 
 $$
 \int_a^b \frac 1{(x-a)^p}dx \Leftrightarrow p<1 
