@@ -323,11 +323,11 @@ $$
 \int_0^{\pi} xf(\sin x)dx = \frac{\pi}{2} \int_0^{\pi} f(\sin x)dx
 \ \\
 \ \\
-\int_0^{\pi} sin^{n}xdx=2\int_0^{\frac {\pi} 2}sin^{n}xdx\\
+\int_0^{\pi} \sin^{n}xdx=2\int_0^{\frac {\pi} 2}\sin^{n}xdx\\
 \ \\
-\int_0^{\pi} cos^{2n}xdx=2\int_0^{\frac {\pi} 2}cos^{2n}xdx
+\int_0^{\pi} \cos^{2n}xdx=2\int_0^{\frac {\pi} 2}\cos^{2n}xdx
 \ \\
-\int_0^{\pi} cos^{2n-1}xdx=0
+\int_0^{\pi} \cos^{2n-1}xdx=0
 $$
 
 ### 周期函数积分
