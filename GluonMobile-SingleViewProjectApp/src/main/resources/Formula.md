@@ -344,19 +344,24 @@ $$
 \int_0^x f(x-t)dt = \int_0^x f(t)dt
 $$
 
-### 反常积分收敛冲要条件
+### 无穷反常积分收敛冲要条件
 
 $$
 \int_a^{+\infty} \frac 1 {x^p}dx \Leftrightarrow p>1,a>0 \\
 \int_a^{+\infty} \frac 1{x\ln^p x}dx \Leftrightarrow p>1, a>1 \\
-\int_a^b \frac 1{(x-a)^p}dx \Leftrightarrow p<1 \\
 \int_a^{+\infty}x^ke^{-\lambda x}dx \Leftrightarrow \lambda>0,k>0 \\
+$$
+
+### 瑕积分收敛冲要条件
+
+$$
+\int_a^b \frac 1{(x-a)^p}dx \Leftrightarrow p<1 
 $$
 
 ### 重要反常积分
 
 $$
-\int_{+\infty}^{+\infty}e^{-2x}dx=2\int_{0}^{+\infty}e^{-2x}=\sqrt{\pi}
+\int_{-\infty}^{+\infty}e^{-2x}dx=2\int_{0}^{+\infty}e^{-2x}=\sqrt{\pi}
 $$
 
 ### 定积分的运用
