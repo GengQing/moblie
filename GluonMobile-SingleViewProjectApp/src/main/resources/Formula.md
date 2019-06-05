@@ -68,10 +68,6 @@ $$
 $$
 \frac{a+b}{2} \ge \sqrt{ab}\\
 \ \\
-ab \le (\frac {a+b}2)^2\\
-\ \\
-{a+b} \ge 2\sqrt{ab}\\
-\ \\
 \frac {a_1+\ldots + a_n}{n} \ge \sqrt[n]{a_1 \times \ldots \times a_n}\\
 \ \\
 x \ge \sin x (x\ge0)\\
