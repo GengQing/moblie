@@ -112,7 +112,6 @@ a^{m+n}=a^m a^n\\
 a^{mn}=(a^m)^n=(a^n)^m\\
 a^{m-n}=\frac {a^m}{a^n}
 
-
 $$
 
 ### 三角函数的周期
@@ -586,5 +585,13 @@ y^{(n)} = f(x) \\
 \Rightarrow y^{(n-2)} = \int [\int f(x) dx +C_1]dx + C_2 \\
 
 \Rightarrow \cdots
+
+$$
+
+### 柯西积分不等式
+
+$$
+
+(\int_a^b sf(x)g(x) dx)^2  \le \int_a^b f^2(x)dx \cdot \int_a^b g^2(x)dx
 
 $$
