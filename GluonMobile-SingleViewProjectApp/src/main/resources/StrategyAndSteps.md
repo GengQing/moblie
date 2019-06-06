@@ -644,4 +644,5 @@ $$
 ### 二重积分综合问题
 
 1. 通过累次积分化为一元积分处理
-2. 通过求导化为一元积分处理
+2. 通过求导化为一元积分处理$[\int_a^x du\int_b^u f(t,u)dt]'=\int_b^x f(t,x)dt$
+3. 两积分的乘积化为二重积分$\int_a^b f(x)dx \cdot \int_a^b g(x)dx=\iint f(x)g(y)dxdy$
