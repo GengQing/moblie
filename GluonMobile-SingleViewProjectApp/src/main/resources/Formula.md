@@ -588,6 +588,22 @@ y^{(n)} = f(x) \\
 
 $$
 
+### 不显含$y$的微分方程
+
+$$
+y''=f(x,y') \\
+y'=p,y''=\frac {dp}{dx}\\
+\frac {dp}{dx}=f(x,p)
+$$
+
+### 不显含$x$的微分方程
+
+$$
+y''=f(y,y') \\
+y'=p,y''=\frac {dp}{dy} \frac {dy}{dx}=p\frac {dp}{dy}\\
+p\frac {dp}{dy}=f(y,p)
+$$
+
 ### 柯西积分不等式
 
 $$
