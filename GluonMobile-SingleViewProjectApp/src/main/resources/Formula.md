@@ -592,6 +592,6 @@ $$
 
 $$
 
-(\int_a^b sf(x)g(x) dx)^2  \le \int_a^b f^2(x)dx \cdot \int_a^b g^2(x)dx
+[\int_a^b f(x)g(x) dx]^2  \le \int_a^b f^2(x)dx \cdot \int_a^b g^2(x)dx
 
 $$
