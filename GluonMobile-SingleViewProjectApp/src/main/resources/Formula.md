@@ -549,6 +549,18 @@ k=\begin{cases}
 \end{cases}
 $$
 
+### 微分方程特解-三角函数
+
+$$
+f(x)=\sin x\\
+y^*=x^k(A\cos {x}+B\sin x),\\
+k=\begin{cases}
+0, \pm i不是特征根\\
+1, \pm i 是特种根\\
+\end{cases}
+
+$$
+
 ### 变量可分离微分方程
 
 $$
