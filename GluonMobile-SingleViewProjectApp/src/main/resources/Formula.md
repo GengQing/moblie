@@ -629,3 +629,7 @@ $$
 [\int_a^b f(x)g(x) dx]^2  \le \int_a^b f^2(x)dx \cdot \int_a^b g^2(x)dx
 
 $$
+
+### 线性方程解的性质
+
+1. 特解加齐次解仍是特解
