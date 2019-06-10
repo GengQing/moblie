@@ -342,17 +342,17 @@ $$
 ### 无穷反常积分收敛充分条件
 
 $$
-\int_a^{+\infty} \frac 1 {x^p}dx \Leftarrow p>1,a>0 \\
+\int_a^{+\infty} \frac 1 {x^p}dx\ (a>0) \Leftarrow p>1, \\
 \ \\
-\int_a^{+\infty} \frac 1{x\ln^p x}dx \Leftarrow p>1, a>1 \\
+\int_a^{+\infty} \frac 1{x\ln^p x}dx\ (a>1)\Leftarrow p>1 \\
 \ \\
-\int_a^{+\infty}x^ke^{-\lambda x}dx \Leftarrow \lambda>0,k>0 \\
+\int_a^{+\infty}x^ke^{-\lambda x}dx\ (k>0) \Leftarrow \lambda>0 \\
 $$
 
 ### 瑕积分收敛充分条件
 
 $$
-\int_a^b \frac 1{(x-a)^p}dx \Leftrightarrow p<1 
+\int_a^b \frac 1{(x-a)^p}dx \Leftrightarrow p<1
 $$
 
 ### 重要反常积分
