@@ -622,7 +622,7 @@ y'=p,y''=\frac {dp}{dy} \frac {dy}{dx}=p\frac {dp}{dy}\\
 p\frac {dp}{dy}=f(y,p)
 $$
 
-### 柯西积分不等式
+### 柯西积分不等式-定积分的平方小于等于平方的定积分
 
 $$
 
