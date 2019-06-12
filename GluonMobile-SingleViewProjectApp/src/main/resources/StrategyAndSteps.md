@@ -210,9 +210,9 @@ $$
 
 ### 函数取绝对值导数的结论
 
-1. 设函数$f(x)$在$x=a$处可导  
-    a)若$f(0)\neq 0,则|f(x)|在x=a$处必可导.  
-    b)若$f(0)=0,则|f(x)|在x=a处可导的充要条件是f'(a)=0$.
+设函数$f(x)$在$x=a$处可导  
+若$f(a)\neq 0,则|f(x)|在x=a$处必可导  
+若$f(a)=0,则|f(x)|在x=a处可导的充要条件是f'(a)=0$.
 
 ### 根据某点可导, 求参数
 
@@ -299,11 +299,11 @@ $$
 ### 求水平渐近线(趋近正负无穷,最多两条)
 
 $$
-\lim_{x\rightarrow -\infty} f(x)=b_1, y=b_1即一条水平渐进线\\
-\lim_{x\rightarrow +\infty} f(x)=b_2, y=b_2即一条水平渐进线\\
+\lim_{x\rightarrow -\infty} f(x)=b_1, x=b_1即一条水平渐进线\\
+\lim_{x\rightarrow +\infty} f(x)=b_2, x=b_2即一条水平渐进线\\
 $$
 
-有水平渐近线基本初等函数有$(a^x, y=0),(\arctan x, y=\pm \frac{\pi}{2}),( arccot\ x, y=0和\pi)$
+有水平渐近线基本初等函数有$(a^x, x=0),(\arctan x, x=\pm \frac{\pi}{2}),( arccot\ x, x=0和\pi)$
 
 ### 不等式证明
 
