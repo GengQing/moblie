@@ -505,7 +505,8 @@ $$
 
 $$
 y''+py'+y=f(x) \\
-f(x)=ax^2+bx+c, 特解:y^*=x^k(cx^2+dx+f),
+f(x)=ax^2+bx+c,\\
+特解:y^*=x^k(cx^2+dx+f),\\
 k=\begin{cases}
 0, 0不是特征根\\
 1, 0是单根\\
@@ -518,7 +519,8 @@ $$
 ### 微分方程特解-指数函数
 
 $$
-f(x)=e^{ax},y^*=Cx^ke^{ax},
+f(x)=e^{ax},\\
+y^*=Cx^ke^{ax},\\
 k=\begin{cases}
 0, a不是特征根\\
 1, a是单根\\
@@ -530,7 +532,9 @@ $$
 ### 微分方程特解-多项式-指数函数
 
 $$
-f(x)=e^{ax}(bx+c),y^*=x^ke^{ax}(Dx+C),k=\begin{cases}
+f(x)=e^{ax}(bx+c),\\
+y^*=x^ke^{ax}(Dx+C),\\
+k=\begin{cases}
 0, a不是特征根\\
 1, a是单根\\
 2, a是二重根
