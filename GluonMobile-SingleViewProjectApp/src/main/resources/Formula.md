@@ -546,7 +546,8 @@ $$
 
 $$
 f(x)=e^{ax}(H_{n1}(x)\cos bx+L_{n2}(x)\sin bx),\\
- y^*=x^ke^{ax}(M_n(x)\cos {bx}+F_n(x)\sin bx), n=\max(n1,n2)\\
+ y^*=x^ke^{ax}(M_n(x)\cos {bx}+F_n(x)\sin bx),\\
+ n=\max(n1,n2)\\
 k=\begin{cases}
 0, a\pm ib不是特征根\\
 1, a\pm ib 是特种根\\
