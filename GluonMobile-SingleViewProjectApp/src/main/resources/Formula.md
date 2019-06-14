@@ -30,7 +30,7 @@ $$
 \cos x \ge 0, x\in[0,\pi/2] ,[\frac{3\pi}{2},2\pi], 即一和四象限为正值, 二三象限为负值\\
 $$
 
-### 特殊三角函数值
+### 特殊三角函数值=
 
 $$
 \begin{aligned}
@@ -38,7 +38,7 @@ $$
 &\sin(\frac {\pi}2)=1&\\
 &\cos(0) = 1& &\cos(\frac {\pi}6)=\frac{\sqrt3}2& &\cos(\frac {\pi}4)=\frac{\sqrt2}2& &\cos(\frac {\pi}3)=\frac12&
 &\cos(\frac {\pi}2)=0&\\
-&\tan(0) = 0& &\tan(\frac {\pi}6)=\frac{\sqrt3}3& &\tan(\frac {\pi}4)=1&  &\tan(\frac {\pi}3)=\sqrt3& 
+&\tan(0) = 0& &\tan(\frac {\pi}6)=\frac{\sqrt3}3& &\tan(\frac {\pi}4)=1&  &\tan(\frac {\pi}3)=\sqrt3&
 &\tan(\frac {\pi}2)=+\infty&\\
 \end{aligned}
 $$
@@ -49,7 +49,7 @@ $$
 \sin x + \cos x = \sqrt 2\sin(x+\frac {\pi}{4})
 $$
 
-### 排列组合公式
+### 排列组合公式=
 
 $$
 C_n^k=\frac{n*(n-1)\cdots(n-k+1)}{k!}\\
@@ -452,8 +452,9 @@ $$
 \end{cases}
 \ \\
 \int_{-a+n}^{a+n}f(x-n)dx=\int_{-a}^{a}f(x)dx\\
-反常积分必须满足在右半区间收敛的条件
 $$
+
+反常积分必须满足在右半区间收敛的条件
 
 ### 二重积分区间原点对称性质
 
@@ -567,7 +568,8 @@ $$
 ### 变量可分离微分方程
 
 $$
-g(y)dy=f(x)dx \Rightarrow \int g(y)dy = \int f(x)dx
+g(y)dy=f(x)dx\\
+\Rightarrow \int g(y)dy = \int f(x)dx
 $$
 
 ### 齐次微分方程
@@ -625,7 +627,7 @@ y'=p,y''=\frac {dp}{dy} \frac {dy}{dx}=p\frac {dp}{dy}\\
 p\frac {dp}{dy}=f(y,p)
 $$
 
-### 柯西积分不等式-定积分的平方小于等于平方的定积分
+### 柯西积分不等式(定积分的平方小于等于平方的定积分)
 
 $$
 
