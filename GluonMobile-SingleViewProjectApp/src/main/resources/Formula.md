@@ -204,7 +204,6 @@ $$
 dy=f'(x)\Delta x = f'(x)dx\\
 \Delta y - dy = \frac 12 f''(\xi)(\Delta x)^2
 
-
 $$
 
 ### 导数四则运算
@@ -307,7 +306,7 @@ $$
 $$
 \int_0^{\frac \pi 2} f(\sin x)dx=\int_0^{\frac \pi 2}f(\cos x)dx\\
 
-\int_0^{\frac \pi 2} \sin^nxdx=\int_0^{\frac \pi 2}\cos^nxdx = 
+\int_0^{\frac \pi 2} \sin^nxdx=\int_0^{\frac \pi 2}\cos^nxdx =
 \begin{cases}
 \frac {(n-1)!!} {n!!} \cdot \frac \pi2 (n为偶数）\\
 \ \\
