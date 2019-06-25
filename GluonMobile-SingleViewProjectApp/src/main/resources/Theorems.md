@@ -84,15 +84,36 @@ $$
 
 [注]单调有界定对函数极限也成立
 
-### 几个重要极限
+### $x \rightarrow 0$时几个重要极限
 
 $$
 \begin{aligned}
 &\lim_{x \rightarrow 0} \frac{\sin x}{x} = 1\\
-&\lim_{\varphi(x) \rightarrow 0} \frac{\sin \varphi(x)}{\varphi(x)} = 1,(\varphi(x) \ne 0)\\
+&\lim_{\varphi(x) \rightarrow 0} \frac{\sin \varphi(x)}{\varphi(x)} = 1,其中\varphi(x) \ne 0\\
 &\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
 &\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
 &\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)\\
 &\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)
+\end{aligned}
+$$
+
+### 几个重要等价无穷小
+
+$$
+\begin{aligned}
+&\sin x  \sim  x, \tan x  \sim  x\\
+
+&\arcsin x \sim x, \arctan x \sim x\\
+
+&1-\cos x  \sim  \frac {x^2} 2\\
+
+&\sec x - 1 =\frac 1{\cos x} -1 \sim \frac {x^2}2\\
+
+&e^x-1 \sim x, a^x-1 \sim x\ln a \\
+
+&\ln (1+x) \sim x, \log_a (1+x) \sim \frac x{\ln a}\\
+
+&\sqrt {1+x}-1 \sim \frac x2, (1+x)^a-1 \sim ax\\
+& x^m+x^k \sim x^m,其中常数 k \gt m \gt 0
 \end{aligned}
 $$
