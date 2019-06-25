@@ -83,3 +83,16 @@ $$
 2) 设$u_n$单调减少且有下界$m$,则$\lim_{n \rightarrow \infty} u_n存在且 \ge m$;
 
 [注]单调有界定对函数极限也成立
+
+### 几个重要极限
+
+$$
+\begin{aligned}
+&\lim_{x \rightarrow 0} \frac{\sin x}{x} = 1\\
+&\lim_{\varphi(x) \rightarrow 0} \frac{\sin \varphi(x)}{\varphi(x)} = 1,(\varphi(x) \ne 0)\\
+&\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
+&\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
+&\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)\\
+&\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)
+\end{aligned}
+$$
