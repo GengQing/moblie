@@ -67,4 +67,19 @@ $$
 
 1. 设$\lim_{x \rightarrow *} f(x) = \infty,则 \lim_{x \rightarrow *} \frac 1 {f(x)} = 0$
 
-1. 设$\lim_{x \rightarrow *} f(x) = 0 且f(x) \ne 0,则 \lim_{x \rightarrow *} \frac 1 {f(x)} = \infty$
+2. 设$\lim_{x \rightarrow *} f(x) = 0 且f(x) \ne 0,则 \lim_{x \rightarrow *} \frac 1 {f(x)} = \infty$
+
+### 夹逼定理
+
+1) 设在*的去心领域内$g(x) \le f(x) \le h(x)$;
+2) $\lim_{x \rightarrow *} g(x) = \lim_{x \rightarrow *} h(x) = A,$  
+则$\lim_{x \rightarrow *} f(x) = A$
+
+[注]夹逼定理对数列也成立,$A换成 \pm\infty$也成立.
+
+### 单调有界定理
+
+1) 设$u_n$单调增加且有上界$M$,则$\lim_{n \rightarrow \infty} u_n存在且 \le M$;
+2) 设$u_n$单调减少且有下界$m$,则$\lim_{n \rightarrow \infty} u_n存在且 \ge m$;
+
+[注]单调有界定对函数极限也成立

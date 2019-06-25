@@ -233,9 +233,9 @@ $$
 $$
 (uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}\\
 \ \\
-(\sin ax)^{(n)} = a^n\sin (ax +frac{n\pi}{2})\\
+(\sin ax)^{(n)} = a^n\sin (ax + \frac{n\pi}{2})\\
 \ \\
-(\cos ax)^{(n)} = a^n\cos (ax +frac{n\pi}{2})\\
+(\cos ax)^{(n)} = a^n\cos (ax + \frac{n\pi}{2})\\
 \ \\
 (\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
 ((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}
