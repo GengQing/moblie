@@ -190,30 +190,34 @@ $$
 设$f(x)在x=x_0处n阶可导$,则有公式
 
 $$
-f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac {2!} f''(x_0)(x-x_0)+\cdots +
-\frac {n!} f^{(n)}(x_0)(x-x_0)^n + o((x-x_0)^n)
+f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac 1{2!} f''(x_0)(x-x_0)+\cdots +
+\frac 1{n!} f^{(n)}(x_0)(x-x_0)^n + o((x-x_0)^n)
 $$
 
-### 在零处展开的佩亚诺泰勒公式
+### 在$x=0$处展开的佩亚诺余项泰勒公式
 
 $$
-e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
+\begin{aligned}
+&e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
 
-(1+x)^a=1+ax + \frac{a(a-1)}{2!}x^2 + \frac{a(a-1)(a-2)}{3!}x^3+...\\
+&(1+x)^a=1+ax + \frac{a(a-1)}{2!}x^2 + \frac{a(a-1)(a-2)}{3!}x^3+...\\
 
-\frac{1}{1-x}=1+x+x^2+x^3+...\\
+&\frac{1}{1-x}=1+x+x^2+x^3+...\\
 
-\frac{1}{1+x} = 1-x+x^2-x^3+...\\
+&\frac{1}{1+x} = 1-x+x^2-x^3+...\\
 
-\ln (1-x) = -x-\frac{1}{2}x^2- \frac{1}{3}x^3 + \cdots\\
+&\ln (1-x) = -x-\frac{1}{2}x^2- \frac{1}{3}x^3 + \cdots\\
 
-\ln (1+x) = x-\frac{1}{2}x^2+ \frac{1}{3}x^3 + \cdots\\
+&\ln (1+x) = x-\frac{1}{2}x^2+ \frac{1}{3}x^3 + \cdots\\
 
-\tan x=x+\frac{x^3}{3}+\cdots\\
+&\tan x=x+\frac{x^3}{3}+\cdots\\
 
-\arctan x=x-\frac{x^3}{3}+\cdots\\
+&\arctan x=x-\frac{x^3}{3}+\cdots\\
 
-\sin x=x-\frac{1}{3!}x^3+\cdots\\
+&\sin x=x-\frac{1}{3!}x^3+\cdots\\
 
-\cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4+\cdots\\
+&\cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4+\cdots\\
+\end{aligned}
 $$
+
+### 利用积分和求极限
