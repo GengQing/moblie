@@ -134,3 +134,10 @@ $\lim_{x \rightarrow *} v(x)$存在且等于$B$,
 1 以上法则对数列也成立  
 2 零比零极限不能使用除法法则
 
+### 等价无穷小替换定理
+
+设$x \rightarrow * 时 \alpha (x) \sim a(x),\beta (x) \sim b(x)$, 则
+
+$$
+\lim_{x \rightarrow * } \frac{\alpha (x) \delta (x)}{\beta (x) \gamma (x)} = \lim_{x \rightarrow * } \frac{a(x)\delta (x)}{b(x)\gamma (x)}
+$$
