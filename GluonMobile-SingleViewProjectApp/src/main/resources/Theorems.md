@@ -141,3 +141,46 @@ $\lim_{x \rightarrow *} v(x)$存在且等于$B$,
 $$
 \lim_{x \rightarrow * } \frac{\alpha (x) \delta (x)}{\beta (x) \gamma (x)} = \lim_{x \rightarrow * } \frac{a(x)\delta (x)}{b(x)\gamma (x)}
 $$
+
+[注]  
+
+1) 上式的意义是,如果右边极限存在,则左边等于右边,若右边为无穷或其他形式的不存在,
+则左边也是无穷或其他形式的的不存.  
+2) 整个因式乘除能用等价无穷小替换,加减不能用等价无穷小替换,部分因式乘除不能用等价无穷小替换.
+
+### 等价无穷小的冲要条件
+
+$$
+当x \rightarrow 0时,\alpha (x) \sim \beta (x)时的充要条件是: \\
+\alpha (x) - \beta (x)= o(\beta (x))
+$$
+
+### 洛必达法则零比零型
+
+设
+
+1) $\lim_{x \rightarrow *} f(x)=0, \lim_{x \rightarrow *} g(x)=0$;
+2) $f(x),g(x)在 * 的去心领域内可导,且g'(x) \ne 0$
+3) $\lim_{x \rightarrow *} [ \frac {f(x)}{g(x)}] = A(或\infty)$
+
+则
+
+$$
+\lim_{x \rightarrow *} \frac {f(x)}{g(x)} = \lim_{x \rightarrow *} \frac {f'(x)}{g'(x)}
+$$
+
+### 洛必达法则无穷比无穷
+
+设
+
+1) $\lim_{x \rightarrow *} f(x)=\infty, \lim_{x \rightarrow *} g(x)=\infty$;
+2) $f(x),g(x)在 * 的去心领域内可导,且g'(x) \ne 0$
+3) $\lim_{x \rightarrow *} [ \frac {f(x)}{g(x)}] = A(或\infty)$
+
+则
+
+$$
+\lim_{x \rightarrow *} \frac {f(x)}{g(x)} = \lim_{x \rightarrow *} \frac {f'(x)}{g'(x)}
+$$
+
+[注] 使用洛必达法则求导后如果极限不存在(非无穷的)并不能确定极限不存在, 应该改用其他方法
