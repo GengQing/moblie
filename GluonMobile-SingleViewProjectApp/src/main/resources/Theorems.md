@@ -234,3 +234,13 @@ $$
  = \lim_{n\rightarrow \infty} \frac{1}{n}\sum_{i=0}^{n-1} f(\frac{i}{n})
  \end{aligned}
 $$
+
+### 函数在一点出连续的定义
+
+设函数$f(x)在x=x_0某领域内有定义$, 且有
+
+$$
+\lim_{x \rightarrow x_0} f(x) = f(x_0)
+$$
+
+则称$f(x)在x=x_0$处连续.
