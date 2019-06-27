@@ -28,6 +28,10 @@
 
 7. 设$\lim_{x\rightarrow *} = \infty,则f(x)在*的去心领域内无界,但其逆不成立$
 
+### 函数极限的定义
+
+$\lim_{x \rightarrow *} f(x) =A \Rightarrow 对任意小\varepsilon \gt 0, 总存在 * 的一个去心领域,使得|f(x)-A| \lt \varepsilon$.
+
 ### 函数极限存在的充要条件
 
 $$
