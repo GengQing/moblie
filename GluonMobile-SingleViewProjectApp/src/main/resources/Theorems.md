@@ -220,4 +220,13 @@ $$
 \end{aligned}
 $$
 
-### 利用积分和求极限
+### 利用积分和式求极限
+
+$设f(x)在[0,1]$上连续则:
+
+$$
+\begin{aligned}
+\int_0^1 f(x)dx = \lim_{n\rightarrow \infty} \frac{1}{n}\sum_{i=1}^n f(\frac{i}{n})\\
+ = \lim_{n\rightarrow \infty} \frac{1}{n}\sum_{i=0}^{n-1} f(\frac{i}{n})
+ \end{aligned}
+$$
