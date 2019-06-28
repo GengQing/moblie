@@ -264,8 +264,8 @@ $$
 
 函数$f(x),在x=x_0的去心领域内有定义$
 
-1) $\lim_{x \rightarrw x_0}$存在, 但$f(x_0)$无定义
-2) $\lim_{x \rightarrw x_0}$存在, 但与$f(x_0)$不相等
+1) $\lim_{x \rightarrow x_0}$存在, 但$f(x_0)$无定义
+2) $\lim_{x \rightarrow x_0}$存在, 但与$f(x_0)$不相等
 
 ### 第一类间断的-跳跃间断点
 
@@ -314,7 +314,51 @@ $$
 \Delta y=f(x_0+\Delta x)-f(x_0)=A\Delta x +o(\Delta x)
 $$
 
-其中$A与\Delta x$无关,则称函数在该点可微.记$\Delta x=dx,dy=A\Delta x=Adx$
+其中$A与\Delta x$无关,则称函数在该点可微.记$\Delta x=\mathrm{d}x,\mathrm{d}y=A\Delta x=A\mathrm{d}x$
 
+### 可导与连续的关系
 
+函数在某点可导,则必在该点连续, 反之不真
+
+### 左右导数与可导的关系
+
+函数在某点可导的充要条件是:函数在该点的左右导数都存在且相等
+
+### 导数的几何意义
+
+函数在某点的导数即为函数曲线在该点切线的斜率,切线方程:
+
+$$
+y-f(x_0)=f'(x_0)(x-x_0)
+$$
+
+### 一元函数可导与可微的关系
+
+可导即可微,可微即可导且
+
+$$
+\mathrm{d}y=f'(x)\mathrm{d}x
+$$
+
+### 函数微分与函数增量的关系
+
+$$
+\Delta y=\mathrm{d}y+o(\Delta x),\Delta y=f'(x_0)+o(\Delta x)\\
+\Delta y-\mathrm{d}y=\frac 12 f''(\xi)(\Delta x)^2, \xi 介域x_0和x_0+\Delta x 之间
+$$
+
+### 导数与微分的运算法则
+
+设以下涉及的函数都可导,则有
+
+$$
+\begin{aligned}
+&(u\pm v)' = u' \pm v',& &\mathrm{d}(u\pm v)=\mathrm{d}u \pm \mathrm{d}v\\
+&(Cv)'=Cv',& &\mathrm{d}(Cv)=C\mathrm{d}v\\
+&(uv)' = u'v+uv',& &\mathrm{d}(uv)=u\mathrm{d}v+v\mathrm{d}u\\
+&(\frac uv)'=\frac{u'v-uv'}{v^2}(v\neq 0),&
+&\mathrm{d}(\frac uv)=\frac{v\mathrm{d}u-u\mathrm{d}v}{v^2}(v\neq 0)\\
+&(uvw)'=u'vw+uv'w+uvw'\\
+\end{aligned}
+$$
 
