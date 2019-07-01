@@ -362,3 +362,23 @@ $$
 &[f(\varphi (x))]' = f'(\varphi (x)) \cdot \varphi '(x)& & \frac {\mathrm{d}y}{\mathrm{d}x} =  \frac {\mathrm{d}y}{\mathrm{d}u}  \cdot \frac {\mathrm{d}u}{\mathrm{d}x}
 \end{aligned}
 $$
+
+### 一阶微分形式的不变形
+
+不论$u$是自变量还是中间变量均有$\mathrm{d}y=f'(u)\mathrm{d}u$
+
+### 基本初等函数的导数
+
+$$
+\begin{aligned}
+&(C)'=0&                          &(x^a)'=ax^{a-1} \\
+&(\sqrt x)' = \frac1{2\sqrt x}&   &(\frac 1x)'=-\frac 1{x^2} \\
+&(e^x)' = e^x&                    &(a^x)'=a^x\ln a \\
+&(\ln x)' = \frac{1}{x}&          &(log_ax)' = \frac{1} {x\ln a} \\
+&(\sin x)' = \cos x&              &(\cos x)' = -\sin x \\
+&(\tan x)' =\sec^2x=\frac{1}{\cos^2 x}& &(\cot x)'=-\csc^2x=-\frac{1}{\sin^2 x}\\
+&(\sec x)' = \sec x \tan x&         &(\csc x)' = -\csc x \cot x\\
+&(\arcsin x)' = \frac{1}{\sqrt{1-x^2}}&     &(\arccos x)'=-\frac{1}{\sqrt{1-x^2}} \\
+&(\arctan x)' = \frac{1}{1+x^2}&    &(arccot x)' = -\frac{1}{1+x^2}\\
+\end{aligned}
+$$
