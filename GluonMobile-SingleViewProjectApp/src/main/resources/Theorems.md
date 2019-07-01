@@ -356,7 +356,7 @@ $$
 &(u\pm v)' = u' \pm v',& &\mathrm{d}(u\pm v)=\mathrm{d}u \pm \mathrm{d}v\\
 &(Cv)'=Cv',& &\mathrm{d}(Cv)=C\mathrm{d}v\\
 &(uv)' = u'v+uv',& &\mathrm{d}(uv)=u\mathrm{d}v+v\mathrm{d}u\\
-&(\frac uv)'=\frac{u'v-uv'}{v^2}(v\neq 0),&
+&(\frac uv)'=\frac{vu'-uv'}{v^2}(v\neq 0),&
 &\mathrm{d}(\frac uv)=\frac{v\mathrm{d}u-u\mathrm{d}v}{v^2}(v\neq 0)\\
 &(uvw)'=u'vw+uv'w+uvw'\\
 \end{aligned}
