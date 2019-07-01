@@ -359,6 +359,6 @@ $$
 &(\frac uv)'=\frac{vu'-uv'}{v^2}(v\neq 0),&
 &\mathrm{d}(\frac uv)=\frac{v\mathrm{d}u-u\mathrm{d}v}{v^2}(v\neq 0)\\
 &(uvw)'=u'vw+uv'w+uvw'\\
+&[f(\varphi (x))]' = f'(\varphi (x)) \cdot \varphi '(x)& & \frac {\mathrm{d}y}{\mathrm{d}x} =  \frac {\mathrm{d}y}{\mathrm{d}u}  \cdot \frac {\mathrm{d}u}{\mathrm{d}x}
 \end{aligned}
 $$
-
