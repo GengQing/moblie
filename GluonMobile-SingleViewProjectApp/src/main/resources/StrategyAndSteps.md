@@ -40,14 +40,24 @@ $$
 
 $$
 
-### 幂函数在零点处的极限
+### 幂函数的极限
 
 $$
 \lim_{x \rightarrow 0}x^a = \\
 \begin{cases}
-0, (a \gt 0)\\
-1, (a=0)\\
-\infty, (a \lt 0)
+0 \Leftrightarrow a \gt 0\\
+1, \Leftrightarrow a=0\\
+\infty \Leftrightarrow a \lt 0
+\end{cases}
+$$
+
+$$
+f(x) =\lim_{n \rightarrow \infty} x^n=\\
+\begin{cases}
+不存在, (x \le -1)\\
+0, (-1 \lt x \lt 1)\\
+1, (x = 1)\\
++\infty, (x \gt 1)
 \end{cases}
 $$
 
