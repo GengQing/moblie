@@ -399,3 +399,67 @@ $$
 \end{aligned}
 $$
 
+### 变限积分求导公式
+
+设$f$为连续函数,$\varphi_1(x),\varphi_2(x)$均可导,则
+
+$$
+(\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt)' = f(\varphi_1(x))\varphi'_1(x)-f(\varphi_2(x))\varphi'_2(x)
+$$
+
+### $n$阶导数运算法则
+
+设$u,v均n阶$可导,则有
+
+$$
+\begin{aligned}
+&(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}\\
+&(Cu)^{(n)} = Cu^{(n)}\\
+&(uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}
+\end{aligned}
+$$
+
+### 常见初等函数$n$阶导数公式
+
+$$
+\begin{aligned}
+&(\sin ax)^{(n)} = a^n\sin (ax + \frac{n\pi}{2})\\
+&\ \\
+&(\cos ax)^{(n)} = a^n\cos (ax + \frac{n\pi}{2})\\
+\ \\
+&(\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
+&((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}\\
+&((1+x)^n)^{(n)} = n!,(n 为正整数)\\
+&((1+x)^n)^{(m)}=0,(m \gt n,n和m均为正整数)
+\end{aligned}
+$$
+
+### 参数方程求导公式
+
+设$x(t), y(t)$均可导且$x'(t) \ne 0$
+
+$$
+x=x(t), y=y(t)\\
+y'_x=\frac{y'_t}{x'_t}\\
+y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}\\
+
+$$
+
+### 隐函数求导
+
+$设y=f(x)有方程F(x,y)=0确定$, 对$F(x,y)=0$两边对$x$求导,解出$\frac{\mathrm{d}y}{\mathrm{d}x}$.  
+对$\frac{\mathrm{d}y}{\mathrm{d}x}$的再求导,可得二阶导数.
+
+### 幂指函数求导公式
+
+$$
+[u^v]'=u^v(\frac{v}{u}u'+\ln(u)v')
+$$
+
+### 反函数求导公式
+
+$$
+\frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
+\varphi '(y)=\frac 1{f'(x)}\\
+\varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
+$$
