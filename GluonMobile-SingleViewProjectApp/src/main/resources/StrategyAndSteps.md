@@ -334,11 +334,11 @@ $$
 ### 求水平渐近线(趋近正负无穷,最多两条)
 
 $$
-\lim_{x\rightarrow -\infty} f(x)=b_1, x=b_1即一条水平渐进线\\
-\lim_{x\rightarrow +\infty} f(x)=b_2, x=b_2即一条水平渐进线\\
+\lim_{x\rightarrow -\infty} f(x)=b_1, y=b_1即一条水平渐进线\\
+\lim_{x\rightarrow +\infty} f(x)=b_2, y=b_2即一条水平渐进线\\
 $$
 
-有水平渐近线基本初等函数有$(a^x, x=0),(\arctan x, x=\pm \frac{\pi}{2}),( arccot\ x, x=0和\pi)$
+有水平渐近线基本初等函数有$(a^x, y=0),(\arctan x, y=\pm \frac{\pi}{2}),(\mathrm{arccot}\ x, y=0和\pi)$
 
 ### 不等式证明
 
