@@ -588,10 +588,11 @@ $$
 ### 原函数与不定积分
 
 设$F'(x)=f(x), x \in(a,b)$,则称$F(x)为f(x)的一个原函数$,  
-若$F(x)是f(x)的一个原函数,则F(x)+C$也是$f(x)$的一个原函数.一般表达式
+若$F(x)是f(x)的一个原函数,则F(x)+C$也是$f(x)$的原函数.  
+不定积分的一般表达式
 
 $$
-\int f(x)=F(x)+C
+\int f(x)\mathrm{d} x=F(x)+C,(C是任意常数)
 $$
 
 ### 定积分
@@ -606,8 +607,8 @@ $$
 
 ### 定积分存在定理
 
-1) 设$f(x)在[a,b]上连续,则\int_a^b f(x)$存在.
-2) 设$f(x)在[a,b]上有界,且只有有限个间断点(可以在端点处),则\int_a^b f(x)$存在.
+1) 设$f(x)在[a,b]上连续,则\int_a^b f(x)\mathrm dx$存在.
+2) 设$f(x)在[a,b]上有界,且只有有限个间断点(可以在端点处),则\int_a^b f(x)\mathrm dx$存在.
 
 ### 原函数存在定理
 
@@ -616,3 +617,36 @@ $$
 [注] 若$f(x)在(a,b)上有跳跃间断点,则f(x)在[a,b]上一定不存在原函数$.  
 若$f(x)$不连续,则原函数是否存在与定积分是否存在各不相干.
 
+### 变上限函数求导
+
+设$f(x)在[a,b]上连续$, 则
+
+$$
+(\int_a^x f(t)\mathrm dt)'_x = f(x), x \in [a,b]
+$$
+
+可知$\int_a^x f(t)\mathrm dt是f(x)$的一个原函数,从而不定积分
+
+$$
+\int f(x)\mathrm dx = \int_a^x f(t)\mathrm dt + C
+$$
+
+#### 牛顿-莱布尼兹定理
+
+$$
+\int_a^b f(x)dx = F(x)\mid_a^b = F(b)-F(a)
+$$
+
+### 不定积分性质
+
+设以下所涉及的函数均连续
+
+$$
+\begin{aligned}
+&(\int f(x)\mathrm dx)' = f(x)&      &\mathrm d \int f(x) \mathrm dx = f(x) \mathrm dx\\
+&\int f'(x)\mathrm dx = f(x) + C&  &\int \mathrm df(x) = f(x) + C\\
+&\int f(x) \pm g(x) \mathrm dx = \int f(x) \mathrm dx \pm \int  g(x) \mathrm dx&\\
+&\int kf(x) \mathrm dx = k\int f(x) \mathrm dx,(k \ne 0)&
+
+\end{aligned}
+$$
