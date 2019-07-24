@@ -656,5 +656,17 @@ $$
 设以下涉及的函数在讨论区间均可积,则有
 
 $$
+\begin{aligned}
+&1) \int_a^b f(x) \mathrm dx = - \int_b^a f(x) \mathrm dx\\
+&2) \int_a^a f(x) \mathrm dx = 0\\
+&3) \int_a^b [f(x) \pm g(x)] \mathrm dx = \int_a^b f(x) \mathrm dx \pm \int_a^b g(x) \mathrm dx\\
+&4) \int_a^b kf(x) \mathrm dx = k\int_a^b f(x) \mathrm dx, (k为常数)\\
+&5) \int_a^b f(x) \mathrm dx = \int_a^c f(x) \mathrm dx + \int_c^b f(x) \mathrm dx\\
+&6) 若f(x) \le g(x), a \le b, 则 \int_a^b f(x) \mathrm dx \le \int_a^b g(x) \mathrm dx\\
+&7) 若f(x)与g(x)在[a,b]上连续,f(x) \le g(x),且至少有一点x_1,a \le x_1 \le b,
+使f(x_1) \lt g(x_1),则\\
+&\ \int_a^b f(x) \mathrm dx \lt \int_a^b g(x) \mathrm dx\\
+&8)积分中值定理:设f(x)在[a,b]上连续, 则至少存在一点\xi \in (a,b),使得\\
+&\ \int_a^b f(x) \mathrm dx = f(\xi)(b-a).
+\end{aligned}
 $$
-
