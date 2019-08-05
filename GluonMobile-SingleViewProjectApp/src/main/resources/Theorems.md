@@ -841,3 +841,35 @@ $\mathrm dz = A\Delta x + B\Delta y$
 $$
 \mathrm dz = \frac {\partial z}{\partial x}\mathrm dx + \frac{\partial z} {\partial y}\mathrm dy
 $$
+
+### 可微的充分条件
+
+如果函数$z=f(x,y)在(x,y)处偏导数 \frac {\partial z}{\partial x},\frac{\partial z} {\partial y}连续$,  
+则$z=f(x,y)在(x,y)处$可微.
+
+### 多元函数连续可导可微关系
+
+1) 多元函数可导$\nRightarrow$连续
+2) 多元函数可微$\Rightarrow$连续,可导
+3) 多元函数可微$\nRightarrow$一阶偏导数连续
+
+### 多元复合函数求导法则
+
+$$
+1. 多元函数与一元函数复合 \\
+
+u = \varphi(t), v = \psi(t)\\
+z=f(\varphi(t),\psi(t))\\
+\frac {\mathrm dz} {\mathrm dt}= \frac{\partial z}{\partial u} \frac{\mathrm du}{\mathrm dt} + \frac{\partial z}{\partial v} \frac{\mathrm dv}{\mathrm dt}\\
+\ \\
+2. 多元函数与多元函数复合\\
+u = \varphi(x,y), v = \psi(x,y)\\
+z=f(\varphi(x,y),\psi(x,y))\\
+\frac {\partial z} {\partial x}= \frac{\partial z}{\partial u} \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \frac{\partial v}{\partial x}\\
+
+
+$$
+
+### 全微分形式的不变性
+
+无论是自变量还是中间变量,多元函数的全微分具有同样的形式
