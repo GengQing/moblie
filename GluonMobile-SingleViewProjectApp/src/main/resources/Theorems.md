@@ -866,10 +866,21 @@ z=f(\varphi(t),\psi(t))\\
 u = \varphi(x,y), v = \psi(x,y)\\
 z=f(\varphi(x,y),\psi(x,y))\\
 \frac {\partial z} {\partial x}= \frac{\partial z}{\partial u} \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \frac{\partial v}{\partial x}\\
-
-
 $$
 
 ### 全微分形式的不变性
 
 无论是自变量还是中间变量,多元函数的全微分具有同样的形式
+
+### 混合偏导数与求导次序无关
+
+若两二阶混合偏导数连续,则相等
+
+### 隐函数求导公式
+
+$$
+F(x,y)=0, \frac{\mathrm dy}{\mathrm dx} = - \frac{F'_x}{F'_y}(F'_y \ne 0)\\
+F(x,y,z)=0, \frac {\partial z} {\partial x} = - \frac{F'_x}{F'_z},\frac {\partial z} {\partial y} = - \frac{F'_y}{F'_z}(F'_z \ne 0)
+
+$$
+
