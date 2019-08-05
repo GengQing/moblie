@@ -670,3 +670,174 @@ $$
 &\ \int_a^b f(x) \mathrm dx = f(\xi)(b-a).
 \end{aligned}
 $$
+
+### 基本积分公式积分
+
+$$
+\begin{aligned}
+&\int a dx = ax+C&               &\int x^ndx=\frac{x^{n+1}}{n+1}+C,(n \ne -1)\\
+&\int \frac 1 x dx=\ln |x| +C\\
+&\int e^xdx = e^x+C&             &\int a^xdx=\frac{a^x}{\ln a} + C\\
+&\int\sin xdx = -\cos x+C&       &\int\cos xdx=\sin x+C\\
+&\int\tan xdx = -\ln |\cos x|+C& &\int\cot xdx=\ln |\sin x|+C\\
+&\int\sec xdx = \ln|\sec x + \tan x|+C&   &\int\csc xdx=\ln |\csc x - \cot x|+C\\
+&\int \sec^2 xdx=\tan x +C&               &\int\csc^2xdx=-cotx +C\\
+&\int\frac 1{\sqrt{1-x^2}}dx=\arcsin x+C& &\int\frac{1}{\sqrt{a^2-x^2}}dx=\arcsin \frac xa+C\\
+&\int\frac 1{\sqrt{x^2-a^2}}dx=\ln{|x+\sqrt{x^2-a^2}|}+C& &\int\frac 1{\sqrt{x^2+a^2}}dx=\ln{(x+\sqrt{x^2+a^2})}+C\\
+&\int\frac 1{1+x^2}dx=\arctan x+C& &\int\frac{1}{a^2+x^2}dx=\frac 1a \arctan \frac xa + C\\
+&\int\frac 1{x^2-a^2}dx=\frac 1{2a}\ln |\frac{x-a}{x+a}|+C \\
+\end{aligned}
+$$
+
+### 第一换元积分法(凑微分)
+
+$$
+\int f(\varphi(x)) \varphi'(x)\mathrm dx = \int f(\varphi(x)) \mathrm d \varphi(x)
+$$
+
+### 第二换元积分法
+
+$$
+\int f(x) \mathrm dx =\int f(\varphi(t))  \varphi'(t)\mathrm dt,\ (x=\varphi(t))\\
+再取反函数t=\varphi^{-1}(x)带入右式
+$$
+
+### 定积分换元积分
+
+定积分换元积分上下限要跟着变,不必代换成原变量
+
+### 分部积分法
+
+$$
+\int u(x) \mathrm d v(x) = u(x)v(x)-\int v(x) \mathrm d u(x)\\
+\int u(x) v'(x) \mathrm dx = u(x)v(x)-\int v(x)u'(x) dx
+$$
+
+### 无穷区间上的反常积分
+
+设$f(x)在[a,+\infty)上连续$,称
+
+$$
+\int_a^{+\infty} f(x) \mathrm dx = \lim_{b \rightarrow +\infty} \int_a^{b} f(x) \mathrm dx
+$$
+
+为$f(x)在[a,+\infty)$上的反常积分,若右边极限存在,称此反常积分收敛,否则称此反常积分发散.  
+同理下限和上下限(拆成两个)都为为无穷的情形.
+
+### 无界函数的反常积分
+
+设$f(x)在[a,b)$上连续,且$\lim_{x \rightarrow b^-} f(x) = \infty$,称
+
+$$
+\int_a^b f(x) \mathrm dx = \lim_{b \rightarrow \beta} \int_a^{\beta} f(x) \mathrm dx
+$$
+
+为$f(x)在[a,b)$的反常积分(也称暇积分),若右边极限存在则收敛,反之发散.  
+同理下限为奇点和上限下限都为奇点(拆成两部分)的情形.
+
+若奇点在区间内部,则应该按奇点拆分成两个暇积分.
+
+### 反常积分积分区间关于原点对称
+
+反常积分奇偶性关于原点对称,性质同普通积分,但要求在某半区间收敛,否则是发散的.
+
+### 定积分的运用
+
+$$
+当积分函数在积分区间有\lt 0时,需要分段\\
+积分,函数\lt 0的段函数要取反转换成正值.
+$$
+
+### 曲线与$x$轴面积公式两种($y$轴取反函数同理)
+
+$$
+S=\int_a^b y dx, (y=y(x)\ge 0)\\
+\ \\
+
+S=\int_{t1}^{t2}yx'dt, (y=y(t)\ge 0, x=x(t))
+$$
+
+### 极坐标曲边扇形面积
+
+$$
+S=\frac 12 \int_{\theta1}^{\theta2}r^2d\theta, r=r(\theta)\\
+$$
+
+### 弧微分三种
+
+$$
+ds=\sqrt{1+y'^2}dx,y=y(x)\\
+ds=\sqrt{x'^2+y'^2}dt, y=y(t), x=x(t)\\
+ds=\sqrt{r^2+r'^2}d\theta,r=r(\theta)
+$$
+
+### 弧长公式三种
+
+$$
+L=\int_a^b\sqrt{1+y'^2}dx ,y=y(x)\\
+L=\int_{t_1}^{t_2}\sqrt{x'^2+y'^2}dt, y=y(t), x=x(t)\\
+L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2}d\theta,r=r(\theta)\\
+$$
+
+### 曲线绕$x$轴旋转体积
+
+$$
+V=\pi\int_a^b y^2dx, y=y(x)
+$$
+
+### 曲线绕$y$轴旋转体积两种
+
+$$
+V=2\pi\int_a^b xydx, y=y(x)\ge 0\\
+
+V=\pi \int_{y_1}^{y_2} x^2dy, x=x(y)
+$$
+
+### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
+
+$$
+V= \int_a^b S(x) dx
+$$
+
+### 曲线绕$x$轴旋转体侧面积两种
+
+$$
+S=2\pi\int_a^b|y|\sqrt{1+y'^2}dx,y=y(x)\\
+
+S=2\pi\int_{t1}^{t2}|y|\sqrt{x'^2+y'^2}dt, x=x(t),y=y(t)\\
+$$
+
+### 函数的平均值
+
+$$
+average=\frac 1 {(b-a)}\int_a^bf(x)dx
+$$
+
+### 密度均匀形心质心公式
+
+$$
+密度均匀薄片y=f(x)是薄片上边界曲线,\\
+可利用对称性计算出其中一个坐标 \\
+横坐标x=\frac {\int_a^b xf(x)dx}{\int_a^b f(x)dx}\\
+\ \\
+纵坐标y=\frac {\frac 12 \int_a^b f^2(x)dx}{\int_a^b f(x)dx}
+$$
+
+### 偏导数的概念
+
+二元函数的偏导数就是固定一个变量,关于另一个变量的一元函数的导数.
+
+### 全微分和可微的概念
+
+若二元函数在某点的全增量$\Delta z = f(x+\Delta x, y+\Delta y) - f(x,y)$  
+可表示为$\Delta z = A\Delta x + B\Delta y + o (\sqrt{(\Delta x)^2 + (\Delta y)^2})$  
+其中$A,B仅与x,y有关$, 则称$z=f(x,y)在点(x,y)$可微,且全微分为  
+$\mathrm dz = A\Delta x + B\Delta y$
+
+### 可微的必要条件
+
+若函数$z=f(x,y)在(x,y)处可微$, 则在该点的偏导数存在且
+
+$$
+\mathrm dz = \frac {\partial z}{\partial x}\mathrm dx + \frac{\partial z} {\partial y}\mathrm dy
+$$
