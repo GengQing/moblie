@@ -7,7 +7,8 @@ import java.util.*;
 public class MathBlock {
 
     public static List<String> EQUALITY_BLOCK =
-            Arrays.asList("泰勒公式", "高阶导数", "补充积分", "排列组合公式", "导数四则运算");
+            Arrays.asList("泰勒公式", "高阶导数", "补充积分", "排列组合公式", "导数四则运算",
+                    "反函数求导", "周期函数积分", "变上限积分");
 
     private String title;
 
