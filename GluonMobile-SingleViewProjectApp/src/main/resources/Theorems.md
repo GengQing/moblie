@@ -104,7 +104,6 @@ $$
 ### 几个重要等价无穷小
 
 $$
-\begin{aligned}
 &\sin x  \sim  x, \tan x  \sim  x\\
 
 &\arcsin x \sim x, \arctan x \sim x\\
@@ -119,7 +118,6 @@ $$
 
 &\sqrt {1+x}-1 \sim \frac x2, (1+x)^a-1 \sim ax\\
 & x^m+x^k \sim x^m,其中常数 k \gt m \gt 0
-\end{aligned}
 $$
 
 ### 极限的四则运算
@@ -198,7 +196,7 @@ f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac 1{2!} f''(x_0)(x-x_0)+\cdots +
 \frac 1{n!} f^{(n)}(x_0)(x-x_0)^n + o((x-x_0)^n)
 $$
 
-### 在$x=0$处展开的佩亚诺余项泰勒公式
+### 在零处展开的佩亚诺余项泰勒公式
 
 $$
 \begin{aligned}
@@ -229,10 +227,8 @@ $$
 $设f(x)在[0,1]$上连续则:
 
 $$
-\begin{aligned}
 \int_0^1 f(x)dx = \lim_{n\rightarrow \infty} \frac{1}{n}\sum_{i=1}^n f(\frac{i}{n})\\
  = \lim_{n\rightarrow \infty} \frac{1}{n}\sum_{i=0}^{n-1} f(\frac{i}{n})
- \end{aligned}
 $$
 
 ### 函数在一点处连续的定义
