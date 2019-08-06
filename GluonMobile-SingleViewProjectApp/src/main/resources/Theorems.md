@@ -881,6 +881,24 @@ $$
 $$
 F(x,y)=0, \frac{\mathrm dy}{\mathrm dx} = - \frac{F'_x}{F'_y}(F'_y \ne 0)\\
 F(x,y,z)=0, \frac {\partial z} {\partial x} = - \frac{F'_x}{F'_z},\frac {\partial z} {\partial y} = - \frac{F'_y}{F'_z}(F'_z \ne 0)
-
 $$
+
+### 多元函数取得极值的必要条件
+
+若二元函数在某点取得极值,则在该点的两个偏导数为0.
+
+### 二元函数极值定理
+
+1) $AC-B^2 \gt 0是取极值,A \gt 0时取极小值,A \lt 0时取极大值$
+2) $AC-B^2 \lt 0无极值$
+3) $AC-B^2 = 0$时不确定,一般要用定义证明
+
+### 拉格朗日数乘法
+
+函数$z=f(x,y)在\varphi(x,y)=0下$求极值,构造拉格朗日函数  
+$F(x,y,\lambda)=0$, 求三元函数极值.
+
+### 二重积分几何意义
+
+底面为积分区域$D$的垂直于$xoy$平面的区顶柱体体积
 
