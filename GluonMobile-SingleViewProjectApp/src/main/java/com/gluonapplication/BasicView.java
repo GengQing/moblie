@@ -21,11 +21,14 @@ public class BasicView extends View {
 
     public static final String FORMULA = "formula";
     public static final String STRATEGY = "strategy";
-    public static String selectStr = "";
+    public static final String THEOREMS = "theorems";
+
+    public static String selectStr = "formula";
 
 
     private MathBlockExtractor mathBlockExtractor;
     private MathBlockExtractor strategAndStepsExtractor;
+    private MathBlockExtractor theoremsExtractor;
 
     private WebEngine engine;
 
@@ -34,6 +37,7 @@ public class BasicView extends View {
 
         mathBlockExtractor = new MathBlockExtractor("/Formula.md");
         strategAndStepsExtractor = new MathBlockExtractor("/StrategyAndSteps.md");
+        theoremsExtractor = new MathBlockExtractor("/Theorems.md");
         WebView webView = new WebView();
         engine = webView.getEngine();
 
@@ -71,8 +75,10 @@ public class BasicView extends View {
     private MathBlock getOneMathBlock() {
         if (selectStr.equals(STRATEGY)) {
             return strategAndStepsExtractor.getOneMathBlock();
-        } else {
+        } else if (selectStr.equalsIgnoreCase(FORMULA)) {
             return mathBlockExtractor.getOneMathBlock();
+        } else {
+            return theoremsExtractor.getOneMathBlock();
         }
     }
 
@@ -84,32 +90,44 @@ public class BasicView extends View {
 //        appBar.getActionItems().add(MaterialDesignIcon.SEARCH.button(e -> System.out.println("Search")));
         appBar.getActionItems().add(MaterialDesignIcon.WEB_ASSET.button(this::loadFromWeb));
         MenuItem formula = new MenuItem(FORMULA);
+        MenuItem theorems = new MenuItem(THEOREMS);
+        MenuItem strategy = new MenuItem(STRATEGY);
+        appBar.getMenuItems().add(formula);
+        appBar.getMenuItems().add(theorems);
+        appBar.getMenuItems().add(strategy);
+
         formula.setOnAction(event -> {
                     selectStr = formula.getText();
                     appBar.setTitleText(selectStr);
                 }
         );
-        appBar.getMenuItems().add(formula);
-        MenuItem strategy = new MenuItem(STRATEGY);
+
+        theorems.setOnAction(event -> {
+                    selectStr = theorems.getText();
+                    appBar.setTitleText(selectStr);
+                }
+        );
+
         strategy.setOnAction(event -> {
-            selectStr = strategy.getText();
-            appBar.setTitleText(selectStr);
-        });
-        appBar.getMenuItems().add(strategy);
+                    selectStr = strategy.getText();
+                    appBar.setTitleText(selectStr);
+                }
+        );
+
     }
 
     private void loadFromWeb(ActionEvent actionEvent) {
         engine.load("https://github.com/GengQing/moblie/blob/master/GluonMobile-SingleViewProjectApp/src/main/resources/Formula.md");
 
         new Thread(() -> {
-            int cnt =0;
+            int cnt = 0;
             while (engine.getDocument() == null) {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                cnt ++;
+                cnt++;
                 if (cnt > 20) {
                     break;
                 }
