@@ -23,7 +23,7 @@ public class BasicView extends View {
     public static final String STRATEGY = "strategy";
     public static final String THEOREMS = "theorems";
 
-    public static String selectStr = "formula";
+    public static String selectStr = FORMULA;
 
 
     private MathBlockExtractor mathBlockExtractor;
@@ -38,6 +38,14 @@ public class BasicView extends View {
         mathBlockExtractor = new MathBlockExtractor("/Formula.md");
         strategAndStepsExtractor = new MathBlockExtractor("/StrategyAndSteps.md");
         theoremsExtractor = new MathBlockExtractor("/Theorems.md");
+
+        long currentTimeMillis = System.currentTimeMillis();
+        if (currentTimeMillis % 3 == 1) {
+            selectStr = STRATEGY;
+        } else if (currentTimeMillis % 3 == 2) {
+            selectStr = THEOREMS;
+        }
+
         WebView webView = new WebView();
         engine = webView.getEngine();
 
