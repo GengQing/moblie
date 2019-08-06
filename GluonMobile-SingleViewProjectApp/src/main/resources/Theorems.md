@@ -902,3 +902,178 @@ $F(x,y,\lambda)=0$, 求三元函数极值.
 
 底面为积分区域$D$的垂直于$xoy$平面的区顶柱体体积
 
+### 二重积分的性质
+
+1 比较定理
+
+如果在$D上, f(x,y) \le g(x,y),则\iint \limits_D f(x,y)d\sigma \le \iint \limits_D g(x,y)d\sigma$.
+
+2 估值定理
+
+设$M,m是连续函数f(x,y)$在闭区域$D$上的最大值与最小值,$S表示D的面积$,则
+
+$$
+mS \le \iint \limits_D f(x,y)d\sigma \le MS
+$$
+
+3 中值定理
+
+设$f(x,y)$是闭区域$D$上的连续函数,$S表示D的面积$,则在$D上至少存在一点(\xi, \eta)$使得
+
+$$
+\iint \limits_D f(x,y)d\sigma = f(\xi, \eta)S
+$$
+
+### 线性微分方程解的结构
+
+1 二阶齐次通解
+
+$y=C_1y_1(x)+C_2y_2(x)$  
+$其中y_1(x),y_2(x)是两个线性无关的解,C_1,C_2是任意常数$.
+
+2 非齐次通解$=$对应齐次通解$+$一个非齐次特解
+
+3 解的叠加原理
+
+$若y_1^*(x)和y_2^*(x)分别是$  
+$y'' + P(x)y'+Q(x)y=f_1(x)$与
+$y'' + P(x)y'+Q(x)y=f_2(x)$  
+的特解,  
+那么$y_1^*(x)+y_2^*(x)$就是
+$y'' + P(x)y'+Q(x)y=f_1(x) + f_2(x)$的一个特解
+
+以上结论可以推广到$n$阶.
+
+### 二阶常系数线性齐次微分方程及特征方程
+
+$$
+y''+py'+qy=f(x)\\
+\lambda^2+p\lambda+q=0
+$$
+
+### 二常线非齐特解-多项式
+
+$$
+y''+py'+y=f(x) \\
+f(x)=ax^2+bx+c,\\
+特解:y^*=x^k(cx^2+dx+f),\\
+k=\begin{cases}
+0, 0不是特征根\\
+1, 0是单根\\
+2, 0是二重根
+\end{cases}\\
+\ \\
+
+$$
+
+### 微分方程特解-指数函数
+
+$$
+f(x)=e^{ax},\\
+y^*=Cx^ke^{ax},\\
+k=\begin{cases}
+0, a不是特征根\\
+1, a是单根\\
+2, a是二重根
+\end{cases}\\
+\ \\
+$$
+
+### 微分方程特解-多项式-指数函数
+
+$$
+f(x)=e^{ax}(bx+c),\\
+y^*=x^ke^{ax}(Dx+C),\\
+k=\begin{cases}
+0, a不是特征根\\
+1, a是单根\\
+2, a是二重根
+\end{cases}\\ \\
+\ \\
+$$
+
+### 微分方程特解-多项式-指数函数-三角函数
+
+$$
+f(x)=e^{ax}(H_{n1}(x)\cos bx+L_{n2}(x)\sin bx),\\
+ y^*=x^ke^{ax}(M_n(x)\cos {bx}+F_n(x)\sin bx),\\
+ n=\max(n1,n2)\\
+k=\begin{cases}
+0, a\pm ib不是特征根\\
+1, a\pm ib 是特种根\\
+\end{cases}
+$$
+
+### 微分方程特解-三角函数
+
+$$
+f(x)=\sin x\\
+y^*=x^k(A\cos {x}+B\sin x),\\
+k=\begin{cases}
+0, \pm i不是特征根\\
+1, \pm i 是特种根\\
+\end{cases}
+
+$$
+
+### 变量可分离微分方程
+
+$$
+g(y)dy=f(x)dx\\
+\Rightarrow \int g(y)dy = \int f(x)dx
+$$
+
+### 齐次微分方程
+
+$$
+\frac{dy}{dx}=f(\frac yx)\\
+
+u=\frac yx\\
+
+\int \frac 1{f(u)-u} du = \int \frac 1x dx
+$$
+
+### 一阶线性微分方程及其解
+
+$$
+y'+p(x)y=q(x), (x'+p(y)x=q(y)) \\
+u=e^{\int p(x)dx}\\
+yu=\int q(x)u(x)dx+C
+
+$$
+
+### 可降阶的高阶微方程
+
+$$
+
+y^{(n)} = f(x) \\
+
+\Rightarrow y^{(n-1)} = \int f(x) dx +C_1 \\
+
+\Rightarrow y^{(n-2)} = \int [\int f(x) dx +C_1]dx + C_2 \\
+
+\Rightarrow \cdots
+
+$$
+
+### 不显含$y$的微分方程
+
+$$
+y''=f(x,y') \\
+y'=p,y''=\frac {dp}{dx}\\
+\frac {dp}{dx}=f(x,p)
+$$
+
+### 二阶齐次常系数微分方程特解
+
+1. 双根$C_1 e^{r_1x}+C_2 e^{r_2x}$
+2. 重根$(C_1+C_2x)e^{rx}$
+3. 复根$e^{ax}(C_1 \cos bx+C_2 \sin bx)$
+
+### 不显含$x$的微分方程
+
+$$
+y''=f(y,y') \\
+y'=p,y''=\frac {dp}{dy} \frac {dy}{dx}=p\frac {dp}{dy}\\
+p\frac {dp}{dy}=f(y,p)
+$$
