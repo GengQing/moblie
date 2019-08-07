@@ -343,7 +343,7 @@ $$
 ### 函数微分与函数增量的关系
 
 $$
-\Delta y=\mathrm{d}y+o(\Delta x),\Delta y=f'(x_0)+o(\Delta x)\\
+\Delta y=\mathrm{d}y+o(\Delta x),\Delta y=f'(x_0)\Delta x+o(\Delta x)\\
 \Delta y-\mathrm{d}y=\frac 12 f''(\xi)(\Delta x)^2, \xi 介域x_0和x_0+\Delta x 之间
 $$
 
