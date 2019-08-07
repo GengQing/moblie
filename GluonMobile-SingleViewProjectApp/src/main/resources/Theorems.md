@@ -7,7 +7,7 @@
 ### 关于函数的奇偶性
 
 1. 两函数的乘积的奇偶性符合:正(偶)负(奇)数乘积的正负性
-2. 两函数的复合函数的奇偶性符合:其中一个偶函数就是偶函数,否则是奇函数
+2. 两函数的复合函数的奇偶性符合:奇数偶数的乘积,即其中一个偶函数就是偶函数,否则是奇函数
 
 ### 关于有界和无界的充分条件
 
@@ -19,8 +19,8 @@
 
 3. 设$f(x)在[a,b]上连续,则f(x)在[a,b]上有界$
 
-4. 设$f(x)在[a,+\infty]上连续, 且\lim_{x\rightarrow +\infty} f(x)存在,则f(x)在[a,+\infty]上有界$.  
-同理$[-infty,a]$有界
+4. 设$f(x)在[a,+\infty)上连续, 且\lim_{x\rightarrow +\infty} f(x)存在,则f(x)在[a,+\infty)上有界$.  
+同理$[-\infty,a]$有界
 
 5. 设$f(x)在数集U上有最大值(最小值),则f(x)在U有上界(下界)$
 
@@ -38,10 +38,10 @@ $$
 \lim_{x \rightarrow x_0} f(x)=A的充要条件是f(x_0^-)=f(x_0^+)=A.
 $$
 
-### 数列极限存在的冲要条件
+### 数列极限存在的充要条件
 
 $$
-\lim_{n \rightarrow \infty} u_n = A的冲要条件是\lim_{n \rightarrow \infty} u_{2n} = \lim_{n \rightarrow \infty} u_{2n+1}
+\lim_{n \rightarrow \infty} u_n = A的充要条件是\lim_{n \rightarrow \infty} u_{2n} = \lim_{n \rightarrow \infty} u_{2n+1}
 $$
 
 ### 极限的唯一性
@@ -92,8 +92,8 @@ $$
 
 $$
 \begin{aligned}
-&\lim_{x \rightarrow 0} \frac{\sin x}{x} = 1\\
-&\lim_{\varphi(x) \rightarrow 0} \frac{\sin \varphi(x)}{\varphi(x)} = 1,其中\varphi(x) \ne 0\\
+&\lim_{x \rightarrow 0} \frac{\sin x}{x} = 1&\\
+&\lim_{\varphi(x) \rightarrow 0} \frac{\sin \varphi(x)}{\varphi(x)} = 1,其中\varphi(x) \ne 0&\\
 &\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
 &\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
 &\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)\\
@@ -104,20 +104,22 @@ $$
 ### 几个重要等价无穷小
 
 $$
-&\sin x  \sim  x, \tan x  \sim  x\\
+\begin{aligned}
+&\sin x  \sim  x,& &\tan x  \sim  x\\
 
-&\arcsin x \sim x, \arctan x \sim x\\
+&\arcsin x \sim x,& &\arctan x \sim x\\
 
 &1-\cos x  \sim  \frac {x^2} 2\\
 
 &\sec x - 1 =\frac 1{\cos x} -1 \sim \frac {x^2}2\\
 
-&e^x-1 \sim x, a^x-1 \sim x\ln a \\
+&e^x-1 \sim x,& &a^x-1 \sim x\ln a \\
 
-&\ln (1+x) \sim x, \log_a (1+x) \sim \frac x{\ln a}\\
+&\ln (1+x) \sim x,& &\log_a (1+x) \sim \frac x{\ln a}\\
 
-&\sqrt {1+x}-1 \sim \frac x2, (1+x)^a-1 \sim ax\\
+&\sqrt {1+x}-1 \sim \frac x2,& &(1+x)^a-1 \sim ax\\
 & x^m+x^k \sim x^m,其中常数 k \gt m \gt 0
+\end{aligned}
 $$
 
 ### 极限的四则运算

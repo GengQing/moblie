@@ -10,6 +10,8 @@ public class MathBlock {
             Arrays.asList("泰勒公式", "高阶导数", "补充积分", "排列组合公式", "导数四则运算",
                     "反函数求导", "周期函数积分", "变上限积分");
 
+    public static List<String> exculdeAligned = Arrays.asList("几个重要等价无穷小");
+
     private String title;
 
     private int startLineNo;
@@ -39,7 +41,7 @@ public class MathBlock {
         }
 
         for (String str : this.getContents()) {
-            if (str.contains("aligned")) {
+            if (str.contains("aligned") && !exculdeAligned.contains(title)) {
                 type = Type.ALIGNED;
                 return type;
             }
