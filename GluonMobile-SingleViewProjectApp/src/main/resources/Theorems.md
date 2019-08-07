@@ -459,9 +459,11 @@ $$
 ### 反函数求导公式
 
 $$
-\frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
-\varphi '(y)=\frac 1{f'(x)}\\
-\varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
+\begin{aligned}
+&\frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
+&\varphi '(y)=\frac 1{f'(x)}\\
+&\varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
+\end{aligned}
 $$
 
 ### 极值定义
