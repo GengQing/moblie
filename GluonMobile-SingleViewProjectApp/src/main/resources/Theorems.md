@@ -676,8 +676,8 @@ $$
 $$
 若f(x) \le g(x), a \le b, 则 \int_a^b f(x) \mathrm dx \le \int_a^b g(x) \mathrm dx\\
 \ \\
-若f(x)与g(x)在[a,b]上连续,f(x) \le g(x),且至少有一点x_1,a \le x_1 \le b,\\
-使f(x_1) \lt g(x_1),则\\
+若f(x)与g(x)在[a,b]上连续,f(x) \le g(x),\\
+且至少有一点x_1, a \le x_1 \le b, 使f(x_1) \lt g(x_1),则\\
 \int_a^b f(x) \mathrm dx \lt \int_a^b g(x) \mathrm dx\\
 $$
 
@@ -693,17 +693,17 @@ $$
 
 $$
 \begin{aligned}
-&\int a dx = ax+C&               &\int x^ndx=\frac{x^{n+1}}{n+1}+C,(n \ne -1)\\
-&\int \frac 1 x dx=\ln |x| +C\\
-&\int e^xdx = e^x+C&             &\int a^xdx=\frac{a^x}{\ln a} + C\\
-&\int\sin xdx = -\cos x+C&       &\int\cos xdx=\sin x+C\\
-&\int\tan xdx = -\ln |\cos x|+C& &\int\cot xdx=\ln |\sin x|+C\\
-&\int\sec xdx = \ln|\sec x + \tan x|+C&   &\int\csc xdx=\ln |\csc x - \cot x|+C\\
-&\int \sec^2 xdx=\tan x +C&               &\int\csc^2xdx=-cotx +C\\
-&\int\frac 1{\sqrt{1-x^2}}dx=\arcsin x+C& &\int\frac{1}{\sqrt{a^2-x^2}}dx=\arcsin \frac xa+C\\
-&\int\frac 1{\sqrt{x^2-a^2}}dx=\ln{|x+\sqrt{x^2-a^2}|}+C& &\int\frac 1{\sqrt{x^2+a^2}}dx=\ln{(x+\sqrt{x^2+a^2})}+C\\
-&\int\frac 1{1+x^2}dx=\arctan x+C& &\int\frac{1}{a^2+x^2}dx=\frac 1a \arctan \frac xa + C\\
-&\int\frac 1{x^2-a^2}dx=\frac 1{2a}\ln |\frac{x-a}{x+a}|+C \\
+&\int a \mathrm dx = ax+C&               &\int x^n\mathrm dx=\frac{x^{n+1}}{n+1}+C,(n \ne -1)\\
+&\int \frac 1 x \mathrm dx=\ln |x| +C\\
+&\int e^x\mathrm dx = e^x+C&             &\int a^x\mathrm dx=\frac{a^x}{\ln a} + C\\
+&\int\sin x\mathrm dx = -\cos x+C&       &\int\cos x\mathrm dx=\sin x+C\\
+&\int\tan x\mathrm dx = -\ln |\cos x|+C& &\int\cot x\mathrm dx=\ln |\sin x|+C\\
+&\int\sec x\mathrm dx = \ln|\sec x + \tan x|+C&   &\int\csc x\mathrm dx=\ln |\csc x - \cot x|+C\\
+&\int \sec^2 x\mathrm dx=\tan x +C&               &\int\csc^2x\mathrm dx=-cotx +C\\
+&\int\frac 1{\sqrt{1-x^2}}\mathrm dx=\arcsin x+C& &\int\frac{1}{\sqrt{a^2-x^2}}\mathrm dx=\arcsin \frac xa+C\\
+&\int\frac 1{\sqrt{x^2-a^2}}\mathrm dx=\ln{|x+\sqrt{x^2-a^2}|}+C& &\int\frac 1{\sqrt{x^2+a^2}}\mathrm dx=\ln{(x+\sqrt{x^2+a^2})}+C\\
+&\int\frac 1{1+x^2}\mathrm dx=\arctan x+C& &\int\frac{1}{a^2+x^2}\mathrm dx=\frac 1a \arctan \frac xa + C\\
+&\int\frac 1{x^2-a^2}\mathrm dx=\frac 1{2a}\ln |\frac{x-a}{x+a}|+C \\
 \end{aligned}
 $$
 
@@ -740,7 +740,7 @@ $$
 $$
 
 为$f(x)在[a,+\infty)$上的反常积分,若右边极限存在,称此反常积分收敛,否则称此反常积分发散.  
-同理下限和上下限(拆成两个)都为为无穷的情形.
+同理定义下限和上下限(拆成两个)都为为无穷的情形.
 
 ### 无界函数的反常积分
 
@@ -761,10 +761,8 @@ $$
 
 ### 定积分的运用
 
-$$
-当积分函数在积分区间有\lt 0时,需要分段\\
-积分,函数\lt 0的段函数要取反转换成正值.
-$$
+当求面积时,积分函数在积分区间有$\lt 0$时,需要分段  
+积分, 函数$\lt 0$的段函数要取反转换成正值.
 
 ### 曲线与$x$轴面积公式两种($y$轴取反函数同理)
 
@@ -784,17 +782,17 @@ $$
 ### 弧微分三种
 
 $$
-ds=\sqrt{1+y'^2}dx,y=y(x)\\
-ds=\sqrt{x'^2+y'^2}dt, y=y(t), x=x(t)\\
-ds=\sqrt{r^2+r'^2}d\theta,r=r(\theta)
+ds=\sqrt{1+(y')^2}dx,y=y(x)\\
+ds=\sqrt{(x')^2+(y')^2}dt, y=y(t), x=x(t)\\
+ds=\sqrt{r^2+(r')^2}d\theta,r=r(\theta)
 $$
 
 ### 弧长公式三种
 
 $$
-L=\int_a^b\sqrt{1+y'^2}dx ,y=y(x)\\
-L=\int_{t_1}^{t_2}\sqrt{x'^2+y'^2}dt, y=y(t), x=x(t)\\
-L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+r'^2}d\theta,r=r(\theta)\\
+L=\int_a^b\sqrt{1+(y')^2}dx ,y=y(x)\\
+L=\int_{t_1}^{t_2}\sqrt{(x')^2+(y')^2}dt, y=y(t), x=x(t)\\
+L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+(r')^2}d\theta,r=r(\theta)\\
 $$
 
 ### 曲线绕$x$轴旋转体积
