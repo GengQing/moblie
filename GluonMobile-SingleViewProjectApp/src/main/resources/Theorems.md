@@ -791,7 +791,7 @@ $$
 
 $$
 L=\int_a^b\sqrt{1+(y')^2}dx ,y=y(x)\\
-L=\int_{t_1}^{t_2}\sqrt{(x')^2+(y')^2}dt, y=y(t), x=x(t)\\
+L=\int_{t_1}^{t_2}\sqrt{(x_t')^2+(y_t')^2}dt, y=y(t), x=x(t)\\
 L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+(r')^2}d\theta,r=r(\theta)\\
 $$
 
@@ -820,13 +820,13 @@ $$
 $$
 S=2\pi\int_a^b|y|\sqrt{1+y'^2}dx,y=y(x)\\
 
-S=2\pi\int_{t1}^{t2}|y|\sqrt{x'^2+y'^2}dt, x=x(t),y=y(t)\\
+S=2\pi\int_{t_1}^{t_2}|y|\sqrt{x_t'^2+y_t'^2}dt, x=x(t),y=y(t)\\
 $$
 
 ### 函数的平均值
 
 $$
-average=\frac 1 {(b-a)}\int_a^bf(x)dx
+\overline f =\frac 1 {(b-a)}\int_a^bf(x)dx
 $$
 
 ### 密度均匀形心质心公式
