@@ -1056,9 +1056,11 @@ $$
 
 $$
 \frac{dy}{dx}=f(\frac yx)\\
+\ \\
 
-u=\frac yx\\
-
+u=\frac yx,y=ux,\\
+ \frac{dy}{dx} = u+\frac{du}{dx}\\
+\ \\
 \int \frac 1{f(u)-u} du = \int \frac 1x dx
 $$
 
