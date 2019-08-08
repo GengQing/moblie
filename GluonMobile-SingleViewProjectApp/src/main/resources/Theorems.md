@@ -439,9 +439,10 @@ $$
 设$x=x(t), y=y(t)$均可导且$x'(t) \ne 0$
 
 $$
-y'_x=\frac{y'_t}{x'_t}\\
-y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}\\
-
+\begin{aligned}
+&y'_x=\frac{y'_t}{x'_t}\\
+&y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}\\
+\end{aligned}
 $$
 
 ### 隐函数求导
