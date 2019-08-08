@@ -303,7 +303,7 @@ $$
 \lim_{x \rightarrow x_0} \frac{f(x)-f(x_0)}{x-x_0}
 $$
 
-存在, 则$f(x), 在x=x_0$处可导,且极限函数在该点的导数,  
+存在, 则$f(x) 在x=x_0$处可导,且极限是函数$f(x)$在该点的导数,  
 同理可定义左导数($x \rightarrow x_0^-$)和右导数($x \rightarrow x_0^+$).
 
 ### 微分的定义
@@ -423,9 +423,9 @@ $$
 
 $$
 \begin{aligned}
-&(\sin ax)^{(n)} = a^n\sin (ax + \frac{n\pi}{2})\\
+&(\sin ax)^{(n)} = a^n\sin (\frac{n\pi}{2} + ax)\\
 &\ \\
-&(\cos ax)^{(n)} = a^n\cos (ax + \frac{n\pi}{2})\\
+&(\cos ax)^{(n)} = a^n\cos ( \frac{n\pi}{2}+ax)\\
 \ \\
 &(\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
 &((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}\\
