@@ -834,23 +834,25 @@ $$
 $$
 密度均匀为1的薄片y=f(x)是薄片上边界曲线,\\
 可利用对称性计算出其中一个坐标 \\
-横坐标x=\frac {\int_a^b 1\cdot xf(x)dx}{\int_a^b 1\cdot f(x)dx}\\
+横坐标x=\frac {\int_a^b  xf(x)dx}{\int_a^b  f(x)dx}\\
 \ \\
-纵坐标y=\frac {\frac 12 \int_a^b 1\cdot f^2(x)dx}{\int_a^b 1\cdot f(x)dx}
+纵坐标y=\frac {\frac 12 \int_a^b  f^2(x)dx}{\int_a^b  f(x)dx}\\
+\ \\
+若点密度是关于x的函数,则上面所以被积函数要乘以密度函数
 $$
 
 ### 偏导数的概念
 
 二元函数的偏导数就是固定一个变量,关于另一个变量的一元函数的导数.
 
-### 全微分和可微的概念
+### 二元函数全微分和可微的概念
 
 若二元函数在某点的全增量$\Delta z = f(x+\Delta x, y+\Delta y) - f(x,y)$  
 可表示为$\Delta z = A\Delta x + B\Delta y + o (\sqrt{(\Delta x)^2 + (\Delta y)^2})$  
 其中$A,B仅与x,y有关$, 则称$z=f(x,y)在点(x,y)$可微,且全微分为  
 $\mathrm dz = A\Delta x + B\Delta y$
 
-### 可微的必要条件
+### 二元可微的必要条件
 
 若函数$z=f(x,y)在(x,y)处可微$, 则在该点的偏导数存在且
 
@@ -858,7 +860,7 @@ $$
 \mathrm dz = \frac {\partial z}{\partial x}\mathrm dx + \frac{\partial z} {\partial y}\mathrm dy
 $$
 
-### 可微的充分条件
+### 二元函数可微的充分条件
 
 如果函数$z=f(x,y)在(x,y)处偏导数 \frac {\partial z}{\partial x},\frac{\partial z} {\partial y}连续$,  
 则$z=f(x,y)在(x,y)处$可微.
@@ -884,7 +886,7 @@ z=f(\varphi(x,y),\psi(x,y))\\
 \frac {\partial z} {\partial x}= \frac{\partial z}{\partial u} \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \frac{\partial v}{\partial x}\\
 $$
 
-### 全微分形式的不变性
+### 多元函数全微分形式的不变性
 
 无论是自变量还是中间变量,多元函数的全微分具有同样的形式
 
@@ -901,22 +903,31 @@ $$
 
 ### 多元函数取得极值的必要条件
 
-若二元函数在某点取得极值,则在该点的两个偏导数为0.
+若二元函数在某点取得极值,则在该点的两个偏导数为零.
 
 ### 二元函数极值定理
 
-1) $AC-B^2 \gt 0是取极值,A \gt 0时取极小值,A \lt 0时取极大值$
+1) $AC-B^2 \gt 0是极值,A \gt 0时取极小值,A \lt 0时取极大值$
 2) $AC-B^2 \lt 0无极值$
 3) $AC-B^2 = 0$时不确定,一般要用定义证明
 
 ### 拉格朗日数乘法
 
 函数$z=f(x,y)在\varphi(x,y)=0下$求极值,构造拉格朗日函数  
-$F(x,y,\lambda)=0$, 求三元函数极值.
+$F(x,y,\lambda)=f(x,y)+\lambda \varphi(x,y)$, 求三元函数的驻点是可能的极值点.
+
+$$
+\frac{\partial F}{\partial x}=\frac{\partial f}{\partial x} + \lambda \frac{\partial \varphi}{\partial x}=0\\
+\ \\
+\frac{\partial F}{\partial y}=\frac{\partial f}{\partial y} + \lambda \frac{\partial \varphi}{\partial y}=0\\
+\ \\
+\frac{\partial F}{\partial y} = \varphi(x,y)=0
+
+$$
 
 ### 二重积分几何意义
 
-底面为积分区域$D$的垂直于$xoy$平面的区顶柱体体积
+底面为积分区域$D$的垂直于$xoy$平面的曲顶柱体体积
 
 ### 二重积分的性质
 
