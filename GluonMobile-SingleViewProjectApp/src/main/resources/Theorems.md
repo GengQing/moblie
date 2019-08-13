@@ -1248,9 +1248,9 @@ $$
 
 $$
 \begin{aligned}
-(AB)C=A(BC)\\
-A(B+C)=AB+AC\\
-(B+C)A=BA+CA
+&(AB)C=A(BC)\\
+&A(B+C)=AB+AC\\
+&(B+C)A=BA+CA
 \end{aligned}
 $$
 
@@ -1265,10 +1265,15 @@ $$
 \end{aligned}
 $$
 
-### 伴随矩阵的运算公式
+### 伴随矩阵的运算法则
 
 $$
 \begin{aligned}
-
+&AA^*=A^*A& &AA^*=|A|E&\\
+&(A^*)^{-1}=(A^{-1})^*& &(A^*)^{-1}=\frac A{|A|}(|A|\ne 0)&\\
+&(A^*)^T=(A^T)^*\\
+&(kA)^*=k^{n-1}A^*\\
+&|A^*|=|A|^{n-1}\\
+&(A^*)^*=|A|^{n-2}A(n\ge2)\\
 \end{aligned}
 $$
