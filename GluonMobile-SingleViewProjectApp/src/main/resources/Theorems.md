@@ -1411,3 +1411,19 @@ $$
 
 定理1 经初等变换矩阵的秩不变.  
 定理2 如果$A$可逆,则$r(AB)=r(B),r(BA)=r(B)$
+
+### 矩阵秩的概念
+
+若矩阵中存在$r$阶不为零,且所有$r+1$子式(如果存在)均为零,  
+则称矩阵的秩为$r$.零矩阵的秩规定为0.
+
+### 矩阵秩的充要条件
+
+$r(A)=r \Longleftrightarrow 矩阵A$中的非零子式的最高阶数是$r$  
+$r(A) \lt r \Longleftrightarrow A$中每一个$r$阶子式全为$0$  
+
+$r(A)=0 \Longleftrightarrow A=O$  
+$A \neq O \Longleftrightarrow r(A) \ge 1$
+
+若$A$是$n$阶矩阵  
+$r(A)=n \Longleftrightarrow |A| \neq 0 \Longleftrightarrow A可逆$
