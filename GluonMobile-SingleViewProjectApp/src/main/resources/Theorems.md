@@ -1437,7 +1437,7 @@ $r(A^TA)=r(A)$
 
 $r(kA)=r(A),(k\ne 0)$
 
-$r(A+B) \le r(A)+r(B))$
+$r(A+B) \le r(A)+r(B)$
 
 $r(AB)\le \min(r(A),r(B))$
 
@@ -1445,3 +1445,25 @@ $r(AB)\le \min(r(A),r(B))$
 
 $r(A_{m\times n}) \le \min(m,n)$
 
+分块矩阵$r\left( \begin{matrix} A&O\\ O&B \end{matrix} \right)=r(A)+r(B)$
+
+### 分开矩阵的运算
+
+1 分开矩阵的加法,等于把对应位置的子矩阵相加  
+2 分开矩阵的乘法,把子矩阵当成一个元素,使用矩阵乘法  
+3 分块矩阵的转置,等于把各个位置上的子矩阵转置  
+4 主对角分块矩阵的幂,等于把各个位置的子矩阵做幂运算  
+
+5 主对角分块对角矩阵的逆, 等于各个分块取逆运算
+
+$$
+\left[ \begin{matrix} A&O\\ O&B \end{matrix} \right]^{-1}=
+\left[ \begin{matrix} A^{-1}&O\\ O&B^{-1} \end{matrix} \right]\\
+$$
+
+6 副对角分块矩阵的逆,等于各个分块取逆运算,再交换位置
+
+$$
+\left[ \begin{matrix} O&B \\A&O  \end{matrix} \right]^{-1}=
+\left[ \begin{matrix} O&A^{-1}  \\B^{-1}&O\\ \end{matrix} \right]\\
+$$
