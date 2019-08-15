@@ -1427,3 +1427,21 @@ $A \neq O \Longleftrightarrow r(A) \ge 1$
 
 若$A$是$n$阶矩阵  
 $r(A)=n \Longleftrightarrow |A| \neq 0 \Longleftrightarrow A可逆$
+$r(A)\lt n \Longleftrightarrow |A| = 0 \Longleftrightarrow A不可逆$
+
+矩阵秩的公式
+
+$r(A)=r(A^T)$
+
+$r(A^TA)=r(A)$
+
+$r(kA)=r(A),(k\ne 0)$
+
+$r(A+B) \le r(A)+r(B))$
+
+$r(AB)\le \min(r(A),r(B))$
+
+若$A_{m\times n}B_{n\times s}=O, 则r(A)+r(B)\le n$
+
+$r(A_{m\times n}) \le \min(m,n)$
+
