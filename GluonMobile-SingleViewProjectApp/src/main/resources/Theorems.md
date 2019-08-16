@@ -1481,24 +1481,92 @@ $$
 ### 向量的定义
 
 1 $n$个数所构成的有序数组称为$n$为向量.
-2 所以分量为$0$的向量称为零向量,记为$0$.
+2 所有分量为$0$的向量称为零向量,记为$0$.
 
 ### 向量的运算法则
 
-1 向量加法,等于对应位置的各个分量相加  
-2 向量数乘,等于常数乘以各个分量  
-3 向量内积$(\alpha,\beta)$,等于对应各个分量乘积之和,结果是一个数  
+1 向量相等,等于所以分量都相等.  
+2 向量加法 $\alpha+\beta=(a_1+b_1,a_2+b_2,\cdots,a_n+b_n)$  
+3 向量数乘 $k\alpha=(ka_1,ka_2,\cdots,ka_n)$ 
+
+4 向量内积 $(\alpha,\beta)=a_1b_1+a_2b_2+\cdots+a_nb_n$  
 若两向量内积为零,则称这两向量<u>正交</u>  
 向量内积的开方$\sqrt {(\alpha,\beta)}$,称为向量的长度
 
-向量加法,数乘满足分配律,交换律,结合律.  
+5 向量加法和数乘满足分配律,交换律,结合律.  
 
 ### 向量的内积运算法则  
 
 $$
-(\alpha,\beta) = (\beta,\alpha)\\
-k(\alpha,\beta)=(\alpha,\beta)
+\begin{aligned}
+&(\alpha,\beta) = (\beta,\alpha)\\
+&k(\alpha,\beta)=(k\alpha,\beta)\\
+&(k\alpha,\beta)=(\alpha,k\beta)\\
+&(\alpha+\beta,\gamma)=(\alpha,\gamma)+(\beta,\gamma)\\
+&(\alpha,\alpha) \ge 0(等号成立当且仅当\alpha是零向量)\\
+\end{aligned}
 $$
+
+### 等价向量组
+
+1 如果两个向量组可以相互线性表出,则称这两个向量组等价.  
+2 等价向量组具有传递性,对称性,反身性.  
+3 向量组的两个极大线性无关组是等价向量组.  
+4 等价向量组具有相同的秩,但秩相等的向量组不一定等价.
+
+### 向量组的线性相关的概念
+
+1 线性相关是指存在非全为零的系数使得$k_1\alpha_1+\cdots+k_s\alpha_s=0$
+2 含有零向量,相等向量,坐标成比例的向量的向量组都是线性相关的  
+3 梯形向量组定是无关的
+
+### 向量线性表出的概念
+
+1 能线性表出的向量必须是同纬度的向量
+
+### 向量组线性相关的充要条件
+
+$n$维向量组$\alpha_1,\alpha_2,\cdots,\alpha_s$线性相关
+
+$\Longleftrightarrow$
+齐次方程组$(\alpha_1,\alpha_2,\cdots,\alpha_s)\left[\begin{matrix} \alpha_1\\ \alpha_2 \\ \vdots \\ \alpha_s\end{matrix} \right]=0$有非零解.
+
+$\Longleftrightarrow r(\alpha_1,\alpha_2,\cdots,\alpha_s) \lt s$.
+
+$\Longleftrightarrow$ 至少有一个向量,可由其余向量线性表出.
+
+### 向量组线性相关推论
+
+1) $n个n维向量组\alpha_1,\alpha_2,\cdots,\alpha_n$线性相关  
+$\Longleftrightarrow |\alpha_1,\alpha_2,\cdots,\alpha_n|=0$.
+
+2) $n+1个n$维向量必线性相关.
+
+3) 如果$\alpha_1,\alpha_2,\cdots,\alpha_r$线性相关,  
+那么$\alpha_1,\alpha_2,\cdots,\alpha_r, \alpha_{r+1},\cdots,\alpha_s$必线性相关.
+
+4) 设有两个$n$维向量组$(I)(\alpha_1,\alpha_2,\cdots,\alpha_s),(II)(\beta_1,\beta_2,\cdots,\beta_t)$,  
+如果$(I)$能由$(II)$线性表出,且$s\gt t$,则$\alpha_1,\alpha_2,\cdots,\alpha_s$必线性相关.
+
+5) 推论 若$n$维向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$可由$(\beta_1,\beta_2,\cdots,\beta_t)$线性表出,  
+且$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,则$s\le t$.
+
+### 向量组线性无关的推论
+
+1) 如果$n为向量组\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,  
+那么它的延伸组$\left(\begin{matrix} \alpha_1\\ \beta_1 \end{matrix} \right), \cdots$必线性无关.
+
+### 向量可被线性表出的充要条件
+
+$n$维向量$\beta可由\alpha_1,\alpha_2,\cdots,\alpha_m$线性表出  
+$\Longleftrightarrow$非齐次方程组$x_1\alpha_1+\cdots+x_m\alpha_m=\beta$有解.  
+$\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2,\cdots,\alpha_m,\beta)$
+
+### 关于向量和向量组的定理
+
+1) 向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
+线性相关,则$\beta$可由$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性表出,且表示法唯一.
+
 
 
 
