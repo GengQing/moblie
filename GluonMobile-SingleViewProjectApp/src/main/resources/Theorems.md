@@ -1570,6 +1570,12 @@ $\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2
 
 ### 极大线性无关组和秩的概念
 
+设向量组$\alpha_1, \alpha_2\cdots, \alpha_s$中有一部分组$a_1,a_2,\cdots,a_r, 1 \le r \le s$,满足条件
+
+1) $a_1,a_2,\cdots,a_r$线性无关
+2) 再添加任一向量$\beta \in \alpha_i$,则向量组$a_1,a_2,\cdots,a_r,\beta$必线性相关;  
+则称$a_1,a_2,\cdots,a_r$是$\alpha_i$的一个极大线性无关组.
+
 1 只有一个零向量构成的向量组没有极大线性无关组  
 2 一个线性无关组的极大线性无关组是该向量组本身  
 3 向量组的极大线性无关组一般不唯一,但极大线性无关组的向量个数是一样的.  
