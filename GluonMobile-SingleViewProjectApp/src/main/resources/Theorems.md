@@ -1565,7 +1565,7 @@ $\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2
 
 ### 关于向量和向量组的定理
 
-1) 向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
+1) 若向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
 线性相关,则$\beta$可由$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性表出,且表示法唯一.
 
 ### 极大线性无关组和秩的概念
@@ -1603,5 +1603,46 @@ $$
 
 $\gamma_1 = \frac {\beta_1}{|\beta_1|}$,$\gamma_2 = \frac {\beta_2}{|\beta_2|}$, $\gamma_3 = \frac {\beta_3}{|\beta_3|}$  
 
-则$\gamma_1,\gamma_2,\gamma_3$是正交规范化向量
+则$\gamma_1,\gamma_2,\gamma_3$是正交规范向量组.
 
+### 正交矩阵的概念
+
+若$n$阶矩阵$A$满足$AA^T=A^TA=E$,则$A$是正交矩阵.
+
+若$A$是正交矩阵,则行列式$|A|=1或-1$.
+
+### 正交矩阵的充要条件
+
+$A$是正交矩阵  
+$\Longleftrightarrow A^T=A^{-1}$  
+$\Longleftrightarrow A$的列(行)向量组是正交规范向量组.
+
+### 非齐次方程组克拉默法则
+
+设有$n$个变量$n$方程构成的非齐次线性方程组$Ax=\beta$,  
+若系数行列式$A \ne 0$,则方程组有唯一解,且  
+
+$$
+x_i = \frac {|A_i|}{|A|}, i=1,2,\cdots,n
+$$
+
+其中$|A_i|是|A|中第i$列的元素替换乘方程中右边的常数列向量$\beta$.
+
+### $n$阶齐次线性方程组解的推论
+
+设有$n$个变量$n$方程构成的齐次线性方程组$Ax=0$,
+
+1) 齐次线性方程组有唯一解的充要条件是$|A|\ne 0$.  
+2) 反之,齐次线性方程组有非零解的充要条件是$|A|= 0$.
+
+### 齐次线性方程组的基础解系
+
+设$\xi_1,\xi_2,\cdots,\xi_{n-r}是Ax=0$的解向量,若满足
+
+1) $\xi_1,\xi_2,\cdots,\xi_{n-r}$线性无关.
+2) $Ax=0$的任一解向量$\xi$均可由$\xi_1,\xi_2,\cdots,\xi_{n-r}$线性表出.
+
+则称$\xi_1,\xi_2,\cdots,\xi_{n-r}$是$Ax=0$的基础解系.  
+其中$r=r(A)$即矩阵$A$的秩,即线性无关向量组的个数为$n-r, n$是变量的个数.
+
+基础解系是齐次方程组的解向量的极大无关组.
