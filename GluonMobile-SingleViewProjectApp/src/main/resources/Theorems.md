@@ -1691,4 +1691,67 @@ $\xi_2=[d_{21},d_{22},\cdots,d_{2r},0,1,\cdots,0]^T$
 $\cdots$  
 $\xi_{n-r}=[d_{n-r1},d_{n-r2},\cdots,d_{n-rr},0,0,\cdots,1]^T$  
 
+### 非齐次方程组的解的性质
+
+设$\eta_1,\eta_2是Ax=b$的两个解,$\xi$是对应齐次方程组$Ax=0$的解,则  
+
+1. $A(\eta_1-\eta_2)=0$即两非齐次解的差是对应的齐次解
+2. $A(\eta_1+k\xi)=b$即齐次解的倍数与非齐次解的和仍旧是非齐次解
+
+### 非齐次方程组有解的充要条件
+
+$Ax=b$有解  
+$\Longleftrightarrow b 可由A$的列向量线性表出.  
+$\Longleftrightarrow r(A)=r(A|b)$
+
+$Ax=b$有唯一解  
+$\Longleftrightarrow r(A)=r(A|b)=n$,$n$是$A$的列数.  
+$\Longleftrightarrow A的列向量(\alpha_1,\cdots,\alpha_n)线性无关,(\alpha_1,\cdots,\alpha_n,b)$线性相关.  
+$\Longleftrightarrow b 可由A$的列向量线性表出,且表示法唯一.
+
+### 非齐次方程组无解的充要条件
+
+$Ax=b$无解  
+$\Longleftrightarrow b 不能由A$的列向量线性表出.  
+$\Longleftrightarrow r(A) \ne r(A|b)(r(A)+1=r(A|b))$
+
+### 非齐次方程组通解的结构
+
+非齐次方程组的通解$=$对应的齐次方程组的通解$+$一个非齐次方程组的特解
+
+### 非齐次方程组的通解的求法
+
+1. 写出增广矩阵$(A|b)$.
+2. 通过初等行变换化将增广矩阵化为阶梯形矩阵.
+3. 求出对应齐次方程组的通解.
+4. 再求一个非齐次特解,一般将自由未知量均取零带入非齐次方程,求的独立未知量.
+
+### 特征值和特征向量
+
+$A$是$n$阶方阵,如果对于数$\lambda$,存在非零向量$\alpha$,使得  
+$A\alpha=\lambda\alpha$
+成立,则称$\lambda是A$的特征值,$\alpha$是$A$对应$\lambda$的特征向量.
+
+$|\lambda E-A|\alpha=0$是特征方程,$|\lambda E-A|$是特征多项式,  
+$\lambda E-A$是特征矩阵.
+
+### 特征值的性质
+
+1. 特征值的和等于组对角线上元素的和
+2. 特征值的乘积等于矩阵的行列式
+
+### 求特征值和特征向量的方法
+
+方法一
+
+1. 根据$|\lambda E-A|=0$,求出全部特征值$\lambda_i$.
+2. 再根据$(\lambda_i E-A)x=0$,求出对应$lambda_i$的特征向量,  
+基础解析即为线性无关的特征向量,通解即为全部特征向量(除零向量).
+
+方法二 利用定义
+
+凡是满足$A\alpha=\lambda\alpha$的$\lambda,\alpha(\alpha\ne 0)$  
+即为$A$的特征值和特征向量,一般用于抽象矩阵.
+
+当$|A|=0$时有特征值$\lambda=0$.因为对$Ax=0的任意解\alpha 使得A\alpha=0\alpha$
 
