@@ -1411,8 +1411,10 @@ $$
 
 ### 矩阵秩的概念
 
-若矩阵中存在$r$阶不为零,且所有$r+1$子式(如果存在)均为零,  
+若矩阵中所有$r$阶子式不为零,且所有$r+1$子式(如果存在)均为零,  
 则称矩阵的秩为$r$.零矩阵的秩规定为0.
+
+在$m\times n$的矩阵中任取$k$行和$k$列,位于这些行和列的交点上的$k^2$个元素按原来的次序所组成的$k$阶方阵的行列式,叫做A的一个$k$阶子式
 
 ### 矩阵秩的充要条件
 
@@ -1423,7 +1425,7 @@ $r(A)=0 \Longleftrightarrow A=O$
 $A \neq O \Longleftrightarrow r(A) \ge 1$
 
 若$A$是$n$阶矩阵  
-$r(A)=n \Longleftrightarrow |A| \neq 0 \Longleftrightarrow A可逆$
+$r(A)=n \Longleftrightarrow |A| \neq 0 \Longleftrightarrow A可逆$  
 $r(A)\lt n \Longleftrightarrow |A| = 0 \Longleftrightarrow A不可逆$
 
 矩阵秩的公式
