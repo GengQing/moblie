@@ -1446,7 +1446,7 @@ $r(A_{m\times n}) \le \min(m,n)$
 
 分块矩阵$r\left( \begin{matrix} A&O\\ O&B \end{matrix} \right)=r(A)+r(B)$
 
-### 分开矩阵的运算
+### 分块矩阵的运算
 
 1 分开矩阵的加法,等于把对应位置的子矩阵相加  
 2 分开矩阵的乘法,把子矩阵当成一个元素,使用矩阵乘法  
@@ -1467,7 +1467,7 @@ $$
 \left[ \begin{matrix} O&A^{-1}  \\B^{-1}&O\\ \end{matrix} \right]\\
 $$
 
-### 矩阵乘法与方程组
+### 矩阵乘法与方程组的关系
 
 设$A是m \times n的矩阵,B是 n \times s的矩阵$
 
