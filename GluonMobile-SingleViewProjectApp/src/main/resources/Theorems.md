@@ -1117,7 +1117,7 @@ $n$阶行列式是所以取自不同行不同列$n$个元素乘积的代数和.
 
 ### 行列式的性质
 
-1. $|A^T|=|A|$
+1. $|A^\intercal |=|A|$
 2. 两行(或列)互换位置,行列式的值变号
 3. 两行(或列)相等,行列式的值为0
 4. 两行(或列)成比例,行列式的值为0
@@ -1186,7 +1186,7 @@ $$
 
 $$
 \begin{aligned}
-&|A^T|=|A|\\
+&|A^\intercal |=|A|\\
 &|kA|=k^n|A|\\
 &|AB|=|A||B|\\
 &|A^2|=|A|^2\\
@@ -1197,10 +1197,6 @@ $$
 &A^*A=|A|E(A^*是伴随矩阵)\\
 \end{aligned}
 $$
-
-### 相似矩阵的性质
-
-若$A\sim B, 则|A|=|B|$
 
 ### 代数余子式的性质
 
@@ -1258,10 +1254,10 @@ $$
 
 $$
 \begin{aligned}
-&(A+B)^T=A^T+B^T\\
-&(kA)^T=kA^T\\
-&(AB)^T=B^TA^T\\
-&(A^T)^T=A
+&(A+B)^\intercal =A^\intercal +B^\intercal \\
+&(kA)^\intercal =kA^\intercal \\
+&(AB)^\intercal =B^\intercal A^\intercal \\
+&(A^\intercal )^\intercal =A
 \end{aligned}
 $$
 
@@ -1271,7 +1267,7 @@ $$
 \begin{aligned}
 &AA^*=A^*A& &A^*A=|A|E&\\
 &(A^*)^{-1}=(A^{-1})^*& &(A^{-1})^*=\frac 1{|A|}A(|A|\ne 0)&\\
-&(A^*)^T=(A^T)^*\\
+&(A^*)^\intercal =(A^\intercal )^*\\
 &(kA)^*=k^{n-1}A^*\\
 &|A^*|=|A|^{n-1}\\
 &(A^*)^*=|A|^{n-2}A(n\ge2)\\
@@ -1294,9 +1290,9 @@ $$
 3. 对角阵,除主对角线上的元素外,其余都为0的矩阵
 4. 上三角矩阵,主对角线以下的元素都为0,元素都在主对角线及以上
 5. 下三角矩阵,主对角线以上的元素都为0,元素都在主对角线及以下
-6. 对称矩阵,$A^T=A,即a_{ij}=a_{ji}$
-7. 反对称矩阵,$A^A=-A,即a_{ij}=-a_{ji}, a_{ii}=0$
-8. 正交矩阵,$AA^T=A^TA=E,即A^T=A{-1}$
+6. 对称矩阵,$A^\intercal =A,即a_{ij}=a_{ji}$
+7. 反对称矩阵,$A^\intercal =-A,即a_{ij}=-a_{ji}, a_{ii}=0$
+8. 正交矩阵,$AA^\intercal =A^\intercal A=E,即A^\intercal =A{-1}$
 9. 初等矩阵,单位矩阵经过一次初等变换所得到的矩阵
 10. 伴随矩阵$A^*$,$A$中所以元素由其代数余子式替换,再<u>转置</u>.
 
@@ -1320,7 +1316,7 @@ $$
 &(kA)^{-1}=\frac 1k A^{-1}(k\ne0)\\
 &(AB)^{-1}=B^{-1}A^{-1}\\
 &(A^2)^{-1}=(A^{-1})^2\\
-&(A^T)^{-1}=(A^{-1})^T\\
+&(A^\intercal )^{-1}=(A^{-1})^\intercal \\
 &(A^{-1})^{-1}=A\\
 &|A^{-1}|=\frac 1{|A|}
 \end{aligned}
@@ -1431,9 +1427,9 @@ $r(A)\lt n \Longleftrightarrow |A| = 0 \Longleftrightarrow A不可逆$
 
 矩阵秩的公式
 
-$r(A)=r(A^T)$
+$r(A)=r(A^\intercal )$
 
-$r(A^TA)=r(A)$
+$r(A^\intercal A)=r(A)$
 
 $r(kA)=r(A),(k\ne 0)$
 
@@ -1530,7 +1526,7 @@ $$
 $n$维向量组$\alpha_1,\alpha_2,\cdots,\alpha_s$线性相关
 
 $\Longleftrightarrow$
-齐次方程组$(\alpha_1,\alpha_2,\cdots,\alpha_s)\left[\begin{matrix} \alpha_1\\ \alpha_2 \\ \vdots \\ \alpha_s\end{matrix} \right]=0$有非零解.
+齐次方程组$(\alpha_1,\alpha_2,\cdots,\alpha_s)\left[\begin{matrix} x_1\\ x_2 \\ \vdots \\ x_s\end{matrix} \right]=0$有非零解.
 
 $\Longleftrightarrow r(\alpha_1,\alpha_2,\cdots,\alpha_s) \lt s$.
 
@@ -1613,14 +1609,14 @@ $\gamma_1 = \frac {\beta_1}{|\beta_1|}$,$\gamma_2 = \frac {\beta_2}{|\beta_2|}$,
 
 ### 正交矩阵的概念
 
-若$n$阶矩阵$A$满足$AA^T=A^TA=E$,则$A$是正交矩阵.
+若$n$阶矩阵$A$满足$AA^\intercal =A^\intercal A=E$,则$A$是正交矩阵.
 
 若$A$是正交矩阵,则行列式$|A|=1或-1$.
 
 ### 正交矩阵的充要条件
 
 $A$是正交矩阵  
-$\Longleftrightarrow A^T=A^{-1}$  
+$\Longleftrightarrow A^\intercal =A^{-1}$  
 $\Longleftrightarrow A$的列(行)向量组是正交规范向量组.
 
 ### 非齐次方程组克拉默法则
@@ -1683,13 +1679,13 @@ $\Longleftrightarrow r(A) \lt n$.
 1. 利用初等行变换(换行/倍加/倍乘)不改变线性方程组的解,将$A$作初等变换化成阶梯形矩阵,得阶梯形方程组  
 2. 阶梯形方程中每一行的第一个系数不为零的$r$个未知变量,称为独立未知量,而后的$n-r$个未知量,称为自由未知量.
 3. 将自由未知量分别赋予下列$n-r$组值  
-$[1,0,\cdots,0]^T,[0,1,\cdots,0]^T, \cdots, [0,0,\cdots,1]^T$  
+$[1,0,\cdots,0]^\intercal ,[0,1,\cdots,0]^\intercal , \cdots, [0,0,\cdots,1]^\intercal$  
 带入方程,求出相应的独立未知量,并的$n-r$个解.
 4. 最后基础解系为  
-$\xi_1=[d_{11},d_{12},\cdots,d_{1r},1,0,\cdots,0]^T$  
-$\xi_2=[d_{21},d_{22},\cdots,d_{2r},0,1,\cdots,0]^T$  
+$\xi_1=[d_{11},d_{12},\cdots,d_{1r},1,0,\cdots,0]^\intercal$  
+$\xi_2=[d_{21},d_{22},\cdots,d_{2r},0,1,\cdots,0]^\intercal$  
 $\cdots$  
-$\xi_{n-r}=[d_{n-r1},d_{n-r2},\cdots,d_{n-rr},0,0,\cdots,1]^T$  
+$\xi_{n-r}=[d_{n-r1},d_{n-r2},\cdots,d_{n-rr},0,0,\cdots,1]^\intercal$  
 
 ### 非齐次方程组的解的性质
 
@@ -1737,7 +1733,7 @@ $\lambda E-A$是特征矩阵.
 
 ### 特征值的性质
 
-1. 特征值的和等于组对角线上元素的和
+1. 特征值的和等于主对角线上元素的和
 2. 特征值的乘积等于矩阵的行列式
 
 ### 求特征值和特征向量的方法
@@ -1762,7 +1758,159 @@ $\lambda E-A$是特征矩阵.
 
 ### 矩阵可相似对角化的充分必要条件
 
-$n$矩阵$A$可相似对角化
-$\Longleftrightarrow$ $A有n$线性无关的的特征向量.
+$n$矩阵$A$可相似对角化  
+$\Longleftrightarrow$ $A有n$线性无关的的特征向量.  
+$\Longleftrightarrow A$的每一个$r_i$重特征值对应线性无关的特征向量的个数等于该特征值的重数$r_i$.
 
 ### 矩阵可相似对角化的充分条件
+  
+若$n$阶矩阵$A$有$n$个互不相同的特征值,则矩阵$A$可相似于对角矩阵.
+
+设$\alpha_1,\alpha_2,\cdots,\alpha_n$是对应于特征值$\lambda_1,\lambda_2,\cdots,\lambda_n$的特征向量,  
+取$P=[\alpha_1,\alpha_2,\cdots,\alpha_n]$,则有
+
+$$
+P^{-1}AP=\Lambda=
+\begin{bmatrix}
+\lambda_1&0&\cdots&0\\
+0&\lambda_2&\cdots&0\\
+\vdots&\vdots&&\vdots\\
+0&0&\cdots&\lambda_n\\
+\end{bmatrix}
+$$
+
+注意特征向量和特征值排列顺序一致.
+
+### 关于特征值和特征向量的定理
+
+定理1 $\lambda_1 \ne \lambda_2 \Rightarrow A$的对应于$\lambda_1 ,\lambda_2的特征向量\alpha_1,\alpha_2$线性无关.
+
+定理2 $\lambda$是$n$阶矩阵$A$的$r_i$重根,则其对应的线性无关的特征向量的个数少于等于$r_i$个.  
+当其少于$r_i$个时,$A$不能相似对角化.
+
+### 判断矩阵是否可相似对角化的步骤
+
+1. 令$|\lambda E-A|=0$,求出所有$\lambda_i$.
+2. 求$r(\lambda_i E-A)$的秩$r_i$
+3. 判断$n-r_i$是否与$\lambda_i$重数相等,若存在不相等的,则不能相似对角化.
+
+### 相似矩阵的性质
+
+若$A\sim B, 则|A|=|B|$
+
+反身性$A\sim A$,  
+对称性$A\sim B \Rightarrow B \sim A$,  
+传递性$A\sim B, B\sim C \Rightarrow A\sim C$.
+
+### 两矩阵相似的必要条件
+
+$A\sim B$  $\Rightarrow$
+
+1) $|\lambda E-A|=|\lambda E-B|$特征多项式相等;
+2) $r(A)=r(B)$秩相等;  
+3) $A,B$具有相同的特征值;
+4) $|A|=|B|=\prod_{i=1}^n \lambda_i$行列式相等;  
+5) $\sum_{i=1}^n a_{ii}=\sum_{i=1}^n b_{ii}=\sum_{i=1}^n \lambda_i$迹相等;
+
+### 关于实对称矩阵的定理
+
+定理1 实对称矩阵的特征值全部是实数.  
+定理2 实对称矩阵属于不同特征值的特征向量相互正交(内积为零).  
+定理3 实对称矩阵必相似于对角矩阵,即存在可逆矩阵$P,使P^{-1}AP=\Lambda$  
+且存在正交矩阵$Q,使得Q^\intercal AQ=Q^{-1}AQ=\Lambda$
+
+### 实对称矩阵正交相似于对角矩阵的步骤
+
+第一步 解特征根方程$|\lambda E-A|=0$,得全部实数解特征值$\lambda_i,i=1,2,\cdots$.  
+第二步 求$(\lambda_i E-A)x=0$的基础解系,若能求的相互正交的基础解系,可免去下一步正交化.  
+第三步 将每个$\lambda_i$的特征向量施密特正交化.  
+第四步 将全部特征向量单位化.  
+第五步 将$n$正交单位化向量合成正交矩阵,则有$Q^\intercal AQ=Q^{-1}AQ=\Lambda$.
+
+### 二次型的矩阵表示
+
+$$
+f=[x_1,x_2,\cdots,x_n]A\begin{bmatrix} x_1 \\x_2\\ \vdots \\ x_n \end{bmatrix}=
+x^\intercal Ax,(A是对称矩阵)\\
+$$
+
+若$r(A)=r \Leftrightarrow r(f)=r$  
+若$A正定,则f$正定.
+
+### 二次型的标准型和规范型
+
+若二次型只有平方项没有混合项,则称二次型为标准型,  
+若标准型中平方项的系数只有$1,-1,0$,则称二次型为规范型.
+
+### 关于二次型的定理
+
+定理一 对任意$n$元二次型$f=x^\intercal Ax$,必存在正交变换$x=Qy,Q$是正交矩阵,化二次型为标准型,  
+
+$$
+f=x^\intercal Ax  = y^\intercal Q^\intercal AQy=\lambda_1 y_1+\lambda_2 y_2+\cdots+\lambda_n y_n
+$$
+
+其中$\lambda_1, \cdots \lambda_n是A$的$n$个特征值.
+
+### 两矩阵合同的定义
+
+设$A,B$是两个$n$阶方阵,若存在可逆矩阵$C$,使得$C^\intercal AC=B$,则称$A合同于B$.
+
+### 惯性定理
+
+二次型的标准型不唯一,但标准型的正平方项数$p$(称为正惯性指数),是唯一确定的,  
+负平方项数$q$(称为负惯性指数),是唯一确定的.  
+$p+q=r$是二次型对应矩阵的秩,$p-q$称为符号差.
+
+### 实数对称矩阵合同的充分必要条件
+
+实对称矩阵$A$合同于$B$  
+$\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指数.
+
+### 实对称矩阵合同的性质
+
+若$A$合同于$B \Longleftrightarrow$  
+
+1) $r(A)=r(B)$
+
+### 正定二次型正定矩阵的定义
+
+对任意非零向量$x$,恒有$f=x^\intercal Ax \gt 0$,  
+则称$f$为正定二次型,对应矩阵$A$为正定矩阵.
+
+### 正定性定理 可逆线性变换不改变二次型的正定性
+
+### 二次型正定的充要条件
+
+$f=x^{\intercal}Ax$正定  
+$\Longleftrightarrow A$的正惯性指出$p=r=n(r是A的秩,A满秩,n是未知量个数)$  
+$\Longleftrightarrow A与E$合同  
+$\Longleftrightarrow A=D^\intercal D,D$是可逆矩阵  
+$\Longleftrightarrow A的全部特征值\lambda \gt 0$  
+$\Longleftrightarrow A的全部顺序主子式 \gt 0$  
+
+### 二次型正定的必要条件
+
+若$f=x^\intercal Ax$正定,则
+
+1) $A的主对角元素a_{ii} \gt 0$  
+2) 行列式$|A| \gt 0$
+
+### 正交变换化二次型为标准型步骤
+
+1) 将二次型表示成矩阵形式$x^\intercal Ax$
+2) 求出$A$的全部特征值
+3) 求出$A$的特征值对应的特征向量
+4) 将重根特征值的特征向量施密特正交化(可检查不同特征值的特征向量是否正交)
+5) 将全部特征向量单位化
+6) 构造正交矩阵$Q$
+7) 令$x=Qy, 则f=\lambda_1 y_1^2+\lambda_2 y_2^2+\cdots+\lambda_n y_n^2$
+
+### 用配方法化二次型为标准型
+
+(1) 若二次型中含有平方项,不妨设$a_11 \ne 0$,对所有含$x_1$的项完全平方,  
+(配方后,平方项可能包含三个以上未知量,其余各项不含$x_1$),再配第二个平方项,  
+直到配成完全平方和.
+
+(2) 若二次型中没有平方项,不妨设$a_12 \ne 0, 令x_1=y_1+y_2,x_2=y_1-y_2, x_3=y_3,\cdots,x_n=y_n$,  
+带入$f$,将其转换成$(1)$情形处理.
