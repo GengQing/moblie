@@ -6,6 +6,8 @@ import java.util.*;
 
 public class MathBlock {
 
+    public static final String SUFFIX = ">";
+    public static final String ALIGNED = "aligned";
     public static List<String> EQUALITY_BLOCK =
             Arrays.asList("泰勒公式", "高阶导数", "补充积分", "排列组合公式", "导数四则运算",
                     "反函数求导", "周期函数积分", "变上限积分");
@@ -41,7 +43,7 @@ public class MathBlock {
         }
 
         for (String str : this.getContents()) {
-            if (str.contains("aligned") && !exculdeAligned.contains(title)) {
+            if (str.contains(ALIGNED) && !title.endsWith(SUFFIX)) {
                 type = Type.ALIGNED;
                 return type;
             }
