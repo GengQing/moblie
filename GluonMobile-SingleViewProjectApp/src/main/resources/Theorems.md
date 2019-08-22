@@ -1200,7 +1200,7 @@ $$
 
 ### 代数余子式的性质
 
-1. 行列式的任一行(列)的元素与另一行(列)的代数余子式的乘积之和为$0$.
+行列式的任一行(列)的元素与另一行(列)的代数余子式的乘积之和为$0$.
 
 ### 矩阵的概念
 
@@ -1304,7 +1304,7 @@ $$
 
 ### 矩阵$A$可逆的<u>充分必要</u>条件
 
-1. 存在$n$阶矩阵$B$,使得$AB(或BA)=E$
+1. 存在$n$阶矩阵$B$,使得$AB(或BA)=E$(定义)
 2. $|A|\ne 0, 或秩r(A)=n,或A$的列(行)向量线性无关
 3. 齐次方程组$Ax=0$只有零解.
 4. 对任意$b, 非齐次线性方程组Ax=b$总有唯一解.
@@ -1323,6 +1323,19 @@ $$
 \end{aligned}
 $$
 
+### 求逆矩阵的方法
+
+方法一 用公式
+
+$$
+A^{-1}=\frac 1 {|A|} A^*
+$$
+
+方法二 初等行变换法 $(A|E) \longrightarrow (E|A^{-1})$  
+方法三 用定义 $AB(或BA)=E, A^{-1}=B$
+方法四 用分块矩阵
+方法五 用初等矩阵法则
+
 ### 矩阵的初等变换
 
 1. 某行(列)乘以非零常数
@@ -1336,8 +1349,9 @@ $$
 ### 初等矩阵的性质
 
 1. 初等矩阵的转置仍是初等矩阵
-2. 初等矩阵是可逆矩阵,且其逆矩阵仍是同一类型的初等矩阵.
-3. $A$左乘初等矩阵,相当于对$A$做对应的初等行变换,右乘初等矩阵,相当于做对应的初等列变换
+2. 初等矩阵均是可逆矩阵,且其逆矩阵仍是同一类型的初等矩阵.
+3. $A$左乘初等矩阵$P$,所得$PA$相当于对$A$做一次和$P$相同的初等行变换,  
+右乘初等矩阵,相当于做对应的初等列变换
 4. 当$A$可逆时,$A$可做一系列初等行变换变成单位矩阵.
 
 ### 初等矩阵的逆矩阵
@@ -1420,6 +1434,7 @@ $$
 
 $r(A)=r \Longleftrightarrow 矩阵A$中的非零子式的最高阶数是$r$  
 $r(A) \lt r \Longleftrightarrow A$中每一个$r$阶子式全为$0$  
+$r(A) \ge r \Longleftrightarrow A$中有$r$阶子式不为$0$  
 
 $r(A)=0 \Longleftrightarrow A=O$  
 $A \neq O \Longleftrightarrow r(A) \ge 1$
@@ -1474,8 +1489,8 @@ $$
 若$AB=O$,则$B$的列向量是齐次方程组$Ax=0$的解.
 
 若$AB=C$,  
-则$AB$的行向量(即$C$的行向量)可由$B$的行向量线性表达,  
-则$AB$的列向量(即$C$的列向量)可由$A$的列向量线性表达.
+则$AB$的列向量(即$C$的列向量)可由$A$的列向量线性表达,  
+则$AB$的行向量(即$C$的行向量)可由$B$的行向量线性表达.
 
 ### 向量的定义
 
@@ -1492,7 +1507,7 @@ $$
 若两向量内积为零,则称这两向量<u>正交</u>  
 向量内积的开方$\sqrt {(\alpha,\beta)}$,称为向量的长度
 
-5 向量加法和数乘满足分配律,交换律,结合律(同矩阵相同).  
+5 向量加法和数乘满足分配律,交换律,结合律(和矩阵加法数乘相同).  
 
 ### 向量的内积运算法则  
 
@@ -1517,19 +1532,19 @@ $$
 
 1 向量组线性相关是指存在不全为零的数使得$k_1\alpha_1+\cdots+k_s\alpha_s=0$  
 2 含有零向量,相等向量,坐标成比例的向量的向量组都是线性相关的  
-3 梯形向量组定是无关的
+3 梯形向量组定是线性无关的
 
 ### 向量线性表出的概念
 
 1 能线性表出的向量必须是同纬度的向量  
-2 一个向量其其他向量的线性组合
+2 一个向量是其他向量的线性组合
 
 ### 向量组线性相关的充要条件
 
 $n$维向量组$\alpha_1,\alpha_2,\cdots,\alpha_s$线性相关
 
 $\Longleftrightarrow$
-齐次方程组$(\alpha_1,\alpha_2,\cdots,\alpha_s)\left[\begin{matrix} x_1\\ x_2 \\ \vdots \\ x_s\end{matrix} \right]=0$有非零解.
+齐次方程组$(\alpha_1,\alpha_2,\cdots,\alpha_s)\left[\begin{matrix} x_1\\ x_2 \\ \vdots \\ x_s\end{matrix} \right]=0$有<u>非零解</u>.
 
 $\Longleftrightarrow r(\alpha_1,\alpha_2,\cdots,\alpha_s) \lt s$.
 
@@ -1543,20 +1558,24 @@ $\Longleftrightarrow |\alpha_1,\alpha_2,\cdots,\alpha_n|=0$.
 2) $n+1个n$维向量必线性相关.
 
 3) 如果$\alpha_1,\alpha_2,\cdots,\alpha_r$线性相关,  
-那么$\alpha_1,\alpha_2,\cdots,\alpha_r, \alpha_{r+1},\cdots,\alpha_s$必线性相关.
+那么$\alpha_1,\alpha_2,\cdots,\alpha_r, \alpha_{r+1},\cdots,\alpha_s$必线性相关.  
+(即向量组中有一子向量组线性相关,则整个向量组线性相关)  
+(或即向量组线性相关,加入新向量后扩大的向量组仍线性相关)
 
 4) 设有两个$n$维向量组$(I)(\alpha_1,\alpha_2,\cdots,\alpha_s),(II)(\beta_1,\beta_2,\cdots,\beta_t)$,  
-如果$(I)$能由$(II)$线性表出,且$s\gt t$,则$\alpha_1,\alpha_2,\cdots,\alpha_s$必线性相关.
+如果$(I)$能由$(II)$线性表出,且$s\gt t$,则$\alpha_1,\alpha_2,\cdots,\alpha_s$必线性相关.  
+(即若多项向量组能有少的向量组线性表出,则多的项组必线性相关)
 
 5) 推论 若$n$维向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$可由$(\beta_1,\beta_2,\cdots,\beta_t)$线性表出,  
-且$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,则$s\le t$.
+且$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,则$s\le t$.  
+(即一个线性无关的向量组能由另一个向量组线性表出,则另一个向量组向量个数必大于等于线性无关组的)
 
 ### 向量组线性无关的推论
 
 1) 如果$n为向量组\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,  
 那么它的延伸组$\left(\begin{matrix} \alpha_1\\ \beta_1 \end{matrix} \right), \cdots$必线性无关.
 
-### 向量可被线性表出的充要条件
+### 向量可被线性表出的充分必要条件
 
 $n$维向量$\beta可由\alpha_1,\alpha_2,\cdots,\alpha_m$线性表出  
 $\Longleftrightarrow$非齐次方程组$x_1\alpha_1+\cdots+x_m\alpha_m=\beta$有解.  
@@ -1564,7 +1583,7 @@ $\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2
 
 ### 关于向量和向量组的定理
 
-1) 若向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
+若向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
 线性相关,则$\beta$可由$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性表出,且表示法唯一.
 
 ### 极大线性无关组和秩的概念
@@ -1585,7 +1604,7 @@ $\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2
 1) 若向量组$(I)(\alpha_1,\alpha_2,\cdots,\alpha_s)$可由$(II)(\beta_1,\beta_2,\cdots,\beta_t)$线性表出,  
 则$r(I)\le r(II)$.
 2) 推论 如果向量组$(I)和(II)$等价,那么$r(I)= r(II)$.
-3) 矩阵的秩=矩阵的行秩=矩阵的列秩.
+3) 矩阵的秩=矩阵的行秩(行向量组的秩)=矩阵的列秩(列向量组的秩).
 4) 经初等变换向量组的秩不变.
 
 ### 施密特正交规范化
@@ -1601,7 +1620,9 @@ $\beta_3=\alpha_3-k_{31}\beta_1-k_{32}\beta_2$
 其中
 
 $$
-k_{ij}=\frac {(\alpha_i,\beta_j)}{(\beta_j,\beta_j)}
+k_{ij}=\frac {(\alpha_i,\beta_j)}{(\beta_j,\beta_j)}\\
+\  \\
+k_{21}=\frac {(\alpha_2,\beta_1)}{(\beta_1,\beta_1)}\\
 $$
 
 2 再将$\beta_1,\beta_2,\beta_3$单位化 
@@ -1622,16 +1643,22 @@ $A$是正交矩阵
 $\Longleftrightarrow A^\intercal =A^{-1}$  
 $\Longleftrightarrow A$的列(行)向量组是正交规范向量组.
 
+### 方程组的向量表示
+
+$\alpha_1 x_1+\alpha_1 x_2 +\cdots+ \alpha_n x_2=0$
+
+$\alpha_1 x_1+\alpha_1 x_2 + \cdots+\alpha_n x_2=b$
+
 ### 非齐次方程组克拉默法则
 
-设有$n$个变量$n$方程构成的非齐次线性方程组$Ax=\beta$,  
+设有$n$个变量$n$方程构成的非齐次线性方程组$Ax=b$,  
 若系数行列式$A \ne 0$,则方程组有唯一解,且  
 
 $$
 x_i = \frac {|A_i|}{|A|}, i=1,2,\cdots,n
 $$
 
-其中$|A_i|是|A|中第i$列的元素替换乘方程中右边的常数列向量$\beta$.
+其中$|A_i|是|A|中第i$列的元素替换乘方程中右边的常数列向量$b$.
 
 ### $n$阶齐次线性方程组解的推论
 
@@ -1683,7 +1710,7 @@ $\Longleftrightarrow r(A) \lt n$.
 2. 阶梯形方程中每一行的第一个系数不为零的$r$个未知变量,称为独立未知量,而后的$n-r$个未知量,称为自由未知量.
 3. 将自由未知量分别赋予下列$n-r$组值  
 $[1,0,\cdots,0]^\intercal ,[0,1,\cdots,0]^\intercal , \cdots, [0,0,\cdots,1]^\intercal$  
-带入方程,求出相应的独立未知量,并的$n-r$个解.
+带入方程,求出相应的独立未知量,并得到$n-r$个解.
 4. 最后基础解系为  
 $\xi_1=[d_{11},d_{12},\cdots,d_{1r},1,0,\cdots,0]^\intercal$  
 $\xi_2=[d_{21},d_{22},\cdots,d_{2r},0,1,\cdots,0]^\intercal$  
@@ -1695,7 +1722,7 @@ $\xi_{n-r}=[d_{n-r1},d_{n-r2},\cdots,d_{n-rr},0,0,\cdots,1]^\intercal$
 设$\eta_1,\eta_2是Ax=b$的两个解,$\xi$是对应齐次方程组$Ax=0$的解,则  
 
 1. $A(\eta_1-\eta_2)=0$即两非齐次解的差是对应的齐次解
-2. $A(\eta_1+k\xi)=b$即齐次解的倍数与非齐次解的和仍旧是非齐次解
+2. $A(\eta_1+k\xi)=b$即齐次解与非齐次解的和仍旧是非齐次解
 
 ### 非齐次方程组有解的充要条件
 
@@ -1721,9 +1748,10 @@ $\Longleftrightarrow r(A) \ne r(A|b)(r(A)+1=r(A|b))$
 ### 非齐次方程组的通解的求法
 
 1. 写出增广矩阵$(A|b)$.
-2. 通过初等行变换化将增广矩阵化为阶梯形矩阵.
+2. 通过初等<u>行变换</u>将增广矩阵化为阶梯形矩阵.
 3. 求出对应齐次方程组的通解.
-4. 再求一个非齐次特解,一般将自由未知量均取零带入非齐次方程,求的独立未知量.
+4. 再求一个非齐次特解,一般将自由未知量均取零带入非齐次方程组,求的独立未知量.
+5. 通解等于齐次通解加非齐次特解
 
 ### 特征值和特征向量
 
@@ -1744,8 +1772,8 @@ $\lambda E-A$是特征矩阵.
 方法一
 
 1. 根据$|\lambda E-A|=0$,求出全部特征值$\lambda_i$.
-2. 再根据$(\lambda_i E-A)x=0$,求出对应$lambda_i$的特征向量,  
-基础解析即为线性无关的特征向量,通解即为全部特征向量(除零向量).
+2. 再根据$(\lambda_i E-A)x=0$,求出对应$\lambda_i$的特征向量,  
+基础解系即为线性无关的特征向量,通解即为全部特征向量(除零向量).
 
 方法二 利用定义
 
@@ -1845,15 +1873,20 @@ $$
 若二次型只有平方项没有混合项,则称二次型为标准型,  
 若标准型中平方项的系数只有$1,-1,0$,则称二次型为规范型.
 
-### 关于二次型的定理
+### 二次型的必可化为标准型定理
 
-定理一 对任意$n$元二次型$f=x^\intercal Ax$,必存在正交变换$x=Qy,Q$是正交矩阵,化二次型为标准型,  
+定理一  
+对任意$n$元二次型$f=x^\intercal Ax$,必存在正交变换$x=Qy,Q$是正交矩阵,化二次型为标准型,  
 
 $$
 f=x^\intercal Ax  = y^\intercal Q^\intercal AQy=\lambda_1 y_1+\lambda_2 y_2+\cdots+\lambda_n y_n
 $$
 
-其中$\lambda_1, \cdots \lambda_n是A$的$n$个特征值.
+其中$\lambda_1, \cdots \lambda_n是A$的$n$个特征值.  
+[注] 正交变换一般只能化为标准型,不能化为规范性,除非特征值只有$1,-1,0$
+
+定理二  
+任何二次型都可经过可逆线性变换(配方法)化为标准型.
 
 ### 两矩阵合同的定义
 
@@ -1870,11 +1903,9 @@ $p+q=r$是二次型对应矩阵的秩,$p-q$称为符号差.
 实对称矩阵$A$合同于$B$  
 $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指数.
 
-### 实对称矩阵合同的性质
+### 实对称矩阵合同的必要条件
 
-若$A$合同于$B \Longleftrightarrow$  
-
-1) $r(A)=r(B)$
+若实对称矩阵$A$合同于$B \Longrightarrow r(A)=r(B)$
 
 ### 正定二次型正定矩阵的定义
 
@@ -1886,11 +1917,20 @@ $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指
 ### 二次型正定的充要条件
 
 $f=x^{\intercal}Ax$正定  
-$\Longleftrightarrow A$的正惯性指出$p=r=n(r是A的秩,A满秩,n是未知量个数)$  
+$\Longleftrightarrow A$的正惯性指出$p=r(A)=n(n是未知量个数)$  
 $\Longleftrightarrow A与E$合同  
 $\Longleftrightarrow A=D^\intercal D,D$是可逆矩阵  
 $\Longleftrightarrow A的全部特征值\lambda \gt 0$  
-$\Longleftrightarrow A的全部顺序主子式 \gt 0$  
+$\Longleftrightarrow A的全部顺序主子式 \gt 0$,即
+
+$$
+a_{11} \gt 0,
+\begin{vmatrix}
+a_{11}&a_{12}\\
+a_{21}&a_{22}\\
+\end{vmatrix} \gt 0,
+\cdots, |A| \gt 0
+$$
 
 ### 二次型正定的必要条件
 
@@ -1911,9 +1951,9 @@ $\Longleftrightarrow A的全部顺序主子式 \gt 0$
 
 ### 用配方法化二次型为标准型
 
-(1) 若二次型中含有平方项,不妨设$a_11 \ne 0$,对所有含$x_1$的项完全平方,  
-(配方后,平方项可能包含三个以上未知量,其余各项不含$x_1$),再配第二个平方项,  
-直到配成完全平方和.
+(1) 若二次型中含有平方项,不妨设$a_{11} \ne 0$,对所有含$x_1$的项完全平方,  
+配方后,(平方项可能包含三个$(x_1+x_2+x_3)^2$),其余各项不含$x_1$,  
+再配第二个平方项, 直到配成完全平方和.
 
-(2) 若二次型中没有平方项,不妨设$a_12 \ne 0, 令x_1=y_1+y_2,x_2=y_1-y_2, x_3=y_3,\cdots,x_n=y_n$,  
+(2) 若二次型中没有平方项,不妨设$a_{12} \ne 0, 令x_1=y_1+y_2,x_2=y_1-y_2, x_3=y_3,\cdots,x_n=y_n$,  
 带入$f$,将其转换成$(1)$情形处理.
