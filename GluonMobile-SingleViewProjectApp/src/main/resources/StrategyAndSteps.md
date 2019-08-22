@@ -304,17 +304,18 @@ $$
 3. 比较1和2中各个值得大小,取其中最大值和最小值.
 4. 如果$f(x)$在区间内部有且只有一个可疑极值点,如果是极大(极大小)值,则它必是$f(x)$的最大(最小)值点,区间可以是开区间，闭区间，半开半闭区间以及无穷区间.实际上遇到的多数是4.
 
-### 渐近线的求法
+### 求函数渐近线的步骤
 
-1. 先铅直渐近线
-2. 再求水平渐近线,至多两条
-3. 如果水平渐近线小于两条,求斜渐近线
-4. 水平渐近线加斜渐近线至多两条
+1 先铅直渐近线 $x=x_0当\lim_{x\rightarrow x_0}f(x)=\infty$  
+2 再求斜渐近线  
+$k=\lim_{x\rightarrow \pm\infty} [f(x)/x],b=\lim_{x\rightarrow \pm\infty}[f(x)-kx],y=kx+b$  
+
+3 水平渐近线是斜渐近线斜率$k=0$的情况
 
 ### 求铅直渐近线(可能位置有:间断点处, 开区间端点)
 
 $$
-\lim_{x\rightarrow x_0^-} f(x)=\infty 或\lim_{x\rightarrow x_0^+} f(x)=\infty, y=x_0即一条铅直渐近线
+\lim_{x\rightarrow x_0^-} f(x)=\infty 或\lim_{x\rightarrow x_0^+} f(x)=\infty, x=x_0即一条铅直渐近线
 $$
 
 有铅直渐近线基本初等函数:$(\log_a x, x=0), (\tan x,x=\frac {\pi}{2}+k\pi), (\cot x,x=\pi + k\pi$)
@@ -334,8 +335,8 @@ $$
 ### 求水平渐近线(趋近正负无穷,最多两条)
 
 $$
-\lim_{x\rightarrow -\infty} f(x)=b_1, y=b_1即一条水平渐进线\\
-\lim_{x\rightarrow +\infty} f(x)=b_2, y=b_2即一条水平渐进线\\
+\lim_{x\rightarrow -\infty} f(x)=b_1, y=b_1即一条水平渐近线\\
+\lim_{x\rightarrow +\infty} f(x)=b_2, y=b_2即一条水平渐近线\\
 $$
 
 有水平渐近线基本初等函数有$(a^x, y=0),(\arctan x, y=\pm \frac{\pi}{2}),(\mathrm{arccot}\ x, y=0和\pi)$
