@@ -55,6 +55,7 @@ public class FormulaExtractor {
 
 
             Collections.shuffle(formulas);
+            if (System.currentTimeMillis() % 2 == 0) Collections.reverse(formulas);
             allFormulas.put(block.getTitle(), formulas);
 
         }

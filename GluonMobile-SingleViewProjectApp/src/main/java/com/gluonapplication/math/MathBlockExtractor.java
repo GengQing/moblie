@@ -17,6 +17,7 @@ public class MathBlockExtractor {
 
     public int size;
 
+
     public MathBlockExtractor(String fileLocation) {
         List<String> list = Utils.readAllLines(fileLocation);
         extract(list);
@@ -42,6 +43,7 @@ public class MathBlockExtractor {
 
         blockList.addAll(allMathBlocks.values());
         Collections.shuffle(blockList);
+        if (System.currentTimeMillis() % 2 == 0) Collections.reverse(blockList);
         this.size = blockList.size();
 
     }
