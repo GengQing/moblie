@@ -407,7 +407,7 @@ $$
 f(x)在(a,b)上界无, 则f'(x)在(a,b)上无界.
 $$
 
-### 导数恒等于0的函数必是常数的作用
+### 导数恒等于零的函数必是常数的作用
 
 1. 证明$\exists f(x_0)=a,f(x)=a$
 2. 证明$f(x)=g(x)$,即证明$\frac{f(x)}{g(x)}=1 或f(x)-g(x)=0$
@@ -435,12 +435,12 @@ $$
 
 1. 奇函数的一切原函数都是偶函数
 2. 偶函数$f(x)$有且仅有一个原函数是奇函数:$\int_0^x f(x)dx$
-3. 极函数的导数是偶函数,偶函数的导数是极函数
+3. 奇函数的导数是偶函数,偶函数的导数是奇函数
 
 ### 周期函数与原函数的关系
 
 1. 周期函数的原函数是周期函数的充要条件是:$\int_0^T f(x)dx = 0$
-2. 周期函数的导数还是周期函数且周期相同
+2. 周期函数的导数仍旧是周期函数且周期相同
 
 ### 换元积分-线性函数替换
 
@@ -448,7 +448,7 @@ $$
 \int f(ax+b)dx = \frac 1a \int f(ax+b)d(ax+b)+C
 $$
 
-### 换元积分-分母替换
+### 换元积分-多项式分母替换
 
 $$
 \int \frac {f(x)} {(ax+b)^n}dx, u=ax+b \\ 
@@ -456,22 +456,36 @@ $$
 =\frac 1a \int F(u)du + C
 $$
 
-### 换元积分$\sin x与\cos x$凑微分
+### 换元积分-$\sin x与\cos x$凑微分>
 
 $$
-\sin^{2k+1}x\cos^n x,u=\cos x,\\
-\Rightarrow sin^{2k}x=(1-\cos^2x)^k \\
+\begin{aligned}
+&\int \sin^{2k+1}x\cos^n x \mathrm dx\\
+=&\int (1-\cos^2x)^k \cos^n x \sin x\mathrm dx\\
+=&-\int (1-\cos^2x)^k \cos^n x \mathrm d\cos x
 
-偶数次方,降为奇数次方\\
-\sin^2x=(1-\cos 2x)/2,\\
-\cos^2x=(1+\cos 2)/2
+\end{aligned}
 $$
 
-4. $\sec^2 x与\tan x$凑
+### 三角函数积分偶数次方,降为奇数次方
 
-    对于$\tan^n x\sec^{2k}x, \Rightarrow u=\tan x$
+$\sin^2x=(1-\cos 2x)/2$
 
-    对于$\tan^{2k-1} x\sec^{n}x, \Rightarrow u=\sec x$
+$\cos^2x=(1+\cos 2)/2$
+
+### 换元积分-$\sec x与\tan x$凑>
+
+$$
+\begin{aligned}
+=&\int \tan^n x\sec^{2k}x \mathrm dx\\
+=&\int \tan^n x \sec^{2(k-1)}x \mathrm d \tan x\\
+=&\int \tan^n x (1+\tan^2 x)^{(k-1)} \mathrm d \tan x\\
+
+
+\end{aligned}
+$$
+
+对于$\tan^{2k-1} x\sec^{n}x, \Rightarrow u=\sec x$
 
 5. 利用三角函数积化和差
 
