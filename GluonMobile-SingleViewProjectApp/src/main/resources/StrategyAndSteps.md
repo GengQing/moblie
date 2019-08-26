@@ -475,17 +475,27 @@ $\cos^2x=(1+\cos 2)/2$
 
 ### 换元积分-$\sec x与\tan x$凑>
 
+公式 $1+\tan^2x=\sec^2x$
+
+1 $\sec x$是偶次方
+
 $$
 \begin{aligned}
-=&\int \tan^n x\sec^{2k}x \mathrm dx\\
+&\int \tan^n x\sec^{2k}x \mathrm dx\\
 =&\int \tan^n x \sec^{2(k-1)}x \mathrm d \tan x\\
 =&\int \tan^n x (1+\tan^2 x)^{(k-1)} \mathrm d \tan x\\
-
-
 \end{aligned}
 $$
 
-对于$\tan^{2k-1} x\sec^{n}x, \Rightarrow u=\sec x$
+2 $\tan x$是奇数次方
+
+$$
+\begin{aligned}
+&\int \tan^{2k-1} x\sec^{n}x \mathrm dx\\
+=&\int \tan^{2k} x\sec^{n-1}x \mathrm d\sec x\\
+=&\int (\sec^2x - 1)^k\sec^{n-1}x \mathrm d\sec x\\
+\end{aligned}
+$$
 
 5. 利用三角函数积化和差
 
