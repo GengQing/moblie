@@ -565,8 +565,9 @@ $$
 
 ### 三角函数有理式
 
-1. 假分式要转化成真分式
-2. 转化成有理函数-万能公式
+1 假分式要转化成真分式
+
+2 转化成有理函数-万能公式
 
 $$
 u=\tan \frac x2(-\pi \lt x \lt \pi),
@@ -574,13 +575,18 @@ u=\tan \frac x2(-\pi \lt x \lt \pi),
 \cos x = \frac{1-u^2}{1+u^2}
 $$
 
-3. 凑微分 $\sin x, \cos x, \tan x, \sec x$
-4. 待定系数法
+3 凑微分 $\sin x, \cos x, \tan x, \sec x$
+
+### 三角函数积分-待定系数法>
 
 $$
-\frac {C\sin x + D\cos x}{A\sin x + B\cos x} =
- \frac {h(A\cos x - B\sin x)}{A\sin x + B\cos x} +
-\frac {k(A\sin x + B\cos x)}{A\sin x + B\cos x}
+\begin{aligned}
+&\int\frac {C\sin x + D\cos x}{A\sin x + B\cos x} \mathrm dx\\
+=&\int \frac {h(A\cos x - B\sin x)}{A\sin x + B\cos x} + \frac {k(A\sin x + B\cos x)}{A\sin x + B\cos x} \mathrm dx\\
+=&\int \frac {h(A\cos x - B\sin x)}{A\sin x + B\cos x}\mathrm dx +\int k \mathrm dx\\
+=&h\int \frac {1}{A\sin x + B\cos x}\mathrm d (A\sin x + B\cos x)+kx\\
+=&h\ln(A\sin x + B\cos x)+kx + C\\
+\end{aligned}
 $$
 
 ### 无理函数简单根式换元积分法
