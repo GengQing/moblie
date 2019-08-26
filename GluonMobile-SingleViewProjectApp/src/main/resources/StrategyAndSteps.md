@@ -581,8 +581,9 @@ $$
 
 $$
 \begin{aligned}
-&\int\frac {C\sin x + D\cos x}{A\sin x + B\cos x} \mathrm dx\\
+&\int\frac {C\sin x + D\cos x}{A\sin x + B\cos x} \mathrm dx,(hA+kB=D,-hB+kA=C)\\
 =&\int \frac {h(A\cos x - B\sin x)}{A\sin x + B\cos x} + \frac {k(A\sin x + B\cos x)}{A\sin x + B\cos x} \mathrm dx\\
+
 =&\int \frac {h(A\cos x - B\sin x)}{A\sin x + B\cos x}\mathrm dx +\int k \mathrm dx\\
 =&h\int \frac {1}{A\sin x + B\cos x}\mathrm d (A\sin x + B\cos x)+kx\\
 =&h\ln(A\sin x + B\cos x)+kx + C\\
