@@ -75,7 +75,7 @@ $$
 
 ### 夹逼定理
 
-1) 设在*的去心领域内$g(x) \le f(x) \le h(x)$;
+1) 设在$*$的去心领域内$g(x) \le f(x) \le h(x)$;
 2) $\lim_{x \rightarrow *} g(x) = \lim_{x \rightarrow *} h(x) = A,$  
 则$\lim_{x \rightarrow *} f(x) = A$
 
