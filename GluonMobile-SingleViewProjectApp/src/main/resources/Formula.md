@@ -144,10 +144,12 @@ $$
 ### 补充重要极限
 
 $$
-\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
-\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
-\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)\\
-\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)
+\begin{aligned}
+&\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
+&\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
+&\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)\\
+&\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)
+\end{aligned}
 $$
 
 ### 肯定型幂指函数极限
@@ -227,14 +229,16 @@ $$
 ### 高阶导数
 
 $$
-(uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}\\
+\begin{aligned}
+&(uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}\\
 \ \\
-(\sin ax)^{(n)} = a^n\sin (\frac{n\pi}{2}+ax)\\
+&(\sin ax)^{(n)} = a^n\sin (\frac{n\pi}{2}+ax)\\
 \ \\
-(\cos ax)^{(n)} = a^n\cos (\frac{n\pi}{2}+ax)\\
+&(\cos ax)^{(n)} = a^n\cos (\frac{n\pi}{2}+ax)\\
 \ \\
-(\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
-((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}
+&(\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
+&((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}
+\end{aligned}
 $$
 
 ### 一阶导数只包含y,求二阶导数
@@ -259,9 +263,11 @@ $$
 ### 反函数求导
 
 $$
-\frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
-\varphi '(y)=\frac 1{f'(x)}\\
-\varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
+\begin{aligned}
+&\frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
+&\varphi '(y)=\frac 1{f'(x)}\\
+&\varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
+\end{aligned}
 $$
 
 ### 极坐标转换成参数方程
