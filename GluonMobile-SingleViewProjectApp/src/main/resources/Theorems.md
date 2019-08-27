@@ -1960,9 +1960,22 @@ $$
 (2) 若二次型中没有平方项,不妨设$a_{12} \ne 0, 令x_1=y_1+y_2,x_2=y_1-y_2, x_3=y_3,\cdots,x_n=y_n$,  
 带入$f$,将其转换成$(1)$情形处理.
 
-### 特征值多项式定理
+### 特征值转换定理
 
-设$\lambda_i$是矩阵$A$的特征值,那么$kA^n+mE$的特征值是$k\lambda_i^n+m$
+定理一
+
+设$\lambda$是矩阵$A$的对应特征向量$\alpha$的特征值,  
+那么  
+1 矩阵$f(A)$对有特征向量$\alpha$的和对应特征值$f(\lambda)$.  
+$f(x)$是多项式,$f(x)=a_0+a_1x+\cdots+a_nx^n$
+
+2 $A^*$有特征向量$\alpha$和特征值$\frac {|A|} \lambda$
+
+3 $A^{-1}$有特征向量$\alpha$和特征值$\frac 1 \lambda$
+
+定理二
+
+若$\alpha^\intercal\alpha=\lambda,则矩阵\alpha\alpha^\intercal有特征值\lambda和0$
 
 ### 行列式为零的充分必要条件
 
