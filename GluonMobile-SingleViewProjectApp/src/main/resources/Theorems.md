@@ -1304,11 +1304,12 @@ $$
 
 ### 矩阵$A$可逆的<u>充分必要</u>条件
 
-1. 存在$n$阶矩阵$B$,使得$AB(或BA)=E$(定义)
-2. $|A|\ne 0, 或秩r(A)=n,或A$的列(行)向量线性无关
-3. 齐次方程组$Ax=0$只有零解.
-4. 对任意$b, 非齐次线性方程组Ax=b$总有唯一解.
-5. 矩阵$A$的特征值全不为$0$.
+矩阵$A$可逆  
+$\Longleftrightarrow$ 存在$n$阶矩阵$B$,使得$AB(或BA)=E$(定义)  
+$\Longleftrightarrow$$|A|\ne 0, 或秩r(A)=n,或A$的列(行)向量线性无关  
+$\Longleftrightarrow$齐次方程组$Ax=0$只有零解.  
+$\Longleftrightarrow$对任意$b, 非齐次线性方程组Ax=b$总有唯一解.  
+$\Longleftrightarrow$矩阵$A$的特征值全不为$0$.
 
 ### 逆矩阵的运算性质
 
