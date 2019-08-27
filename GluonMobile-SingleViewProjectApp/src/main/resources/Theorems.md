@@ -1963,3 +1963,11 @@ $$
 ### 特征值多项式定理
 
 设$\lambda_i$是矩阵$A$的特征值,那么$kA^n+mE$的特征值是$k\lambda_i^n+m$
+
+### 行列式为零的充分必要条件
+
+$|A|=0$  
+$\Longleftrightarrow A$不可逆  
+$\Longleftrightarrow Ax=0$有非零解  
+$\Longleftrightarrow 0是A$特征值  
+$\Longleftrightarrow A$列(行)向量线性相关  
