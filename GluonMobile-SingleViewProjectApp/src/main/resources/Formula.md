@@ -93,13 +93,8 @@ $$
 ### 基本初等函数
 
 $$
-y=x^{\mu} \\
 
-y=a^x,(a>0 \& a \neq 1) \\
-
-y=\log_a x,(a > 0 \& a \neq 1);  a=e,y=\ln x\\
-
-y=\sin x, x\in (-\infty,+\infty),y\in[-1,-1], f(-x)=-f(x), f(x+2\pi)=f(x) \\
+y=\ln x\\
 
 y=\arcsin x, x \in [-1,1], y \in[-\frac \pi 2, \frac\pi 2]
 $$
