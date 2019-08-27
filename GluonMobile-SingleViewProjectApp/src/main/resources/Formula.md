@@ -226,9 +226,9 @@ $$
 $$
 (uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}\\
 \ \\
-(\sin ax)^{(n)} = a^n\sin (ax + \frac{n\pi}{2})\\
+(\sin ax)^{(n)} = a^n\sin (\frac{n\pi}{2}+ax)\\
 \ \\
-(\cos ax)^{(n)} = a^n\cos (ax + \frac{n\pi}{2})\\
+(\cos ax)^{(n)} = a^n\cos (\frac{n\pi}{2}+ax)\\
 \ \\
 (\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
 ((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}
@@ -244,12 +244,13 @@ $$
 =f'(y)f(y)
 $$
 
-### 参数方式求导
+### 参数方程求导
 
 $$
-x=x(t), y=y(t),\\
-y'_x=\frac{y'_t}{x'_t}\\
-y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}
+\begin{aligned}
+&y'_x=\frac{y'_t}{x'_t}\\
+&y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}
+\end{aligned}
 $$
 
 ### 反函数求导
