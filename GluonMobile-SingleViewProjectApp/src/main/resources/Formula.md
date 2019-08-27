@@ -435,7 +435,7 @@ $$
 ### 函数的平均值
 
 $$
-average=\frac 1 {(b-a)}\int_a^bf(x)dx
+\overline A=\frac 1 {(b-a)}\int_a^bf(x)dx
 $$
 
 ### 密度均匀形心质心公式
