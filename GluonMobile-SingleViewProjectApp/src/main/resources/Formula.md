@@ -127,8 +127,6 @@ e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
 
 \frac{1}{1+x} = 1-x+x^2-x^3+...\\
 
-\ln (1-x) = -x-\frac{1}{2}x^2- \frac{1}{3}x^3 + \cdots\\
-
 \ln (1+x) = x-\frac{1}{2}x^2+ \frac{1}{3}x^3 + \cdots\\
 
 \tan x=x+\frac{x^3}{3}+\cdots\\
