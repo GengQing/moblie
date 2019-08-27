@@ -9,10 +9,8 @@ public class MathBlock {
     public static final String SUFFIX = ">";
     public static final String ALIGNED = "aligned";
     public static List<String> EQUALITY_BLOCK =
-            Arrays.asList("泰勒公式", "高阶导数", "补充积分", "排列组合公式", "导数四则运算",
-                    "反函数求导", "周期函数积分", "变上限积分");
+            Arrays.asList("补充积分", "排列组合公式", "导数四则运算", "周期函数积分", "变上限积分");
 
-    public static List<String> exculdeAligned = Arrays.asList("几个重要等价无穷小");
 
     private String title;
 
