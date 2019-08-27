@@ -12,22 +12,25 @@ a^3+b^3&=(a+b)(a^2-ab+b^2)\\
 \end{aligned}
 $$
 
-### 三角函数公式,奇变偶不变,符号看象限
+### 三角函数公式>
 
 $$
-(n\frac{\pi}{2} \pm a)\\
+\begin{aligned}
 
-\sin(\pi + a) = -\sin a\\
+&\sin(\pi + a) = -\sin a\\
 
-\sin(\pi - a) = \sin a\\
+&\sin(\pi - a) = \sin a\\
 
-\cos(\pi + a) = -\cos a\\
+&\cos(\pi + a) = -\cos a\\
 
-\cos(\pi - a) = -\cos a\\
+&\cos(\pi - a) = -\cos a\\
 
-\sin x \ge 0, x\in[0,\pi],即一二象限为正值,三四象限为负值 \\
+&\sin x \ge 0, x\in[0,\pi],即一二象限为正值,三四象限为负值 \\
 
-\cos x \ge 0, x\in[-\frac{\pi}{2},\frac{\pi}{2}], 即一四象限为正值, 二三象限为负值\\
+\ \\
+&奇变偶不变\frac{\pi}{2}的奇偶倍数(n\frac{\pi}{2} \pm a),符号看象限,\\
+&\cos x \ge 0, x\in[-\frac{\pi}{2},\frac{\pi}{2}], 即一四象限为正值, 二三象限为负值\\
+\end{aligned}
 $$
 
 ### 特殊三角函数值=
