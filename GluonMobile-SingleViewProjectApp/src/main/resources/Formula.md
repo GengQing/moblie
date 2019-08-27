@@ -303,12 +303,9 @@ $$
 
 &\int_0^{\frac \pi 2} \sin^nxdx =
 \begin{cases}
-\frac {(n-1)!!} {n!!} \cdot \frac \pi2 (n为偶数）\\
-\ \\
-\ \\
+\frac {(n-1)!!} {n!!} \cdot \frac \pi2 (n为偶数）\\ \ \\ \ \\
 \frac {(n-1)!!} {n!!} (n为奇数)\\
-\end{cases}
-\  \\
+\end{cases} \  \\
 
 &\int_0^{\frac \pi 2}\cos^nxdx =
 \begin{cases}
@@ -324,10 +321,13 @@ $$
 \ \\
 &\int_0^{\pi} \sin^{n}xdx=2\int_0^{\frac {\pi} 2}\sin^{n}xdx\\
 \ \\
-&\int_0^{\pi} \cos^{2n}xdx=2\int_0^{\frac {\pi} 2}\cos^{2n}xdx
-\ \\
-&\int_0^{\pi} \cos^{2n-1}xdx=0
+&\int_0^{\pi} \cos^{n}xdx=
+\begin{cases}
+2\int_0^{\frac {\pi} 2}\cos^{n}xdx,(n为偶数)\\
+0,(n为偶数)
+\end{cases}
 \end{aligned}
+
 $$
 
 ### 周期函数积分
