@@ -1250,6 +1250,12 @@ $$
 \end{aligned}
 $$
 
+### 矩阵乘法的特殊情况
+
+1 矩阵乘法没有交换律,一般情况下$AB\ne BA$  
+2 $AB=0\nRightarrow A=0或者B=0$  
+3 矩阵乘法没有消除律$AB=B 且B\ne 0\nRightarrow A=E$
+
 ### 矩阵转置运算法则
 
 $$
