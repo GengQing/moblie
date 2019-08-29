@@ -51,7 +51,7 @@ $$
 ### 存在极限与无穷小的关系
 
 $$
-\lim_{x \rightarrow *} f(x)=A的冲要条件是f(x)-A=\alpha(x),\lim_{x \rightarrow *} \alpha(x)=0
+\lim_{x \rightarrow *} f(x)=A的充分必要条件是f(x)-A=\alpha(x),\lim_{x \rightarrow *} \alpha(x)=0
 $$
 
 ### 极限的保号性
