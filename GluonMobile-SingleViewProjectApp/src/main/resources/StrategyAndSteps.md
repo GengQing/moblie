@@ -768,5 +768,5 @@ $$
 ### 向量与矩阵
 
 设$\alpha,\beta是n$阶列向量,则有  
-1 $A=\alpha\beta^\intercal,B=\beta\alpha^^\intercal$都是秩为$1$的矩阵,且$A^\intercal=$.  
-2 $\alpha^\intercal\beta$是$A和B$迹,即主对角线上元素的和
+1 $A=\alpha\beta^\intercal,B=\beta\alpha^\intercal$都是秩为$1$的矩阵,且$A^\intercal=B$.  
+2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹,即主对角线上元素的和.
