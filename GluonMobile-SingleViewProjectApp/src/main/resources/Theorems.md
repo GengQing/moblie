@@ -14,7 +14,7 @@
 1. 设$\lim_{x\rightarrow x_0^-} f(x)$存在, 则存在$\delta \gt 0,当-\delta \lt x-x_0 \lt 0时,f(x)$有界.  
 对$x\rightarrow x_0^+, x_0$同理有界.
 
-2. 设$\lim_{x\rightarrow \infty} f(x)$存在, 则存在$X \gt 0, 当|X| \gt 0是,f(x)$有界.  
+2. 设$\lim_{x\rightarrow \infty} f(x)$存在, 则存在$X \gt 0, 当|x| \gt X是,f(x)$有界.  
 对$x\rightarrow \pm\infty$同理有界.
 
 3. 设$f(x)在[a,b]上连续,则f(x)在[a,b]上有界$
