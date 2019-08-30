@@ -766,7 +766,7 @@ $$
 1 $A=\alpha\beta^\intercal,B=\beta\alpha^\intercal$都是秩为$1$的矩阵,且$A^\intercal=B$.  
 2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹,即主对角线上元素的和.
 
-### 矩阵转俩矩阵的乘积求幂
+### 秩为1的矩阵求幂
 
 若矩阵的秩$A为1$,则矩阵可分解为两个矩阵的乘积(列乘以行),  
 那么$A^2=lA,A^n=l^{n-1}A,其中l是A$的迹,即主对角线上元素之和.
@@ -774,3 +774,10 @@ $$
 其中当每行成比例时,则$A=\alpha\beta^\intercal$,  
 $\beta^\intercal$是所有行的公因式,可选第一行做$\beta^\intercal$,  
 $\alpha$各个元素是每行对$\beta^\intercal$比例系数.  
+
+### 上三角矩阵求幂
+
+上三角矩阵可分解成对角矩阵+另一个矩阵$A=\Lambda+B$,  
+使用二项式定理求解,其中当矩阵式$3$阶是,$B^3=0$,$4$阶时,$B^4=0$.
+
+若是分块矩阵对角矩阵,先使用分块矩阵幂的算法.

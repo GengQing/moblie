@@ -1273,7 +1273,7 @@ $$
 \begin{aligned}
 &AA^*=A^*A& &A^*A=|A|E&\\
 &A^*=|A|A^{-1},(A可逆)\\
-&(A^*)^{-1}=(A^{-1})^*& &(A^{-1})^*=\frac 1{|A|}A(|A|\ne 0)&\\
+&(A^*)^{-1}=(A^{-1})^*& &(A^{-1})^*=\frac A{|A|}(|A|\ne 0)&\\
 &(A^*)^\intercal =(A^\intercal )^*\\
 &(kA)^*=k^{n-1}A^*\\
 &|A^*|=|A|^{n-1}\\
@@ -1840,6 +1840,8 @@ $$
 反身性$A\sim A$,  
 对称性$A\sim B \Rightarrow B \sim A$,  
 传递性$A\sim B, B\sim C \Rightarrow A\sim C$.
+
+$A^n \sim B^n$
 
 ### 两矩阵相似的必要条件
 
