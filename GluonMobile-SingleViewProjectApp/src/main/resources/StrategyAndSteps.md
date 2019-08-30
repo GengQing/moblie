@@ -765,3 +765,12 @@ $$
 设$\alpha,\beta是n$阶列向量,则有  
 1 $A=\alpha\beta^\intercal,B=\beta\alpha^\intercal$都是秩为$1$的矩阵,且$A^\intercal=B$.  
 2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹,即主对角线上元素的和.
+
+### 矩阵转俩矩阵的乘积求幂
+
+若矩阵的秩$A为1$,则矩阵可分解为两个矩阵的乘积(列乘以行),  
+那么$A^2=lA,A^n=l^{n-1}A,其中l是A$的迹,即主对角线上元素之和.
+
+其中当每行成比例时,则$A=\alpha\beta^\intercal$,  
+$\beta^\intercal$是所有行的公因式,可选第一行做$\beta^\intercal$,  
+$\alpha$各个元素是每行对$\beta^\intercal$比例系数.  
