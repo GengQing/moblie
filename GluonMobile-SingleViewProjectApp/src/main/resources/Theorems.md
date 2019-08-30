@@ -1158,14 +1158,14 @@ $n$阶行列式的值等于它任何一行(列)元素,与其对应代数余子�
 $$
 \left|
   \begin{matrix}
-   A & *  \\
+   A & C  \\
    O & B  
   \end{matrix}
 \right| =
 \left|
   \begin{matrix}
    A & O  \\
-   * & B  
+   C & B  
   \end{matrix}
   \right|=
 |A||B|\\
