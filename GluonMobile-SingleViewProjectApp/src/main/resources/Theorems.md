@@ -1583,7 +1583,7 @@ $\Longleftrightarrow |\alpha_1,\alpha_2,\cdots,\alpha_n|=0$.
 
 4) 设有两个$n$维向量组$(I)(\alpha_1,\alpha_2,\cdots,\alpha_s),(II)(\beta_1,\beta_2,\cdots,\beta_t)$,  
 如果$(I)$能由$(II)$线性表出,且$s\gt t$,则$\alpha_1,\alpha_2,\cdots,\alpha_s$必线性相关.  
-(即若多项向量组能有少的向量组线性表出,则多的项组必线性相关)
+(即若个数多的项向量组能由个数少的向量组线性表出,则多的项组必线性相关)
 
 5) 推论 若$n$维向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$可由$(\beta_1,\beta_2,\cdots,\beta_t)$线性表出,  
 且$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,则$s\le t$.  
@@ -1600,10 +1600,12 @@ $n$维向量$\beta可由\alpha_1,\alpha_2,\cdots,\alpha_m$线性表出
 $\Longleftrightarrow$非齐次方程组$x_1\alpha_1+\cdots+x_m\alpha_m=\beta$有解.  
 $\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2,\cdots,\alpha_m,\beta)$
 
-### 关于向量和向量组的定理
+### 线性无关向量组线性表出定理
 
-若向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
+定理一 若向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
 线性相关,则$\beta$可由$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性表出,且表示法唯一.
+
+定理二 $n$个线性无关的$n$向量组能线性表出任意一个$n$向量.
 
 ### 极大线性无关组和秩的概念
 
