@@ -1592,7 +1592,8 @@ $\Longleftrightarrow |\alpha_1,\alpha_2,\cdots,\alpha_n|=0$.
 ### 向量组线性无关的推论
 
 1) 如果$n为向量组\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,  
-那么它的延伸组$\left(\begin{matrix} \alpha_1\\ \beta_1 \end{matrix} \right), \cdots$必线性无关.
+那么它的延伸组$\left(\begin{matrix} \alpha_1\\ \beta_1 \end{matrix} \right), \cdots$必线性无关,  
+它的任意子向量组必线性无关.
 
 ### 向量可被线性表出的充分必要条件
 
