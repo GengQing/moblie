@@ -1467,6 +1467,8 @@ $r(A^\intercal A)=r(A)$
 
 $r(kA)=r(A),(k\ne 0)$
 
+$r(A-B)=r(B-A),(k\ne 0)$
+
 $r(A+B) \le r(A)+r(B)$
 
 $r(AB)\le \min(r(A),r(B))$
