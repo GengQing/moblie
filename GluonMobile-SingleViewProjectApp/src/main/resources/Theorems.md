@@ -1314,12 +1314,12 @@ $$
 
 ### 可逆矩阵主要定理
 
-定理1 若矩阵$A$可逆,则$A$的逆矩阵唯一  
+定理1 若$n$阶矩阵$A$可逆,则$A$的逆矩阵唯一  
 定理2 $A可逆\Leftrightarrow |A| \ne 0$
 
 ### 矩阵$A$可逆的<u>充分必要</u>条件
 
-矩阵$A$可逆  
+$n$阶矩阵$A$可逆  
 $\Longleftrightarrow$ 存在$n$阶矩阵$B$,使得$AB(或BA)=E$(定义)  
 $\Longleftrightarrow$$|A|\ne 0, 或秩r(A)=n,或A$的列(行)向量线性无关  
 $\Longleftrightarrow$齐次方程组$Ax=0$只有零解.  
