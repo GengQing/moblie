@@ -476,7 +476,8 @@ $$
 $$
 \iint f(x,y)dxdy=
 \begin{cases}
-2\iint f(x)dxdy, \in D_1,
+2\iint f(x,y)dxdy, \in D_1
+,
 f(-x,-y)=f(x,y)\\
 0, f(-x,-y)=-f(x,y)
 \end{cases}
