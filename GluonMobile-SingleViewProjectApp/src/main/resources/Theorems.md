@@ -1268,7 +1268,7 @@ $$
 
 $$
 \begin{aligned}
-&(A+B)^\intercal =A^\intercal +B^\intercal \\
+&(A\pm B)^\intercal =A^\intercal \pm B^\intercal \\
 &(kA)^\intercal =kA^\intercal \\
 &(AB)^\intercal =B^\intercal A^\intercal \\
 &(A^\intercal )^\intercal =A
@@ -1471,7 +1471,7 @@ $r(A-B)=r(B-A),(k\ne 0)$
 
 $r(A+B) \le r(A)+r(B)$
 
-$r(AB)\le \min(r(A),r(B))$
+$r(AB)\le \min(r(A),r(B)), r(A)\ge r(AB), r(B)\ge r(AB)$
 
 若$A_{m\times n}B_{n\times s}=O, 则r(A)+r(B)\le n$
 
@@ -1741,10 +1741,12 @@ $\xi_{n-r}=[d_{n-r1},d_{n-r2},\cdots,d_{n-rr},0,0,\cdots,1]^\intercal$
 
 ### 非齐次方程组的解的性质
 
-设$\eta_1,\eta_2是Ax=b$的两个解,$\xi$是对应齐次方程组$Ax=0$的解,则  
+设$\eta_1,\eta_2是Ax=b$的两个解,$\xi$是对应齐次方程组$Ax=0$的解,$\eta_3是Ax=c$的解,则  
 
-1. $A(\eta_1-\eta_2)=0$即两非齐次解的差是对应的齐次解
-2. $A(\eta_1+k\xi)=b$即齐次解与非齐次解的和仍旧是非齐次解
+1 $A(\eta_1-\eta_2)=0$即两非齐次解的差是对应的齐次解  
+2 $A(\eta_1+k\xi)=b$即齐次解与非齐次解的和仍旧是非齐次解  
+3 $A(\eta_1+\eta_2)=2b$  
+4 $A(\eta_1+\eta_3)=b+c$
 
 ### 非齐次方程组有解的充要条件
 
