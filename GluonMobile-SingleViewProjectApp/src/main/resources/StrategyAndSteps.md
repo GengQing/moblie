@@ -819,3 +819,11 @@ $\alpha$各个元素是每行对$\beta^\intercal$比例系数.
 4 $x_i,k$都为零,得证.
 
 方案二 反证法
+
+### 两个方程组的公共解
+
+$Ax=0,Bx=0$的公共解满足以下方程组的解
+
+$$
+\begin{bmatrix} A\\B \end{bmatrix}x=0
+$$
