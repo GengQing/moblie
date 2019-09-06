@@ -763,8 +763,11 @@ $$
 ### 向量与矩阵
 
 设$\alpha,\beta是n$阶列向量,则有  
-1 $A=\alpha\beta^\intercal,B=\beta\alpha^\intercal$都是秩为$1$的矩阵,且$A^\intercal=B$.  
-2 $\alpha^\intercal\beta,\beta^\intercal\alpha$是$A和B$迹(即主对角线上元素的和),两者相等.
+1 $A=\alpha\beta^\intercal,B=\beta\alpha^\intercal$都是秩为$1$的矩阵,且$A^\intercal=B$.
+
+2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹(即主对角线上元素的和),两者相等.
+
+3 矩阵$A$有特征值$\lambda=\beta^\intercal\alpha,A\alpha=\alpha(\beta^\intercal\alpha)$和对应特征向量$\alpha$.
 
 ### 秩为$1$的矩阵求幂
 
