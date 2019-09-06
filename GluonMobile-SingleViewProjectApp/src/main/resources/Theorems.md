@@ -1482,9 +1482,13 @@ $r(A_{m\times n}) \le \min(m,n)$
 ### 分块矩阵的运算
 
 1 分开矩阵的加法,等于把对应位置的子矩阵相加  
-2 分开矩阵的乘法,把子矩阵当成一个元素,使用矩阵乘法,如:  
-$A(\alpha_1,\alpha_2,\alpha_3) \Leftrightarrow (A\alpha_1,A\alpha_2,A\alpha_3),A是n阶方阵,\alpha_i是n维列向量$  
-3 分块矩阵的转置,等于把各个位置上的子矩阵转置  
+
+2 分开矩阵的乘法,先对整体做矩阵乘法,再对各个子块做矩阵乘法,如:  
+$A(\alpha_1,\alpha_2,\alpha_3) \Leftrightarrow (A\alpha_1,A\alpha_2,A\alpha_3),A是n阶方阵,\alpha_i是n维列向量$
+
+3 分块矩阵的转置,先对整体做转置,再把各个位置上的子矩阵转置,如:  
+$[A|b]^\intercal=\begin{bmatrix} A^\intercal\\b^\intercal\end {bmatrix}$
+
 4 主对角分块矩阵的幂,等于把各个位置的子矩阵做幂运算  
 
 5 主对角分块对角矩阵的逆, 等于各个分块取逆运算
