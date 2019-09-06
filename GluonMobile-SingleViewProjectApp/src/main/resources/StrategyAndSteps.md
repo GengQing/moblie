@@ -760,14 +760,15 @@ $$
 1 某一行(列)的代数余子式的线性组合,可提取系数,替换行列式中的该(行)列,计算新的行列式.  
 2 某一行(列)的代数余子式的线性组合,用上和下行(列)替换该行(列)行列式为零,计算新行列式,解方程.
 
-### 向量与矩阵
+### 列向量行列矩阵相乘
 
-设$\alpha,\beta是n$阶列向量,则有  
+设$\alpha,\beta是n$阶列向量,则有
+
 1 $A=\alpha\beta^\intercal,B=\beta\alpha^\intercal$都是秩为$1$的矩阵,且$A^\intercal=B$.
 
-2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹(即主对角线上元素的和),两者相等.
+2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹(即主对角线上元素的和).
 
-3 矩阵$A$有特征值$\lambda=\beta^\intercal\alpha,A\alpha=\alpha(\beta^\intercal\alpha)$和对应特征向量$\alpha$.
+3 矩阵$A$有特征值$\lambda=\beta^\intercal\alpha$.
 
 ### 秩为$1$的矩阵求幂
 
