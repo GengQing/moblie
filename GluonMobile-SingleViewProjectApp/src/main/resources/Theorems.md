@@ -2002,7 +2002,7 @@ $f(x)$是多项式,$f(x)=a_0+a_1x+\cdots+a_nx^n$
 
 定理二
 
-若$\alpha^\intercal\alpha=\lambda,则矩阵\alpha\alpha^\intercal有特征值\lambda和0$
+若有列向量$\alpha且\alpha^\intercal\alpha=\lambda$,则矩阵$A=\alpha\alpha^\intercal有特征值\lambda$和对应特征向量$\alpha$.
 
 ### 行列式为零的充分必要条件
 

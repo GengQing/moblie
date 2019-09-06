@@ -764,9 +764,9 @@ $$
 
 设$\alpha,\beta是n$阶列向量,则有  
 1 $A=\alpha\beta^\intercal,B=\beta\alpha^\intercal$都是秩为$1$的矩阵,且$A^\intercal=B$.  
-2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹,即主对角线上元素的和.
+2 $\alpha^\intercal\beta,\beta^\intercal\alpha$是$A和B$迹(即主对角线上元素的和),两者相等.
 
-### 秩为1的矩阵求幂
+### 秩为$1$的矩阵求幂
 
 若矩阵的秩$A为1$,则矩阵可分解为两个矩阵的乘积(列乘以行),  
 那么$A^2=lA,A^n=l^{n-1}A,其中l是A$的迹,即主对角线上元素之和.
@@ -800,7 +800,7 @@ $\alpha$各个元素是每行对$\beta^\intercal$比例系数.
 当$n$为偶数时线性相关,  
 当$n$为奇数时线性无关.
 
-### 根据基础解析反求系数矩阵的步骤
+### 根据基础解系反求系数矩阵的步骤
 
 1 将基础解系$\alpha_i$转置成行向量$\alpha_i^\intercal$  
 2 将行向量$\alpha_i^\intercal$组成矩阵$A$  
