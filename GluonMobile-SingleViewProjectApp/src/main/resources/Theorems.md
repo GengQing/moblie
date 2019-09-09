@@ -1871,7 +1871,7 @@ $A^n \sim B^n$
 
 $A\sim B$  $\Rightarrow$
 
-1) $|\lambda E-A|=|\lambda E-B|$特征多项式相同;
+1) $|\lambda E-A|=|\lambda E-B|$特征根方程相同;
 2) $r(A)=r(B)$秩相等;  
 3) $A,B$具有相同的特征值;
 4) $|A|=|B|=\prod_{i=1}^n \lambda_i$行列式相等;  
