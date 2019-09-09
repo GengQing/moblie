@@ -2015,3 +2015,8 @@ $\Longleftrightarrow A$不可逆
 $\Longleftrightarrow Ax=0$有非零解  
 $\Longleftrightarrow 0是A$特征值  
 $\Longleftrightarrow A$列(行)向量线性相关  
+
+### 相似于对角矩阵推论
+
+若$n$阶矩阵$A$与对角矩阵$diag(\lambda_1,\lambda_2,\cdots, \lambda_n)$相似,  
+则$\lambda_1,\lambda_2,\cdots, \lambda_n$是$A$的$n$个特征值.
