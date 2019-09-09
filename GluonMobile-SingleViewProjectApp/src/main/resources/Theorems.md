@@ -1859,7 +1859,7 @@ $$
 
 ### 相似矩阵的性质
 
-若$A\sim B, 则|A|=|B|$
+若$A\sim B$
 
 反身性$A\sim A$,  
 对称性$A\sim B \Rightarrow B \sim A$,  
