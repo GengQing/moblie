@@ -1630,7 +1630,7 @@ $\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2
 1) 若向量组$(I)(\alpha_1,\alpha_2,\cdots,\alpha_s)$可由$(II)(\beta_1,\beta_2,\cdots,\beta_t)$线性表出,  
 则$r(I)\le r(II)$.
 2) 推论 如果向量组$(I)和(II)$等价,那么$r(I)= r(II)$.
-3) 矩阵的秩=矩阵的行秩(行向量组的秩)=矩阵的列秩(列向量组的秩).
+3) (三秩相等定理)矩阵的秩=矩阵的行秩(行向量组的秩)=矩阵的列秩(列向量组的秩).
 4) 经初等变换向量组的秩不变.
 
 ### 施密特正交规范化
