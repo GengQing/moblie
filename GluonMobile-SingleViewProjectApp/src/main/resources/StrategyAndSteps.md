@@ -768,7 +768,8 @@ $$
 
 2 $\alpha^\intercal\beta=\beta^\intercal\alpha$是$A和B$迹(即主对角线上元素的和).
 
-3 矩阵$A$有特征值$\lambda=\beta^\intercal\alpha$.
+3 矩阵$A$有特征值$\lambda=\beta^\intercal\alpha,对应特征向量\alpha$.  
+$A\alpha=(\alpha\beta^\intercal)\alpha=\alpha(\beta^\intercal\alpha)=\lambda\alpha$
 
 ### 秩为$1$的矩阵求幂
 
@@ -864,6 +865,6 @@ $$
 如果有有$n$个互不相同的特征值,则$A$相似于对角矩阵  
 
 (3) 若$A$有$i$重根特征值$\lambda$,对应有$i$个线性无关的特征向量,  
-即$n-r(\lambda E-A)=i$,则$A$相似于对角矩阵
+即$n-r(\lambda E-A)=i$,则$A$相似于对角矩阵, 否则不能.
 
 (4) $A\sim \Lambda, B=f(A), 则B\sim f(\Lambda), f$是多项式
