@@ -891,3 +891,31 @@ $a_1x_1+a_2x_2+a_3x_3=0$的基础解系就是
 
 若基础解析正交,可将特征向量单位化,得正交矩阵$Q$,  
 $\Lambda=Q^\intercal AQ \Rightarrow  A=Q\Lambda Q^\intercal$
+
+### 简单方方方阵的幂
+
+$$
+
+\begin{bmatrix}
+0&a\\
+0&0
+\end{bmatrix}^n=0,(n\ge2)\\
+
+\ \\
+
+对角矩阵
+\begin{bmatrix}
+a\\
+&b\\
+&&c\\
+&&&\ddots
+\end{bmatrix}^n=
+
+\begin{bmatrix}
+a^n\\
+&b^n\\
+&&c^n\\
+&&&\ddots
+\end{bmatrix}
+
+$$
