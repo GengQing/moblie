@@ -771,7 +771,8 @@ $$
 
 3 矩阵$A$有特征值$\lambda=\beta^\intercal\alpha,对应特征向量\alpha$,  
 $A\alpha=(\alpha\beta^\intercal)\alpha=\alpha(\beta^\intercal\alpha)=\lambda\alpha$.  
-有二重根特征值$\lambda=0$,对应特征向量是$Ax=0$的基础解析.
+有二重根特征值$\lambda=0$,对应特征向量是$Ax=0$的基础解析,  
+若$\alpha,\beta$正交,即$\beta^\intercal\alpha=0$,则$A$不能相似对角化.
 
 ### 秩为$1$的矩阵求幂
 
