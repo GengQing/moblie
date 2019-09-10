@@ -774,6 +774,8 @@ $A\alpha=(\alpha\beta^\intercal)\alpha=\alpha(\beta^\intercal\alpha)=\lambda\alp
 有二重根特征值$\lambda=0$,对应特征向量是$Ax=0$的基础解析,  
 若$\alpha,\beta$正交,即$\beta^\intercal\alpha=0$,则$A$不能相似对角化.
 
+4 同理$B$的特征值特征向量.
+
 ### 秩为$1$的矩阵求幂
 
 若矩阵的秩$A为1$,则矩阵可分解为两个矩阵的乘积(列乘以行),  
