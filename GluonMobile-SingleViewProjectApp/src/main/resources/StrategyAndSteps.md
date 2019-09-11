@@ -906,7 +906,14 @@ $$
 0&a&b\\
 0&0&c\\
 0&0&0
-\end{bmatrix}^2=a*c\\
+\end{bmatrix}^2=
+\begin{bmatrix}
+0&0&a\times c\\
+0&0&0\\
+0&0&0
+\end{bmatrix}
+
+\\
 
 \ \\
 
