@@ -962,3 +962,11 @@ $$
 四 若方阵可相似对角化,则$A^n=P^{-1}\Lambda P$
 
 五 简单方阵和对角矩阵直接用对应幂运算法则
+
+### 二阶矩阵的逆矩阵
+
+$$
+\begin{bmatrix} a&b\\ c&d \end{bmatrix}=
+\frac 1{ad-bc}\begin{bmatrix} d&-b\\ -c&a \end{bmatrix}
+
+$$
