@@ -927,6 +927,11 @@ $$
 \end{bmatrix}^n=0,(n\ge3)\\
 
 \ \\
+$$
+
+### 对角矩阵的幂
+
+$$
 
 \Lambda^n=
 \begin{bmatrix}
