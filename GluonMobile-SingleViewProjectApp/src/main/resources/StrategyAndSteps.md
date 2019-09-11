@@ -879,7 +879,7 @@ $$
 ### 已知特征值特征向量反求矩阵
 
 方法一  
-非对称矩阵,根据$\Lambda=Q^{-1} AQ \Rightarrow A=P\Lambda P^{-1}$求解$A$,  
+非对称矩阵,根据$\Lambda=P^{-1} A P\Rightarrow A=P\Lambda P^{-1}$求解$A$,  
 $P$由特征向量组成,$\Lambda$由特征值组成.
 
 方法二  
