@@ -902,6 +902,22 @@ $$
 \end{bmatrix}^n=0,(n\ge2)\\
 
 \ \\
+\begin{bmatrix}
+0&a&b\\
+0&0&c\\
+0&0&0
+\end{bmatrix}^2=a*c\\
+
+\ \\
+
+\ \\
+\begin{bmatrix}
+0&a&b\\
+0&0&c\\
+0&0&0
+\end{bmatrix}^n=0,(n\ge3)\\
+
+\ \\
 
 对角矩阵
 \begin{bmatrix}
