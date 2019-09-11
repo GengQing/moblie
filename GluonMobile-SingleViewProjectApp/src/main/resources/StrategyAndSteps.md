@@ -926,7 +926,7 @@ $$
 
 \ \\
 
-对角矩阵
+\Lambda^n=
 \begin{bmatrix}
 a\\
 &b\\
