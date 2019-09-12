@@ -1937,7 +1937,8 @@ $p+q=r$是二次型对应矩阵的秩,$p-q$称为符号差.
 ### 实数对称矩阵合同的充分必要条件
 
 实对称矩阵$A$合同于$B$  
-$\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指数.
+$\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指数.  
+(有相同的秩和正惯性指数)
 
 ### 实对称矩阵合同的必要条件
 
