@@ -1942,7 +1942,7 @@ $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指
 
 ### 实对称矩阵合同的必要条件
 
-若实对称矩阵$A$合同于$B \Longrightarrow r(A)=r(B)$
+若实对称矩阵$A$合同于$B \Longrightarrow r(A)=r(B)$, 非实对称也相等.
 
 ### 正定二次型正定矩阵的定义
 
