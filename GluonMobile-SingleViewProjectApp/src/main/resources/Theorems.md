@@ -1803,13 +1803,13 @@ $\lambda E-A$是特征矩阵.
 
 ### 求特征值和特征向量的方法
 
-方法一
+方法一 特征方程法
 
 1. 根据$|\lambda E-A|=0$,求出全部特征值$\lambda_i$.
 2. 再根据$(\lambda_i E-A)x=0$,求出对应$\lambda_i$的特征向量,  
 基础解系即为线性无关的特征向量,通解即为全部特征向量(除零向量).
 
-方法二 利用定义
+方法二 定义法
 
 凡是满足$A\alpha=\lambda\alpha$的$\lambda,\alpha(\alpha\ne 0)$  
 即为$A$的特征值和特征向量,一般用于抽象矩阵.
@@ -1848,9 +1848,10 @@ $$
 
 ### 关于特征值和特征向量的定理
 
-定理1 $\lambda_1 \ne \lambda_2 \Rightarrow A$的对应于$\lambda_1 ,\lambda_2的特征向量\alpha_1,\alpha_2$线性无关.
+定理1 $\lambda_1 \ne \lambda_2 \Rightarrow A$的对应于$\lambda_1 ,\lambda_2的特征向量\alpha_1,\alpha_2$线性无关.  
+即不同特征值的特征向量线性无关.
 
-定理2 $\lambda$是$n$阶矩阵$A$的$r_i$重根,则其对应的线性无关的特征向量的个数少于等于$r_i$个.  
+定理2 $\lambda$是$n$阶矩阵$A$的$r_i$重根,则其对应的线性无关的特征向量的个数$\le r_i$个.  
 当其少于$r_i$个时,$A$不能相似对角化.
 
 ### 判断矩阵是否可相似对角化的步骤
@@ -1902,7 +1903,7 @@ x^\intercal Ax,(A是对称矩阵)\\
 $$
 
 若$r(A)=r \Leftrightarrow r(f)=r$  
-若$A正定,则f$正定.
+$A正定\Leftrightarrow f$正定.
 
 ### 二次型的标准型和规范型
 
