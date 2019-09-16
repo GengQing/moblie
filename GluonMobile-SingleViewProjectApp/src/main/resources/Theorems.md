@@ -1814,7 +1814,7 @@ $\lambda E-A$是特征矩阵.
 凡是满足$A\alpha=\lambda\alpha$的$\lambda,\alpha(\alpha\ne 0)$  
 即为$A$的特征值和特征向量,一般用于抽象矩阵.
 
-当$|A|=0$时有特征值$\lambda=0$.因为对$Ax=0的任意解\alpha 使得A\alpha=0\alpha$
+当$|A|=0$时有特征值$\lambda=0$.因为对$Ax=0的任意非零解\alpha 使得A\alpha=0\alpha$
 
 ### 相似矩阵的定义
 
