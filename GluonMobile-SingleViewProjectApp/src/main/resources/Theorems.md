@@ -208,7 +208,7 @@ $$
 \begin{aligned}
 &e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
 
-&(1+x)^a=1+ax + \frac{a(a-1)}{2!}x^2 + \frac{a(a-1)(a-2)}{3!}x^3+...\\
+&(1+x)^\alpha=1+\alpha x + \frac{\alpha(\alpha-1)}{2!}x^2 + \frac{\alpha(\alpha-1)(\alpha-2)}{3!}x^3+...\\
 
 &\frac{1}{1-x}=1+x+x^2+x^3+...\\
 
