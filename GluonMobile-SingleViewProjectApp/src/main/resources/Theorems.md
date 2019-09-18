@@ -278,7 +278,9 @@ $$
 
 ### 连续函数的四则运算
 
-设$u(x),v(x)在x=x_0$处连续,则四则运算后所得的函数在$x=x_0$处也连续,除法要求分明不为0.
+连续函数的和差积商也是连续函数,即
+
+设$u(x),v(x)在x=x_0$处连续,则四则运算后所得的函数在$x=x_0$处也连续,除法要求分母不为$0$.
 
 ### 复合函数的连续性
 
@@ -346,7 +348,7 @@ $$
 
 $$
 \Delta y=\mathrm{d}y+o(\Delta x),\Delta y=f'(x_0)\Delta x+o(\Delta x)\\
-\Delta y-\mathrm{d}y=\frac 12 f''(\xi)(\Delta x)^2, \xi 介域x_0和x_0+\Delta x 之间
+\Delta y-\mathrm{d}y=\frac 12 f''(\xi)(\Delta x)^2, \xi 介于x_0和x_0+\Delta x 之间
 $$
 
 ### 导数与微分的运算法则
