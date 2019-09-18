@@ -419,7 +419,7 @@ $$
 \begin{aligned}
 &(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}\\
 &(Cu)^{(n)} = Cu^{(n)}\\
-&(uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}
+&(uv)^{(n)}=u^{(n)}v+n\cdot u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}
 \end{aligned}
 $$
 
