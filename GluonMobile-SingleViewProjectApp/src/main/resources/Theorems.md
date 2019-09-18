@@ -156,8 +156,9 @@ $$
 ### 等价无穷小的充要条件
 
 $$
-当x \rightarrow 0时,\alpha (x) \sim \beta (x)时的充要条件是: \\
-\alpha (x) - \beta (x)= o(\beta (x))
+当x \rightarrow 0时,\alpha (x) \sim \beta (x)时的充要条件是 \\
+\alpha (x) - \beta (x)= o(\beta (x)) 或\\
+\alpha (x) = \beta (x)+ o(\beta (x))\\
 $$
 
 ### 洛必达法则零比零型
