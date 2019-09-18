@@ -44,9 +44,9 @@ $$
 \lim_{n \rightarrow \infty} u_n = A的充要条件是\lim_{n \rightarrow \infty} u_{2n} = \lim_{n \rightarrow \infty} u_{2n+1} = A.
 $$
 
-### 极限的唯一性
+### 极限的唯一性定理
 
-若极限存在,则极限必唯一
+若极限存在,则极限必唯一.(若两者子序列极限不同,则极限不存在)
 
 ### 存在极限与无穷小的关系
 
