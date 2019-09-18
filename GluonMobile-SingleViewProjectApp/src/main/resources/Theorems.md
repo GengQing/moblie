@@ -98,7 +98,7 @@ $$
 &\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
 &\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)指数增长比幂增长快\\
 &\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)幂增长比对数增长快\\
-&\lim_{x \rightarrow \infty} x^{-k} \ln^{\delta} x = 0(k\gt0, \delta \gt0)幂增长比对数增长快\\
+&\lim_{x \rightarrow +\infty} x^{-k} \ln^{\delta} x = 0(k\gt0, \delta \gt0)幂增长比对数增长快\\
 \end{aligned}
 $$
 
@@ -118,7 +118,7 @@ $$
 
 &\ln (1+x) \sim x,& &\log_a (1+x) \sim \frac x{\ln a}\\
 
-&\sqrt {1+x}-1 \sim \frac x2,& &(1+x)^a-1 \sim ax\\
+&\sqrt {1+x}-1 \sim \frac x2,& &(1+x)^\alpha-1 \sim \alpha x\\
 & x^m+x^k \sim x^m,其中常数 k \gt m \gt 0
 \end{aligned}
 $$
