@@ -427,9 +427,9 @@ $$
 
 $$
 \begin{aligned}
-&(\sin ax)^{(n)} = a^n\sin (\frac{n\pi}{2} + ax)\\
+&(\sin \alpha x)^{(n)} = \alpha^n\sin (\frac{n\pi}{2} + \alpha x)\\
 &\ \\
-&(\cos ax)^{(n)} = a^n\cos ( \frac{n\pi}{2}+ax)\\
+&(\cos \alpha x)^{(n)} = \alpha^n\cos ( \frac{n\pi}{2}+\alpha x)\\
 \ \\
 &(\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
 &((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}\\
