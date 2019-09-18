@@ -408,7 +408,7 @@ $$
 设$f$为连续函数,$\varphi_1(x),\varphi_2(x)$均可导,则
 
 $$
-(\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt)' = f(\varphi_1(x))\varphi'_1(x)-f(\varphi_2(x))\varphi'_2(x)
+(\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt)' = f(\varphi_2(x))\varphi'_2(x)-f(\varphi_1(x))\varphi'_1(x)
 $$
 
 ### $n$阶导数运算法则
