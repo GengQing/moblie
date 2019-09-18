@@ -375,7 +375,7 @@ $$
 
 $$
 \begin{aligned}
-&(C)'=0&                          &(x^a)'=ax^{a-1} \\
+&(C)'=0&                          &(x^\alpha)'=\alpha x^{\alpha -1} \\
 &(\sqrt x)' = \frac1{2\sqrt x}&   &(\frac 1x)'=-\frac 1{x^2} \\
 &(e^x)' = e^x&                    &(a^x)'=a^x\ln a \\
 &(\ln x)' = \frac{1}{x}&          &(log_ax)' = \frac{1} {x\ln a} \\
@@ -391,7 +391,7 @@ $$
 
 $$
 \begin{aligned}
-&\mathrm{d}(C)=0& &\mathrm{d}(x^a)=ax^{a-1} \mathrm{d}x\\
+&\mathrm{d}(C)=0& &\mathrm{d}(x^\alpha)=\alpha x^{\alpha-1} \mathrm{d}x\\
 &\mathrm{d}(\sqrt x) = \frac1{2\sqrt x}\mathrm{d}x& &\mathrm{d}(\frac 1x)=-\frac 1{x^2} \mathrm{d}x\\
 &\mathrm{d}(e^x) = e^x\mathrm{d}x& &\mathrm{d}(a^x)=a^x\ln a \mathrm{d}x\\
 &\mathrm{d}(\ln x) = \frac{1}{x}\mathrm{d}x& &\mathrm{d}(log_ax) = \frac{1} {x\ln a} \mathrm{d}x\\
