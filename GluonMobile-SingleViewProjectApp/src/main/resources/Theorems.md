@@ -157,7 +157,7 @@ $$
 
 $$
 当x \rightarrow 0时,\alpha (x) \sim \beta (x)时的充要条件是 \\
-\alpha (x) - \beta (x)= o(\beta (x)) 或\\
+\alpha (x) - \beta (x)= o(\beta (x) 或\\
 \alpha (x) = \beta (x)+ o(\beta (x))\\
 $$
 
@@ -189,7 +189,9 @@ $$
 \lim_{x \rightarrow *} \frac {f(x)}{g(x)} = \lim_{x \rightarrow *} \frac {f'(x)}{g'(x)}
 $$
 
-[注] 使用洛必达法则求导后如果极限不存在(非无穷的)并不能确定极限不存在, 应该改用其他方法
+[注]  
+使用洛必达法则求导后如果极限不存在(非无穷的)或不知道,  
+并不能确定极限不存在, 应该改用其他方法
 
 ### 带佩亚诺余项的泰勒公式
 
