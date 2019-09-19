@@ -562,7 +562,7 @@ $f(x)=f(x_0)+f'(x_0+\theta(x-x_0))(x-x_0), 0 \lt \theta \lt 1$
 
 ### 柯西中值定理
 
-设$f(x),g(x)在[a,b]上连续, 在(a,b)上可导,且g'(\xi) \ne 0$,则  
+设$f(x),g(x)在[a,b]上连续, 在(a,b)上可导,且g'(x) \ne 0$,则  
 至少存在一点$\xi \in (a,b)$,使得
 
 $$\frac {f(b)-f(a)}{g(b)-g(a)}=\frac{f'(\xi)}{g'(\xi)}$$
