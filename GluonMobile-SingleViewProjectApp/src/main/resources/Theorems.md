@@ -771,16 +771,16 @@ $$
 ### 曲线与$x$轴面积公式两种($y$轴取反函数同理)
 
 $$
-S=\int_a^b y dx, (y=y(x)\ge 0)\\
+S=\int_a^b f(x) dx, (y=f(x)\ge 0)\\
 \ \\
 
-S=\int_{t1}^{t2}yx'dt, (y=y(t)\ge 0, x=x(t))
+S=\int_{t1}^{t2}y(t)x'(t)dt, (y=y(t)\ge 0, x=x(t))
 $$
 
 ### 极坐标曲边扇形面积
 
 $$
-S=\frac 12 \int_{\theta1}^{\theta2}r^2d\theta, r=r(\theta)\\
+S=\frac 12 \int_{\theta1}^{\theta2}r^2(\theta) d\theta, r=r(\theta)\\
 $$
 
 ### 弧微分三种
@@ -808,9 +808,10 @@ $$
 ### 曲线绕$y$轴旋转体积两种
 
 $$
+V=\pi \int_{y_1}^{y_2} x^2(y)dy, x=x(y) \\
+\ \\
 V=2\pi\int_a^b xydx, y=y(x)\ge 0\\
 
-V=\pi \int_{y_1}^{y_2} x^2dy, x=x(y)
 $$
 
 ### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
