@@ -424,7 +424,7 @@ $$
 $$
 
 V=\pi \int_{y_1}^{y_2} x^2(y)dy, x=x(y)\\
-V=2\pi\int_a^b xydx, y=y(x)\ge 0\\
+V=2\pi\int_a^b xy(x)dx, y=y(x)\ge 0\\
 
 $$
 
