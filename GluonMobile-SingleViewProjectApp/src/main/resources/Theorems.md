@@ -931,7 +931,7 @@ $$
 \ \\
 \frac{\partial F}{\partial y}=\frac{\partial f}{\partial y} + \lambda \frac{\partial \varphi}{\partial y}=0\\
 \ \\
-\frac{\partial F}{\partial y} = \varphi(x,y)=0
+\frac{\partial F}{\partial \lambda} = \varphi(x,y)=0
 
 $$
 
