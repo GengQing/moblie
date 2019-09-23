@@ -180,7 +180,7 @@ f(x)=x^\alpha \sin(\frac 1x)(或 x^\alpha \cos(\frac 1x)),补充定义f(0)=0.\\
 \end{cases}
 $$
 
-当$a=3$时$f(x)=x^3 \sin(\frac 1x)$是偶函数且$f'(x)=0$,但$f(x)处x=0$不取得极值.
+当$\alpha=3$时$f(x)=x^3 \sin(\frac 1x)$是偶函数且$f'(x)=0$,但$f(x)处x=0$不取得极值.
 
 5 跳跃间断点函数在间断点处
 
