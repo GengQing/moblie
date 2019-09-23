@@ -97,15 +97,16 @@ $$
 ### 左右极限不一样的函数,求极限时要考虑左右极限
 
 $$
-
-\lim_{x\rightarrow 0^+} {\frac 1x} = +\infty\\
-\lim_{x\rightarrow 0^-} {\frac 1x} = -\infty\\
+\begin{aligned}
+&\lim_{x\rightarrow 0^+} {\frac 1x} = +\infty\\
+&\lim_{x\rightarrow 0^-} {\frac 1x} = -\infty\\
 \ \\
-\lim_{x\rightarrow 0^+} e^{\frac 1x} = +\infty\\
-\lim_{x\rightarrow 0^-} e^{\frac 1x} = 0\\
+&\lim_{x\rightarrow 0^+} e^{\frac 1x} = +\infty\\
+&\lim_{x\rightarrow 0^-} e^{\frac 1x} = 0\\
 \ \\
-\lim_{x\rightarrow 0^+} \arctan {\frac 1x} = \frac{\pi}{2}\\
-\lim_{x\rightarrow 0^-} \arctan {\frac 1x} = -\frac{\pi}{2}
+&\lim_{x\rightarrow 0^+} \arctan {\frac 1x} = \frac{\pi}{2}\\
+&\lim_{x\rightarrow 0^-} \arctan {\frac 1x} = -\frac{\pi}{2}\\
+\end{aligned}
 $$
 
 ### 无穷小的比较
