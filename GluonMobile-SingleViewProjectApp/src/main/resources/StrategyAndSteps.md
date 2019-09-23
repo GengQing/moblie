@@ -142,7 +142,7 @@ $$
 
 1. 设$f(x),在x=0$连续且$\lim_{x \rightarrow 0} \frac{f(x)}{x}=A$, 那么$f(0)=0,f'(x)存在且为A$
 
-2. 设$f(x),在x=0$某领域内有定义, 在其去心领域内可导.  
+2. 设$f(x),在x=x_0$某领域内有定义, 在其去心领域内可导.  
     (1)若$\lim_{x\rightarrow x_0} f'(x)=\infty$, 则$f'(x_0)$不存在.使用反证法和洛必达法则证明.  
     (2)若$\lim_{x\rightarrow x_0} f'(x)=A \nRightarrow f'(x_0)$存在且等于A.反例:可去间断点函数在间断点处是不可导的.  
     (3)若$f'(x_0)存在且等于A \nRightarrow \lim_{x\rightarrow x_0} f'(x)=A$.反例振荡函数$f(x)=x^2\sin(\frac 1 x)且f(0)=0(x_0=0)$
@@ -172,11 +172,11 @@ $$
 在间断点处不取得任何极值(根据极值定义).
 
 $$
-f(x)=x^a \sin(\frac 1x)(或 x^a \cos(\frac 1x)),补充定义f(0)=0.\\
+f(x)=x^\alpha \sin(\frac 1x)(或 x^\alpha \cos(\frac 1x)),补充定义f(0)=0.\\
 \begin{cases}
-当 0 \lt a \le 1 , f(x) 在x=0处连续但不可导\\
-当 1\lt a \le 2, f(x) 在x=0处连续且可导, 但导函数f'(x)在该点不连续\\
-当 a \gt 2, f(x) 在x=0处连续且可导,且导函数f'(x)在该点连续
+当 0 \lt \alpha \le 1 , f(x) 在x=0处连续但不可导\\
+当 1\lt \alpha \le 2, f(x) 在x=0处连续且可导, 但导函数f'(x)在该点不连续\\
+当 \alpha \gt 2, f(x) 在x=0处连续且可导,且导函数f'(x)在该点连续
 \end{cases}
 $$
 
