@@ -45,7 +45,7 @@ $$
 ### 幂函数的极限
 
 $$
-\lim_{x \rightarrow 0}x^a = 
+\lim_{x \rightarrow 0}x^a =
 \begin{cases}
 0 \Leftrightarrow a \gt 0\\
 1 \Leftrightarrow a=0\\
