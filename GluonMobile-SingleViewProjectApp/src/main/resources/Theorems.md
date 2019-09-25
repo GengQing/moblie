@@ -704,6 +704,7 @@ $$
 &\int\tan x\mathrm dx = -\ln |\cos x|+C& &\int\cot x\mathrm dx=\ln |\sin x|+C\\
 &\int\sec x\mathrm dx = \ln|\sec x + \tan x|+C&   &\int\csc x\mathrm dx=\ln |\csc x - \cot x|+C\\
 &\int \sec^2 x\mathrm dx=\tan x +C&               &\int\csc^2x\mathrm dx=-cotx +C\\
+&\int \sec x \tan x\mathrm dx=\sec x +C&               &\int \csc x \mathrm{cot} x\mathrm dx=-\csc x +C\\
 &\int\frac 1{\sqrt{1-x^2}}\mathrm dx=\arcsin x+C& &\int\frac{1}{\sqrt{a^2-x^2}}\mathrm dx=\arcsin \frac xa+C\\
 &\int\frac 1{\sqrt{x^2-a^2}}\mathrm dx=\ln{|x+\sqrt{x^2-a^2}|}+C& &\int\frac 1{\sqrt{x^2+a^2}}\mathrm dx=\ln{(x+\sqrt{x^2+a^2})}+C\\
 &\int\frac 1{1+x^2}\mathrm dx=\arctan x+C& &\int\frac{1}{a^2+x^2}\mathrm dx=\frac 1a \arctan \frac xa + C\\
