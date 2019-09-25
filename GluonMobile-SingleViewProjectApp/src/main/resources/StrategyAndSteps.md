@@ -653,7 +653,9 @@ $$
 
 1. $R(x, \sqrt[n]{\frac{(ax+b)}{(cx+d)}}), 令t=\sqrt[n]{\frac{(ax+b)}{(cx+d)}}$
 
-2. $R(x, \sqrt[n]{ax+b},\sqrt[m]{ax+b}), 令t=\sqrt[nm]{ax+b},x=\frac{t^{mn}-b}{a},dx=\frac {mn}{a}t^{mn-1}$
+2. $R(x, \sqrt[n]{ax+b},\sqrt[m]{ax+b}),$  
+    令$t=\sqrt[nm]{ax+b},\sqrt[n]{ax+b}=t^m,\sqrt[m]{ax+b}=t^n$  
+    $x=\frac{t^{mn}-b}{a},dx=\frac {mn}{a}t^{mn-1}$
 
 ### 对称区间的定积分
 
