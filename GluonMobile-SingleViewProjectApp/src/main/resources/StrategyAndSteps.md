@@ -616,7 +616,7 @@ $$
 &\frac{x+a}{(x-b)(x-c)} = \frac{A}{x-b} + \frac{B}{x-C}\\
 
 \ \\
-&\frac{x^2+ax+b}{(x^2+px+q)(x-c)} = \frac{A}{x-c} + \frac{Bx+D}{x^2+px+q} \\
+&\frac{x^2+ax+b}{(x^2+px+q)(x-c)} =  \frac{Bx+D}{x^2+px+q} +\frac{A}{x-c}\\
 &\ \\
 &\frac{x^2+ax+b}{(x-c)^2(x-d)}=\frac{A}{(x-c)^2}+\frac{B}{(x-c)}+\frac{C}{x-d}
 \end{aligned}
