@@ -95,11 +95,18 @@ $$
 
 ### 基本初等函数
 
+<a href="https://wenku.baidu.com/view/bdccfc868762caaedd33d440.html">图形</a>
+
 $$
+\begin{aligned}
+&函数& &定义域& &值域& &单调性& &必过点&\\
+&y=a^x(a \gt 0 \And a \ne 1)& &x \in (-\infty,+\infty)& & y \in (0,+\infty)& &a \gt 1\nearrow , 0 \lt a \lt 1\searrow& &(0,1)&\\
+&y=\log_a x&\\
+&y=x^\mu&\\
 
-y=\ln x\\
+    
+\end{aligned}
 
-y=\arcsin x, x \in [-1,1], y \in[-\frac \pi 2, \frac\pi 2]
 $$
 
 ### 基本初等函数公式
