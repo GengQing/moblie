@@ -1996,7 +1996,7 @@ $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指
 ### 二次型正定的充要条件(判断是否正定)
 
 $f=x^{\intercal}Ax$正定  
-$\Longleftrightarrow A$的正惯性指出$p=r(A)=n(n是未知量个数)$  
+$\Longleftrightarrow A$的正惯性指数$p=r(A)=n(n是未知量个数)$  
 $\Longleftrightarrow A与E$合同  
 $\Longleftrightarrow A=D^\intercal D,D$是可逆矩阵  
 $\Longleftrightarrow A的全部特征值\lambda \gt 0$  
