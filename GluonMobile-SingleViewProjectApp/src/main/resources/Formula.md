@@ -101,7 +101,7 @@ $$
 \begin{aligned}
 &函数& &定义域& &值域& &单调性& &必过点&\\
 &y=a^x(a \gt 0 \And a \ne 1)& &x \in (-\infty,+\infty)& & y \in (0,+\infty)& &a \gt 1\nearrow , 0 \lt a \lt 1\searrow& &(0,1)&\\
-&y=\log_a x&\\
+&y=\log_a x(a \gt 0 \And a \ne 1)& &x \in (0,+\infty)& &y \in (-\infty,+\infty)& &a \gt 1\nearrow , 0 \lt a \lt 1\searrow&\\
 &y=x^\mu&\\
 
     
