@@ -1121,3 +1121,5 @@ $A$和$A^\intercal$具有相同的特征值,但特征向量不一定相同;
 
 4 A与B合同,则$A^* \simeq B^*$,$A^{-1}\simeq B^{-1}$,$A^\intercal\simeq B^\intercal$
 
+5 根据传递性证明合同
+
