@@ -1109,7 +1109,7 @@ $A$和$A^\intercal$具有相同的特征值,但特征向量不一定相同;
 
 4 根据传递性证明
 
-5 $A\sim B \Rightarrow f(A) \sim f(B)$
+5 $A\sim B \Rightarrow f(A) \sim f(B),A^*\sim B^*,A^{-1}\sim B^{-1},A^\intercal\sim B^\intercal$,
 
 ### 判矩阵是否合同的方法
 
