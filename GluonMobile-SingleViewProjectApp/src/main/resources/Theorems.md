@@ -1978,7 +1978,7 @@ $p+q=r$是二次型对应矩阵的秩,$p-q$称为符号差.
 $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指数.  
 (有相同的秩和正惯性指数)
 
-### 矩阵合同的必要条件
+### 矩阵合同的必要条件(判断是否合同)
 
 若矩阵$A$合同于$B \Longrightarrow r(A)=r(B)$,且行列式同号.
 
