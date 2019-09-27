@@ -1111,7 +1111,7 @@ $A$和$A^\intercal$具有相同的特征值,但特征向量不一定相同;
 
 5 $A\sim B \Rightarrow f(A) \sim f(B),A^*\sim B^*,A^{-1}\sim B^{-1},A^\intercal\sim B^\intercal$,
 
-### 判断矩阵是否合同的方法
+### 判断矩阵(或二次型)是否合同的方法
 
 1 若秩不相等,则不合同
 
