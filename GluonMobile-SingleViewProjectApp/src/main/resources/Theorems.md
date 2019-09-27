@@ -1709,6 +1709,7 @@ $\gamma_1 = \frac {\beta_1}{|\beta_1|}$,$\gamma_2 = \frac {\beta_2}{|\beta_2|}$,
 
 $A$是正交矩阵  
 $\Longleftrightarrow A^\intercal =A^{-1}$  
+$\Longleftrightarrow AA^\intercal =E$  
 $\Longleftrightarrow A$的列(行)向量组是正交规范向量组.
 
 ### 方程组的向量表示
