@@ -2118,7 +2118,7 @@ $n$可逆矩阵的乘积仍是可逆矩阵.
 
 ### 数列极限定理
 
-设${a_n}$为数列, $\lim_{n \rightarrow \infty} \frac {a_{n+1}}{a_n}=q,  
+设${a_n}$为数列, $\lim_{n \rightarrow \infty} \frac {a_{n+1}}{a_n}=q$,  
 若$|q|\lt 1 \Rightarrow \lim_{n \rightarrow \infty} a_n =0$;  
 若$|q|\gt 1 \Rightarrow \lim_{n \rightarrow \infty} a_n =\infty$;  
 
