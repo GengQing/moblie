@@ -559,23 +559,25 @@ $$
 积化和差得和差，余弦在后要相加；异名函数取正弦，正弦相乘取负号。
 
 $$
-\sin Ax\cos Bx=\frac 12[\sin(A+B)x+\sin(A-B)x]\\
+\begin{aligned}
+
+F(\sin,\cos) &= (-1)^n \frac 1 2 [f(a+b)\pm f(a-b)] \\
+\ \\
+\sin Ax\cos Bx &=\frac 12[\sin(A+B)x+\sin(A-B)x]\\
 
 \ \\
 
-\cos Ax\cos Bx=\frac 12[\cos(A+B)x+\cos(A-B)x]\\
+\cos Ax\cos Bx &=\frac 12[\cos(A+B)x+\cos(A-B)x]\\
 \ \\
 
-\sin Ax\sin Bx=-\frac 12[\cos(A+B)x-\cos(A-B)x]\\
+\sin Ax\sin Bx &=-\frac 12[\cos(A+B)x-\cos(A-B)x]\\
 \ \\
-$$
 
-$$
-\cos 2x = 2\cos^2 x -1 = 1-2\sin^2x\\
+\sin^2x & =(1-\cos 2x)/2\\
 
-\sin^2x=(1-\cos 2x)/2\\
+\cos^2x & =(1+\cos 2)/2\\
 
-\cos^2x=(1+\cos 2)/2\\
+\end{aligned}
 
 $$
 
