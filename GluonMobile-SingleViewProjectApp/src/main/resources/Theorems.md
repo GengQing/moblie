@@ -2110,8 +2110,16 @@ $C可逆\Longleftrightarrow A和B都可逆$.
 $n$可逆矩阵的乘积仍是可逆矩阵.  
 一个可逆矩阵若能分解成$n$方阵的乘积,则这$n$个方阵均可逆.
 
-### 定理汇总
+### 矩阵定理汇总
 
 对称矩阵的伴随矩阵也是对称矩阵.
 
 正交矩阵的伴随矩阵也是正交矩阵.
+
+### 数列极限定理
+
+设${a_n}$为数列, $\lim_{n \rightarrow \infty} \frac {a_{n+1}}{a_n}=q,  
+若$|q|\lt 1 \Rightarrow \lim_{n \rightarrow \infty} a_n =0$;  
+若$|q|\gt 1 \Rightarrow \lim_{n \rightarrow \infty} a_n =\infty$;  
+
+$\lim_{n \rightarrow \infty} a_n =0 \Leftrightarrow \lim_{n \rightarrow \infty} |a_n| =0$
