@@ -1994,9 +1994,10 @@ $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指
 
 ### 正定性定理 可逆线性变换不改变二次型的正定性
 
-### 二次型正定的充要条件(判断是否正定)
+### 二次型正定的充分必要条件(判断是否正定)
 
 $f=x^{\intercal}Ax$正定  
+$\Longleftrightarrow f(x)如果对任何x≠0都有f(x)>0$  
 $\Longleftrightarrow A$的正惯性指出$p=r(A)=n(n是未知量个数)$  
 $\Longleftrightarrow A与E$合同  
 $\Longleftrightarrow A=D^\intercal D,D$是可逆矩阵  
