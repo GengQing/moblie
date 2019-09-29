@@ -561,7 +561,7 @@ $$
 $$
 \begin{aligned}
 
-F(\sin,\cos) &= (-1)^n \frac 1 2 [f(a+b)\pm f(a-b)] \\
+MUL(\sin,\cos) &= (-1)^n \frac 1 2 [f(a+b)\pm f(a-b)] \\
 \ \\
 \sin Ax\cos Bx &=\frac 12[\sin(A+B)x+\sin(A-B)x]\\
 
