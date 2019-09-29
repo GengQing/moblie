@@ -1709,6 +1709,7 @@ $\gamma_1 = \frac {\beta_1}{|\beta_1|}$,$\gamma_2 = \frac {\beta_2}{|\beta_2|}$,
 
 $A$是正交矩阵  
 $\Longleftrightarrow A^\intercal =A^{-1}$  
+$\Longleftrightarrow AA^\intercal =E$  
 $\Longleftrightarrow A$的列(行)向量组是正交规范向量组.
 
 ### 方程组的向量表示
@@ -1978,7 +1979,7 @@ $p+q=r$是二次型对应矩阵的秩,$p-q$称为符号差.
 $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指数.  
 (有相同的秩和正惯性指数)
 
-### 矩阵合同的必要条件
+### 矩阵合同的必要条件(判断是否合同)
 
 若矩阵$A$合同于$B \Longrightarrow r(A)=r(B)$,且行列式同号.
 
@@ -1993,7 +1994,7 @@ $\Longleftrightarrow x^\intercal Ax与x^\intercal Bx$有相同的正负惯性指
 
 ### 正定性定理 可逆线性变换不改变二次型的正定性
 
-### 二次型正定的充要条件(判断是否正定)
+### 二次型正定的充分必要条件(判断是否正定)
 
 $f=x^{\intercal}Ax$正定  
 $\Longleftrightarrow A$的正惯性指数$p=r(A)=n(n是未知量个数)$  
@@ -2111,6 +2112,6 @@ $n$可逆矩阵的乘积仍是可逆矩阵.
 
 ### 定理汇总
 
-对称矩阵的伴随矩阵也是伴随矩阵.
+对称矩阵的伴随矩阵也是对称矩阵.
 
 正交矩阵的伴随矩阵也是正交矩阵.
