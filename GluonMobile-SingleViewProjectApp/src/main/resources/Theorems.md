@@ -96,6 +96,7 @@ $$
 &\lim_{\varphi(x) \rightarrow 0} \frac{\sin \varphi(x)}{\varphi(x)} = 1,其中\varphi(x) \ne 0&\\
 &\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
 &\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
+&\lim_{x \rightarrow \infty} x^{1/x} = 1\\
 &\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)指数增长比幂增长快\\
 &\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)幂增长比对数增长快\\
 &\lim_{x \rightarrow +\infty} x^{-k} \ln^{\delta} x = 0(k\gt0, \delta \gt0)幂增长比对数增长快\\

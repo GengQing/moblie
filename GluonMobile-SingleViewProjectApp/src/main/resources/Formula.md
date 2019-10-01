@@ -126,39 +126,6 @@ $$
 f(x)=A\sin(Bx+C)+D, T=\frac {2\pi} B
 $$
 
-### 泰勒公式
-
-$$
-e^x=1+x+\frac{1}{2!} x^2 + \frac{1}{3!}x^3+...\\
-
-(1+x)^a=1+ax + \frac{a(a-1)}{2!}x^2 + \frac{a(a-1)(a-2)}{3!}x^3+...\\
-
-\frac{1}{1-x}=1+x+x^2+x^3+...\\
-
-\frac{1}{1+x} = 1-x+x^2-x^3+...\\
-
-\ln (1+x) = x-\frac{1}{2}x^2+ \frac{1}{3}x^3 + \cdots\\
-
-\tan x=x+\frac{x^3}{3}+\cdots\\
-
-\arctan x=x-\frac{x^3}{3}+\cdots\\
-
-\sin x=x-\frac{1}{3!}x^3+\cdots\\
-
-\cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4+\cdots\\
-$$
-
-### 补充重要极限
-
-$$
-\begin{aligned}
-&\lim_{n \rightarrow \infty}\sqrt[n]n = 1\\
-&\lim_{n \rightarrow \infty}\sqrt[n]a = 1(a\gt0)\\
-&\lim_{x \rightarrow +\infty} x^k e^{-\delta x} = 0(k\gt0, \delta \gt0)\\
-&\lim_{x \rightarrow 0^+} x^k \ln^{\delta} x = 0(k\gt0, \delta \gt0)
-\end{aligned}
-$$
-
 ### 肯定型幂指函数极限
 
 $$
@@ -166,24 +133,6 @@ $$
 \lim g(x)存在且为B\\
 那么\lim f(x)^{g(x)}=A^B\\
 
-$$
-
-### 等价无穷小
-
-$$
-\sin x  \sim  x, \tan x  \sim  x\\
-
-\arcsin x \sim x, \arctan x \sim x\\
-
-1-\cos x  \sim  \frac {x^2} 2\\
-
-\sec x - 1 =\frac 1{\cos x} -1 \sim \frac {x^2}2\\
-
-e^x-1 \sim x, a^x-1 \sim x\ln a \\
-
-\ln (1+x) \sim x, \log_a (1+x) \sim \frac x{\ln a}\\
-
-\sqrt {1+x}-1 \sim \frac x2, (1+x)^a-1 \sim ax\\
 $$
 
 ### 导数公式
@@ -203,50 +152,6 @@ $$
 
 $$
 
-### 导数微分关系
-
-$$
-dy=f'(x)\Delta x = f'(x)dx\\
-\Delta y - dy = \frac 12 f''(\xi)(\Delta x)^2
-
-$$
-
-### 导数四则运算
-
-$$
-(u\pm v)' = u' \pm v'\\
-(Cv)'=Cv'\\
-(uv)' = u'v+uv'\\
-(\frac uv)'=\frac{u'v-uv'}{v^2}(v\neq 0)\\
-(uvw)'=u'vw+uv'w+uvw'\\
-$$
-
-### 复合函数求导
-
-$$
-y=f[g(x)],y'(x)=f'(u)g'(x)
-$$
-
-### 幂指函数导数
-
-$$
-[u^v]'=u^v(u'\frac{v}{u}+v'\ln u)
-$$
-
-### 高阶导数
-
-$$
-\begin{aligned}
-&(uv)^{(n)}=u^{(n)}v+C_n^1 u^{(n-1)}v'+C_n^2 u^{(n-2)}v'' +\cdots + uv^{(n)}\\
-\ \\
-&(\sin ax)^{(n)} = a^n\sin (\frac{n\pi}{2}+ax)\\
-\ \\
-&(\cos ax)^{(n)} = a^n\cos (\frac{n\pi}{2}+ax)\\
-\ \\
-&(\ln(1+x))^{(n)} = \frac{(-1)^{n-1} (n-1)!}{(1+x)^{n}}\\
-&((1+x)^a)^{(n)} = a(a-1)\cdots(a-n+1)(1+x)^{a-n}
-\end{aligned}
-$$
 
 ### 一阶导数只包含y,求二阶导数
 
@@ -256,33 +161,6 @@ $$
 \frac {d^2y}{dx^2} =\frac {d}{dx}(\frac {dy}{dx})\\
 =\frac {d}{dy}(f(y))\frac {dy}{dx}\\
 =f'(y)f(y)
-$$
-
-### 参数方程求导
-
-$$
-\begin{aligned}
-&y'_x=\frac{y'_t}{x'_t}\\
-&y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}
-\end{aligned}
-$$
-
-### 反函数求导
-
-$$
-\begin{aligned}
-&\frac {dx}{dy}=\frac 1{\frac {dy}{dx}}\\
-&\varphi '(y)=\frac 1{f'(x)}\\
-&\varphi ''(y)=-\frac {f''(x)}{(f'(x))^3}\\
-\end{aligned}
-$$
-
-### 极坐标转换成参数方程
-
-$$
-r=r(\theta)\\
-x=r\cos \theta\\
-y=r\sin \theta
 $$
 
 ### 积分
@@ -496,7 +374,7 @@ $$
 $$
 \iint f(x,y)dxdy=
 \begin{cases}
-2\iint f(x,y)dxdy, \in D_1, f(-x,y)=f(x,y)\\
+2\iint f(x,y)dxdy, \in D_R, f(-x,y)=f(x,y)\\
 0,f(-x,y)=-f(x,y)
 \end{cases}
 $$
@@ -506,7 +384,7 @@ $$
 $$
 \iint f(x,y)dxy=
 \begin{cases}
-2\iint f(x,y)dxdy, \in D_1, f(x,-y)=f(x,y)\\
+2\iint f(x,y)dxdy, \in D_U, f(x,-y)=f(x,y)\\
 0,f(x,-y)=-f(x,y)
 \end{cases}
 
@@ -518,148 +396,8 @@ $$
 \iint f(x,y)dxdy=\iint f(y,x)dxdy
 $$
 
-### 二阶常系数线性齐次微分方程及特征方程
+### 二重积分区间关于$y=x$对称且$f(x,y)=f(y,x)$
 
 $$
-y''+py'+qy=f(x)\\
-\lambda^2+p\lambda+q=0
+\iint_{D_{11}} f(x,y)dxdy=\iint_{D_{12}} f(y,x)dxdy
 $$
-
-### 二常线非齐特解-多项式
-
-$$
-y''+py'+y=f(x) \\
-f(x)=ax^2+bx+c,\\
-特解:y^*=x^k(cx^2+dx+f),\\
-k=\begin{cases}
-0, 0不是特征根\\
-1, 0是单根\\
-2, 0是二重根
-\end{cases}\\
-\ \\
-
-$$
-
-### 微分方程特解-指数函数
-
-$$
-f(x)=e^{ax},\\
-y^*=Cx^ke^{ax},\\
-k=\begin{cases}
-0, a不是特征根\\
-1, a是单根\\
-2, a是二重根
-\end{cases}\\
-\ \\
-$$
-
-### 微分方程特解-多项式-指数函数
-
-$$
-f(x)=e^{ax}(bx+c),\\
-y^*=x^ke^{ax}(Dx+C),\\
-k=\begin{cases}
-0, a不是特征根\\
-1, a是单根\\
-2, a是二重根
-\end{cases}\\ \\
-\ \\
-$$
-
-### 微分方程特解-多项式-指数函数-三角函数
-
-$$
-f(x)=e^{ax}(H_{n1}(x)\cos bx+L_{n2}(x)\sin bx),\\
- y^*=x^ke^{ax}(M_n(x)\cos {bx}+F_n(x)\sin bx),\\
- n=\max(n1,n2)\\
-k=\begin{cases}
-0, a\pm ib不是特征根\\
-1, a\pm ib 是特种根\\
-\end{cases}
-$$
-
-### 微分方程特解-三角函数
-
-$$
-f(x)=\sin x\\
-y^*=x^k(A\cos {x}+B\sin x),\\
-k=\begin{cases}
-0, \pm i不是特征根\\
-1, \pm i 是特种根\\
-\end{cases}
-
-$$
-
-### 变量可分离微分方程
-
-$$
-g(y)dy=f(x)dx\\
-\Rightarrow \int g(y)dy = \int f(x)dx
-$$
-
-### 齐次微分方程
-
-$$
-\frac{dy}{dx}=f(\frac yx)\\
-
-u=\frac yx\\
-
-\int \frac 1{f(u)-u} du = \int \frac 1x dx
-$$
-
-### 一阶线性微分方程及其解
-
-$$
-y'+p(x)y=q(x), (x'+p(y)x=q(y)) \\
-u=e^{\int p(x)dx}\\
-yu=\int q(x)u(x)dx+C
-
-$$
-
-### 可降阶的高阶微方程
-
-$$
-
-y^{(n)} = f(x) \\
-
-\Rightarrow y^{(n-1)} = \int f(x) dx +C_1 \\
-
-\Rightarrow y^{(n-2)} = \int [\int f(x) dx +C_1]dx + C_2 \\
-
-\Rightarrow \cdots
-
-$$
-
-### 不显含$y$的微分方程
-
-$$
-y''=f(x,y') \\
-y'=p,y''=\frac {dp}{dx}\\
-\frac {dp}{dx}=f(x,p)
-$$
-
-### 二阶齐次常系数微分方程特解
-
-1. 双根$C_1 e^{r_1x}+C_2 e^{r_2x}$
-2. 重根$(C_1+C_2x)e^{rx}$
-3. 复根$e^{ax}(C_1 \cos bx+C_2 \sin bx)$
-
-### 不显含$x$的微分方程
-
-$$
-y''=f(y,y') \\
-y'=p,y''=\frac {dp}{dy} \frac {dy}{dx}=p\frac {dp}{dy}\\
-p\frac {dp}{dy}=f(y,p)
-$$
-
-### 柯西积分不等式(定积分的平方小于等于平方的定积分)
-
-$$
-
-[\int_a^b f(x)g(x) dx]^2  \le \int_a^b f^2(x)dx \cdot \int_a^b g^2(x)dx
-
-$$
-
-### 线性方程解的性质
-
-1. 特解加齐次解仍是特解
