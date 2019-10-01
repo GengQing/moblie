@@ -333,11 +333,11 @@ $$
 \overline A=\frac 1 {(b-a)}\int_a^bf(x)dx
 $$
 
-### 密度均匀形心质心公式
+### 密度均匀薄片上边界曲线$y=f(x)$形心质心公式
 
 $$
-密度均匀薄片y=f(x)是薄片上边界曲线,\\
-可利用对称性计算出其中一个坐标 \\
+可利用对称性计算出坐标为区间中点\\
+
 横坐标x=\frac {\int_a^b xf(x)dx}{\int_a^b f(x)dx}\\
 \ \\
 纵坐标y=\frac {\frac 12 \int_a^b f^2(x)dx}{\int_a^b f(x)dx}
