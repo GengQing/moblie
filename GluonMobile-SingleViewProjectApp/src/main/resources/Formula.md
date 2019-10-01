@@ -104,7 +104,6 @@ $$
 &y=\log_a x(a \gt 0 \And a \ne 1)& &x \in (0,+\infty)& &y \in (-\infty,+\infty)& &a \gt 1\nearrow , 0 \lt a \lt 1\searrow&\\
 &y=x^\mu&\\
 
-    
 \end{aligned}
 
 $$
@@ -151,7 +150,6 @@ $$
 \end{aligned}
 
 $$
-
 
 ### 一阶导数只包含y,求二阶导数
 

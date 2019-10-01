@@ -134,11 +134,43 @@ $\lim_{x \rightarrow *} v(x)$存在且等于$B$,
 2) $\lim_{x \rightarrow *} [u(x)v(x)] = [\lim_{x \rightarrow *} u(x)][\lim_{x \rightarrow *} v(x)] = AB$
 3) $\lim_{x \rightarrow *} Cu(x) = C\lim_{x \rightarrow *} u(x)=CA,其中C是常数$
 4) $\lim_{x \rightarrow *} [u(x)/v(x)] = [\lim_{x \rightarrow *} u(x)] / [\lim_{x \rightarrow *} v(x)] = A/B, 其中B\ne 0$
-5) $\lim_{x \rightarrow *} u(x)=0, 且在 * 的去心领域内k(x)有界,则\lim_{x \rightarrow *} k(x)u(x)=0$
+5) $\lim_{x \rightarrow *} u(x)=0, 且在 * 的去心领域内k(x)有界,则\lim_{x \rightarrow *} k(x)u(x)=0$  
+6) $\lim_{x \rightarrow *} [u(x)]^n=[\lim_{x \rightarrow *} u(x)]^n=A^n$
 
 [注]  
 1 以上法则对数列也成立  
-2 零比零极限不能使用除法法则
+2 零比零极限不能使用除法法则,做分母时$A,B$不能为$0$,其他情况可为$0$.
+
+### 复合函数极限运算法则
+
+定理一 双极限复合定理
+
+设函数$y=f[g(x)]$是由$u=g(x),y=f(u)$复合而成,$y=f[g(x)]$在点$x_0$的某去心领域内有定义,若
+
+$$
+\lim_{x \rightarrow x_0} g(x) = u_0,\lim_{u \rightarrow u_0} f(u) =A
+$$
+
+且存在$x_0$的某个去心领域有$g(x) \ne u_0$, 则
+
+$$
+\lim_{x \rightarrow x_0} f[g(x)]=\lim_{u \rightarrow u_0} f(u)=A
+$$
+
+定理二 函数符号与极限符号交换次序定理
+
+设函数$y=f[g(x)]$是由$u=g(x),y=f(u)$复合而成,$y=f[g(x)]$在点$x_0$的某去心领域内有定义,若
+
+$$
+\lim_{x \rightarrow x_0} g(x) = u_0
+$$
+
+且$f(u)在u=u_0$连续,则
+
+$$
+\lim_{x \rightarrow x_0} f[g(x)]=f(\lim_{x \rightarrow x_0} g(x))=f(u_0)
+
+$$
 
 ### 等价无穷小替换定理
 
