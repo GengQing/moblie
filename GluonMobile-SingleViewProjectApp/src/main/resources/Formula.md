@@ -12,7 +12,7 @@ a^3+b^3&=(a+b)(a^2-ab+b^2)\\
 \end{aligned}
 $$
 
-### 三角函数公式>
+### 三角函数公式
 
 $$
 \begin{aligned}
@@ -25,12 +25,18 @@ $$
 
 &\cos(\pi - a) = -\cos a\\
 
-&\sin x \ge 0, x\in[0,\pi],即一二象限为正值,三四象限为负值 \\
+\end{aligned}
+$$
+
+### 三角函数转换口诀
+
+$$
+奇变偶不变(\frac{\pi}{2}的奇偶倍数)(n\frac{\pi}{2} \pm a),符号看象限,\\
+\sin x \ge 0, x\in[0,\pi],即一二象限为正值,三四象限为负值 \\
 
 \ \\
-&奇变偶不变\frac{\pi}{2}的奇偶倍数(n\frac{\pi}{2} \pm a),符号看象限,\\
-&\cos x \ge 0, x\in[-\frac{\pi}{2},\frac{\pi}{2}], 即一四象限为正值, 二三象限为负值\\
-\end{aligned}
+\cos x \ge 0, x\in[-\frac{\pi}{2},\frac{\pi}{2}], 即一四象限为正值, 二三象限为负值\\
+
 $$
 
 ### 特殊三角函数值=
@@ -398,4 +404,15 @@ $$
 
 $$
 \iint_{D_{11}} f(x,y)dxdy=\iint_{D_{12}} f(y,x)dxdy
+$$
+
+### 函数多项式商的极限
+
+$$
+\lim_{f(x) \rightarrow \infty} \frac {a_0 f(x)^m+a_1 f(x)^{m-1}+\cdots+ a_m}{b_0 f(x)^n+b_1 f(x)^{n-1}+\cdots +b_n}=
+\begin{cases}
+0,当 n \gt m \\
+\frac {a_0} {b_0}, 当n=m\\
+\infty, 当 n \lt m
+\end{cases}
 $$
