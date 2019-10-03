@@ -61,7 +61,7 @@ $$
 ### 排列组合公式=
 
 $$
-C_n^k=\frac{n(n-1)\cdots(n-k+1)}{k!}\\
+C_n^k=\frac{n(n-1)\cdots(n-k+1)}{k!}(分子从高到第取k个)\\
 \ \\
 C_n^k=\frac{n!}{(n-k)!k!}\\
 \ \\
