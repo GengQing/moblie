@@ -135,11 +135,14 @@ $$
 
 $$
 \begin{aligned}
-&\log_a x = \frac {\ln x} {\ln a}\\
+&\log_y x = \frac {\ln x} {\ln y}\\
 &a^{m+n}=a^m a^n\\
 &a^{mn}=(a^m)^n\\
 &(a^m)^n=(a^n)^m\\
-&a^{m-n}=\frac {a^m}{a^n}
+&a^{m-n}=\frac {a^m}{a^n}\\
+&\ln \frac {g(x)}{f(x)}=\ln g(x)-\ln f(x)\\
+&\ln {g(x)}{f(x)}=\ln g(x)+\ln f(x)\\
+
 \end{aligned}
 $$
 
