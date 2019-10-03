@@ -189,8 +189,7 @@ $$
 ----------------\\
 
 \begin{aligned}
-x=\phi(t) \Rightarrow t &=\psi(x)\\
- \frac {dt}{dx}& =  \psi'(x) 
+x=\phi(t) \Rightarrow t &=\psi(x) \Rightarrow \frac {dt}{dx}=  \psi'(x)\\
 \ \\
 
 \frac {dy}{dx} &= \frac {dy}{dt} \frac {dt}{dx}\\
