@@ -464,7 +464,7 @@ $$
 &\ \\
 &(\cos \alpha x)^{(n)} = \alpha^n\cos ( \frac{n\pi}{2}+\alpha x)\\
 \ \\
-&(\ln(1+x))^{(n)} = (-1)^{n-1}\frac{ (n-1)!}{(1+x)^{n}}\\
+&[\ln(1+ \alpha x)]^{(n)} = (-1)^{n-1}\frac{ (n-1)!}{(1+  \alpha x)^{n}}  \alpha^n\\
 &((1+x)^\alpha)^{(n)} = \alpha(\alpha-1)\cdots(\alpha-n+1)(1+x)^{\alpha-n}\\
 &((1+x)^n)^{(n)} = n!,(n 为正整数)\\
 &((1+x)^n)^{(m)}=0,(m \gt n,n和m均为正整数)
