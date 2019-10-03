@@ -176,14 +176,39 @@ $$
 
 $$
 
-### 一阶导数只包含y,求二阶导数
+### 求二阶导数技巧>
 
 $$
-\frac {dy}{dx} =f(y)\\
+\begin{aligned}
+\frac {dy}{dx}&=f(y)\\
+\Rightarrow \frac {d^2y}{dx^2} &=\frac {d}{dx}(\frac {dy}{dx})\\
+&=\frac {d}{dy}(f(y))\frac {dy}{dx}\\
+&=f'(y)f(y)
+\end{aligned} \\
 
-\frac {d^2y}{dx^2} =\frac {d}{dx}(\frac {dy}{dx})\\
-=\frac {d}{dy}(f(y))\frac {dy}{dx}\\
-=f'(y)f(y)
+----------------\\
+
+\begin{aligned}
+x=\phi(t) \Rightarrow t &=\psi(x)\\
+ \frac {dt}{dx}& =  \psi'(x) 
+\ \\
+
+\frac {dy}{dx} &= \frac {dy}{dt} \frac {dt}{dx}\\
+&= \psi'(x) \frac {dy}{dt}\\
+\ \\
+\frac {d^2y}{dx^2} &= \frac {d}{dx}(\psi'(x) \frac {dy}{dt})\\
+&=
+\psi''(x)\frac {dy}{dt} + \psi'(x) \frac {d}{dx}(\frac {dy}{dt})\\
+&=\psi''(x)\frac {dy}{dt} + \psi'(x) \frac {d}{dt}(\frac {dy}{dt}) \frac {dt}{dx}\\
+&=\psi''(x)\frac {dy}{dt} + [\psi'(x)]^2\frac {d^2y}{dt^2}
+\end{aligned} \\
+
+
+
+
+
+
+
 $$
 
 ### 积分
