@@ -478,7 +478,7 @@ $$
 $$
 \begin{aligned}
 &y'_x=\frac{y'_t}{x'_t}\\
-&y''_x=\frac{x'_ty''_{tt}-x''_{tt}y'_t}{x'^3_t}\\
+&y''_x=\frac{y''_{t}x'_t-x''_{t}y'_t}{x'^3_t}\\
 \end{aligned}
 $$
 
