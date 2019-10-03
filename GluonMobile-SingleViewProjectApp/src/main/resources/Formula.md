@@ -114,14 +114,33 @@ $$
 
 $$
 
+### 三角函数关系
+
+$$
+\tan x= \frac {\sin x}{\cos x} \\
+\ \\
+\cot x = \frac {\cos x}{\sin x} \\
+
+\tan x = \frac 1 {\cot x} \\
+\sin x =\frac 1 {\csc x} \\
+\cos x = \frac 1 {\sec x}\\
+
+\sin^2 x + \cos^2 x = 1\\
+1+ \tan^2 x = \sec^2 x\\
+1+ \cot^2 x = \csc^2 x\\
+
+$$
+
 ### 基本初等函数公式
 
 $$
-\log_a x = \frac {\ln x} {\ln a}\\
-a^{m+n}=a^m a^n\\
-a^{mn}=(a^m)^n=(a^n)^m\\
-a^{m-n}=\frac {a^m}{a^n}
-
+\begin{aligned}
+&\log_a x = \frac {\ln x} {\ln a}\\
+&a^{m+n}=a^m a^n\\
+&a^{mn}=(a^m)^n\\
+&(a^m)^n=(a^n)^m\\
+&a^{m-n}=\frac {a^m}{a^n}
+\end{aligned}
 $$
 
 ### 三角函数的周期
