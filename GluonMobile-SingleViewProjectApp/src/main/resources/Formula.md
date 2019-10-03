@@ -61,7 +61,9 @@ $$
 ### 排列组合公式=
 
 $$
-C_n^k=\frac{n*(n-1)\cdots(n-k+1)}{k!}\\
+C_n^k=\frac{n(n-1)\cdots(n-k+1)}{k!}\\
+\ \\
+C_n^k=\frac{n!}{(n-k)!k!}\\
 \ \\
 C_n^k=C_n^{n-k}\\
 \ \\
