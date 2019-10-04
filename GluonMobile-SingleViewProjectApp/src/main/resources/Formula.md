@@ -89,7 +89,7 @@ x \ge \sin x (x\ge0)\\
 (x-a)(x-b)\gt 0 \\
 \Rightarrow x \in (-\infty,a)\cup(b, -\infty),(a \lt b)\\
 \ \\
-函数图像: 波浪线\\
+函数图像: 右侧上扬波浪线\\
 (x-a)(x-b)(x-c)\gt 0 \\
 \Rightarrow  x\in(a,b)\cup (3, \infty),(a \lt b \lt c)\\
 
