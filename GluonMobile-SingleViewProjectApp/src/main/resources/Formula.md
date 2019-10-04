@@ -28,15 +28,19 @@ $$
 \end{aligned}
 $$
 
-### 三角函数转换口诀
+### 三角函数转换口诀>
 
 $$
-奇变偶不变(\frac{\pi}{2}的奇偶倍数)(n\frac{\pi}{2} \pm a),符号看象限,\\
-\sin x \ge 0, x\in[0,\pi],即一二象限为正值,三四象限为负值 \\
+\begin{aligned}
+&奇变偶不变:\frac{\pi}{2}的奇偶倍数(n\frac{\pi}{2} \pm \alpha),&\\
+&符号看象限:\alpha看做锐角,(n\frac{\pi}{2}+\alpha)落在某个象限,&\\
+&\sin(n\frac{\pi}{2} \pm \alpha)由\sin的象限符号决定, 同理\cos&\\
+\ \\
+&\sin x \ge 0, x\in[0,\pi],即一二象限为正值,三四象限为负值 \\
 
 \ \\
-\cos x \ge 0, x\in[-\frac{\pi}{2},\frac{\pi}{2}], 即一四象限为正值, 二三象限为负值\\
-
+&\cos x \ge 0, x\in[-\frac{\pi}{2},\frac{\pi}{2}], 即一四象限为正值, 二三象限为负值\\
+\end{aligned}
 $$
 
 ### 特殊三角函数值=
