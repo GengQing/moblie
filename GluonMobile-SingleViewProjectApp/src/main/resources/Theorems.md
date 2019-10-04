@@ -747,7 +747,7 @@ $$
 &\int\frac 1{\sqrt{1-x^2}}\mathrm dx=\arcsin x+C& &\int\frac{1}{\sqrt{a^2-x^2}}\mathrm dx=\arcsin \frac xa+C\\
 &\int\frac 1{\sqrt{x^2-a^2}}\mathrm dx=\ln{|x+\sqrt{x^2-a^2}|}+C& &\int\frac 1{\sqrt{x^2+a^2}}\mathrm dx=\ln{(x+\sqrt{x^2+a^2})}+C\\
 &\int\frac 1{1+x^2}\mathrm dx=\arctan x+C& &\int\frac{1}{a^2+x^2}\mathrm dx=\frac 1a \arctan \frac xa + C\\
-&\int\frac 1{x^2-a^2}\mathrm dx=\frac 1{2a}\ln |\frac{x-a}{x+a}|+C \\
+&\int\frac 1{x^2-a^2}\mathrm dx=\frac 1{2a}\ln |\frac{x-a}{x+a}|+C& &\int\frac 1{x^2-1}\mathrm dx=\frac 1{2}\ln |\frac{x-1}{x+1}|+C \\
 \end{aligned}
 $$
 
