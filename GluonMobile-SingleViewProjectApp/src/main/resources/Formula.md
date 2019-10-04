@@ -493,4 +493,14 @@ $$
 设$f(x),g(x)$互为反函数,则$f(g(x))=x, g(f(x))=x$,  
 但$f'(x)g'(x)\ne 1$.
 
-### 
+### 特殊分母无穷洛必达
+
+(1) $f,g \in (a, +\infty)$可导且$g'(x) \ne 0$,  
+(2) $\lim_{x \rightarrow +\infty} g(x)=\infty$  
+(3) $\lim_{x \rightarrow +\infty} f'(x)/g'(x) = A(A为有限或无穷)$
+
+则
+
+$$
+\lim_{x \rightarrow +\infty} \frac {f(x)} {g(x)}=\lim_{x \rightarrow +\infty} \frac {f'(x)} {g'(x)}=A
+$$
