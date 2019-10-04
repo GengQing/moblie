@@ -592,7 +592,7 @@ $$
 ### $x=a\tan t$消去分母中的高次
 
 $$
-\int \frac{1}{(x^2+1)^2}dx = \frac 12 \arctan x + \frac x{2(1+x^2)} + C
+\int \frac{1}{(x^2+1)^2}dx = \frac 12 (\arctan x + \frac x{1+x^2}) + C
 $$
 
 ### 分部积分法
