@@ -203,7 +203,7 @@ $$
 
 1) $\lim_{x \rightarrow *} f(x)=0, \lim_{x \rightarrow *} g(x)=0$;
 2) $f(x),g(x)在 * 的去心领域内可导,且g'(x) \ne 0$
-3) $\lim_{x \rightarrow *} [ \frac {f'(x)}{g'(x)}] = A(或\infty)$
+3) $\lim_{x \rightarrow *} [ \frac {f'(x)}{g'(x)}] = A(或\infty),A$是实数,包括0.
 
 则
 
