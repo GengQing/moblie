@@ -57,13 +57,16 @@ $$
 ### 极限的保号性
 
 $$
-设\lim_{x \rightarrow *} f(x)=A,且A \neq 0, 则存在 * 的一个去心领域,在此领域内, f(x)与A同号
+设\lim_{x \rightarrow *} f(x)=A,且A \neq 0, 则存在 * 的一个去心领域,在此领域内, f(x)与A同号.\\
+\ \\
+设\lim_{x \rightarrow *} f(x)=A,且A \gt 0(A \lt 0), 则存在 * 的一个去心领域,在此领域内, f(x) \gt \frac A 2( f(x) \lt \frac A 2).
 $$
 
 ### 极限保号性的推论
 
 $$
-设存在 * 的一个去心领域,在此领域内,f(x) \ge 0(或 \le 0), 且\lim_{x \rightarrow *} f(x)存在且等于A, 则A \ge 0(或 \le 0).\\
+设存在 * 的一个去心领域,在此领域内,f(x) \ge 0(或 \le 0),  \\
+且\lim_{x \rightarrow *} f(x)存在且等于A, 则A \ge 0(或 \le 0).\\
 [f(x) \gt 0(或 \lt 0) 仍然成立]
 $$
 
