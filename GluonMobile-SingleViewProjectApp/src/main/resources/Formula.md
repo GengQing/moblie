@@ -520,4 +520,4 @@ $$
 
 ### 单调无穷区间
 
-$x \in [a, +\infty) a\gt 0,f'(x) \lt 0, \lim_{\rightarrow +\infty} f(x)=0 \Rightarrow f(x) \gt 0$
+$x \in [a, +\infty) 上连续,f'(x) \lt 0, \lim_{\rightarrow +\infty} f(x)=0 \Rightarrow f(x) \gt 0$
