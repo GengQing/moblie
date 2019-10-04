@@ -2159,3 +2159,5 @@ $n$可逆矩阵的乘积仍是可逆矩阵.
 若$|q|\gt 1 \Rightarrow \lim_{n \rightarrow \infty} a_n =\infty$;  
 
 $\lim_{n \rightarrow \infty} a_n =0 \Leftrightarrow \lim_{n \rightarrow \infty} |a_n| =0$
+
+收敛数列具有保号性,有界性,唯一性
