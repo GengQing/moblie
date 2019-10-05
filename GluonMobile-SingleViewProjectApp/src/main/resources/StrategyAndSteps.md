@@ -617,12 +617,15 @@ $$
 
 $$
 \begin{aligned}
-&\frac{x+a}{(x-b)(x-c)} = \frac{A}{x-b} + \frac{B}{x-C}\\
+\frac{x+a}{(x-b)(x-c)} &= \frac{A}{x-b} + \frac{B}{x-C}\\
 
+&-----------\\
+\frac{x^2+ax+b}{(x^2+px+q)(x-c)} &=  \frac{Bx+D}{x^2+px+q} +\frac{A}{x-c}\\
 \ \\
-&\frac{x^2+ax+b}{(x^2+px+q)(x-c)} =  \frac{Bx+D}{x^2+px+q} +\frac{A}{x-c}\\
-&\ \\
-&\frac{x^2+ax+b}{(x-c)^2(x-d)}=\frac{A}{(x-c)^2}+\frac{B}{(x-c)}+\frac{C}{x-d}
+ \frac{Bx+D}{x^2+px+q}&= \frac{P(2x+p)}{x^2+px+q}+\frac{Q}{x^2+px+q}\\
+ \int \frac{Bx+D}{x^2+px+q} dx&=P\ln(x^2+px+q)+Q \frac 1a \arctan \frac {(x+p/2)} a, a=\sqrt{q-p^2/4}\\
+&---------- \\
+\frac{x^2+ax+b}{(x-c)^2(x-d)}&=\frac{A}{(x-c)^2}+\frac{B}{(x-c)}+\frac{C}{x-d}
 \end{aligned}
 $$
 
