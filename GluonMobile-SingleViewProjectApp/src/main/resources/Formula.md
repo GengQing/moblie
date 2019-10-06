@@ -509,3 +509,9 @@ $x \in [a, +\infty) 上连续,f'(x) \lt 0, \lim_{\rightarrow +\infty} f(x)=0 \Ri
 液体压强:$P=\rho g h$,  
 压力=压强$\times$面积,  
 液体压力$F=PS=\rho g hS$
+
+### 特殊导数
+
+$$
+\ln |f(x)|= \frac {f'(x)} {f(x)}
+$$
