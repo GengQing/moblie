@@ -868,9 +868,9 @@ $$
 
 $$
 \begin{aligned}
-S_x=2\pi\int_a^b|y|\sqrt{1+y'^2}dx,y=y(x)\\
+&S_x=2\pi\int_a^b|y|\sqrt{1+y'^2}dx,y=y(x)\\
 
-S_t=2\pi\int_{t_1}^{t_2}|y|\sqrt{x_t'^2+y_t'^2}dt, x=x(t),y=y(t)\\
+&S_t=2\pi\int_{t_1}^{t_2}|y|\sqrt{x_t'^2+y_t'^2}dt, x=x(t),y=y(t)\\
 \end{aligned}
 $$
 
