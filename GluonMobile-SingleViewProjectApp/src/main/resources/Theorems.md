@@ -822,10 +822,12 @@ $R$是底面半径,$h$是高.
 ### 曲线与$x$轴面积公式两种($y$轴取反函数同理)
 
 $$
-S=\int_a^b f(x) dx, (y=f(x)\ge 0)\\
+\begin{aligned}
+&S=\int_a^b f(x) dx, (y=f(x)\ge 0)\\
 \ \\
 
-S=\int_{t1}^{t2}y(t)x'(t)dt, (y=y(t)\ge 0, x=x(t))
+&S_t=\int_{t1}^{t2}y(t)x'(t)dt, (y=y(t)\ge 0, x=x(t))
+\end{aligned}
 $$
 
 ### 极坐标曲边扇形面积
