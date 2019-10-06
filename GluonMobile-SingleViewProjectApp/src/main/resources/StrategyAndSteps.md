@@ -809,7 +809,7 @@ $$
 2. 通过求导化为一元积分处理  
    $[\int_a^x du\int_b^u f(t,u)dt]'=[\int_a^x (\int_b^u f(t,u)dt)du]'=$  
    $\int_b^x f(t,x)dt$
-1. 两积分的乘积化为二重积分$\int_a^b f(x)dx \cdot \int_a^b g(x)dx=\iint f(x)g(y)dxdy$
+3. 两积分的乘积化为二重积分$\int_a^b f(x)dx \cdot \int_a^b g(x)dx=\iint f(x)g(y)dxdy$
 
 ### 已知线性微分方程通解求方程
 
