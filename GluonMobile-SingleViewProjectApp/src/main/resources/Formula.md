@@ -220,12 +220,6 @@ x=\phi(t) \Rightarrow t &=\psi(x) \Rightarrow \frac {dt}{dx}=  \psi'(x)\\
 &=\psi''(x)\frac {dy}{dt} + [\psi'(x)]^2\frac {d^2y}{dt^2}
 \end{aligned} \\
 
-
-
-
-
-
-
 $$
 
 ### 积分
@@ -325,13 +319,6 @@ $$
 \int_{-\infty}^{+\infty}e^{-2x}dx=2\int_{0}^{+\infty}e^{-2x}=\sqrt{\pi}
 $$
 
-### 定积分的运用
-
-$$
-当积分函数在积分区间有\lt 0时,需要分段\\
-积分,函数\lt 0的段函数要取反转换成正值.
-$$
-
 ### 曲线与$x$轴面积公式两种($y$轴取反函数同理)
 
 $$
@@ -345,14 +332,6 @@ $$
 
 $$
 S=\frac 12 \int_{\theta1}^{\theta2}r^2d\theta, r=r(\theta)\\
-$$
-
-### 弧微分三种
-
-$$
-ds=\sqrt{1+y'^2}dx,y=y(x)\\
-ds=\sqrt{x'^2+y'^2}dt, y=y(t), x=x(t)\\
-ds=\sqrt{r^2+r'^2}d\theta,r=r(\theta)
 $$
 
 ### 弧长公式三种
