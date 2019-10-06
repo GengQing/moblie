@@ -521,3 +521,8 @@ $$
 ### 单调无穷区间
 
 $x \in [a, +\infty) 上连续,f'(x) \lt 0, \lim_{\rightarrow +\infty} f(x)=0 \Rightarrow f(x) \gt 0$
+
+### 物理公式
+
+做功=力乘以距离:$W=FS$,  
+重力做功$W=mgh$.  
