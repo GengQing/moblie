@@ -851,10 +851,11 @@ $$
 ### 曲线绕$y$轴旋转体积
 
 $$
-V=\pi \int_{y_1}^{y_2} x^2(y)dy, x=x(y) \\
+\begin{aligned}
+&V=\pi \int_{y_1}^{y_2} x^2(y)dy, x=x(y) \\
 \ \\
-V=2\pi\int_a^b xy(x)dx, y=y(x)\ge 0,注意非单函数要拆分\\
-
+&V=2\pi\int_a^b xy(x)dx, y=y(x)\ge 0,注意非单调函数要拆分\\
+\end{aligned}
 $$
 
 ### 截面面积已知的体积(关键是寻找恰当的截面面积公式)
