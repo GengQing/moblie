@@ -895,10 +895,11 @@ $$
 $$
 密度均匀为1的薄片y=f(x)是薄片上边界曲线,\\
 可利用对称性计算出其中一个坐标 \\
-横坐标x=\frac {\int_a^b  xf(x)dx}{\int_a^b  f(x)dx}\\
+横坐标x=\frac {\int_a^b  xf(x)dx}{S}\\
 \ \\
-纵坐标y=\frac {\frac 12 \int_a^b  f^2(x)dx}{\int_a^b  f(x)dx}\\
+纵坐标y=\frac {\frac 12 \int_a^b  f^2(x)dx}{S}\\
 \ \\
+S=\int_a^b  f(x)dx\\
 若点密度是关于x的函数,则上面所以被积函数要乘以密度函数
 $$
 
