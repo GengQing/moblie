@@ -848,13 +848,13 @@ $$
 V=\pi\int_a^b y^2(x)dx, y=y(x)
 $$
 
-### 曲线绕$y$轴旋转体积
+### 曲线绕$y$轴旋转体积(注意非单调函数要拆分)
 
 $$
 \begin{aligned}
 &V=\pi \int_{y_1}^{y_2} x^2(y)dy, x=x(y) \\
 \ \\
-&V=2\pi\int_a^b xy(x)dx, y=y(x)\ge 0,注意非单调函数要拆分\\
+&V=2\pi\int_a^b xy(x)dx, y=y(x)\ge 0,\\
 \end{aligned}
 $$
 
@@ -867,9 +867,11 @@ $$
 ### 曲线绕$x$轴旋转体侧面积两种
 
 $$
-S=2\pi\int_a^b|y|\sqrt{1+y'^2}dx,y=y(x)\\
+\begin{aligned}
+S_x=2\pi\int_a^b|y|\sqrt{1+y'^2}dx,y=y(x)\\
 
-S=2\pi\int_{t_1}^{t_2}|y|\sqrt{x_t'^2+y_t'^2}dt, x=x(t),y=y(t)\\
+S_t=2\pi\int_{t_1}^{t_2}|y|\sqrt{x_t'^2+y_t'^2}dt, x=x(t),y=y(t)\\
+\end{aligned}
 $$
 
 ### 函数的平均值
