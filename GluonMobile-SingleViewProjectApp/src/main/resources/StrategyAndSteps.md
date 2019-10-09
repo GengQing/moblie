@@ -1223,3 +1223,24 @@ $f(x,y,z),求df|_{1,1,1}, 先带入,y=1,z=1得f(x,1,1)$,
 同理求$f'_y(1,1,1),f'_z(1,1,1)$,最后带入全微分公式.
 
 隐函数数求导后要用原方程化简.
+
+### 带积分求函数
+
+$$
+f(x,y)= [\iint_D f(x,y)dxdy] \phi(x,y) + \psi(x,y)
+$$
+
+$\phi(x,y) ,\psi(x,y)$已知, 令
+
+$$
+\iint_D f(x,y)dxdy=A
+$$
+
+$$
+f(x,y)= A \phi(x,y) + \psi(x,y) \\
+\iint_D f(x,y)dxdy=\iint_D A \phi(x,y) + \psi(x,y) dxdy\\
+A=\iint_D A \phi(x,y) + \psi(x,y) dxdy\\
+$$
+
+解除$A$带入方程即得,同理求解一重积分类似
+
