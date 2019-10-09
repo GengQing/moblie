@@ -522,4 +522,3 @@ $$
 \int_a^b dy \int_{\phi(x)}^1 f(x,y)dx + \int_a^b dy \int_1^{\psi(x)} f(x,y)dx
 = \int_a^b dy \int_{\phi(x)}^{\psi(x)} f(x,y)dx
 $$
-
