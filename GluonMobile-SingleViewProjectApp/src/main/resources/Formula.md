@@ -515,3 +515,11 @@ $x \in [a, +\infty) 上连续,f'(x) \lt 0, \lim_{\rightarrow +\infty} f(x)=0 \Ri
 $$
 \ln |f(x)|= \frac {f'(x)} {f(x)}
 $$
+
+### 二重积分叠加性
+
+$$
+\int_a^b dy \int_{\phi(x)}^1 f(x,y)dx + \int_a^b dy \int_1^{\psi(x)} f(x,y)dx 
+= \int_a^b dy \int_{\phi(x)}^{\psi(x)} f(x,y)dx
+$$
+
