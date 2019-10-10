@@ -802,11 +802,11 @@ $$
 
 1. 半径为$a$, 圆心在$x$轴右半轴且过原点的函数
 
-    $r=2a\cos \theta, y=\sqrt{2ax-x^2}$
+    $y=\sqrt{2ax-x^2},r=2a\cos \theta$
 
 2. 半径为$a$, 圆心在$y$轴上半轴且过原点的函数
 
-    $r=2a\sin \theta, x=\sqrt{2ay-y^2}$
+    $x=\sqrt{2ay-y^2},r=2a\sin \theta, $
 
 ### 二重积分综合问题
 
