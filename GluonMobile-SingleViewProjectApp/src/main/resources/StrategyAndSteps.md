@@ -1252,10 +1252,24 @@ $$
 ### 二重区间积分分解>
 
 $$
-在曲线上方大于0, 在曲线下方小于0\\
-x \le y \le 1 \\
-\Rightarrow y-x \ge 0, y-1\le 0\\
-\Rightarrow 在y-x=0上方, y-1=0下方\\
-\Rightarrow 在y=x上方, y=1下方\\
+在曲线上方(包含曲线)大于等于0, 在曲线下方小于等于0\\
+\ \\
+\begin{aligned}
+&x \le y \le 1 \\
+&\Rightarrow y \ge x, y \le 1\\
+&\Rightarrow y-x \ge 0, y-1\le 0\\
+&\Rightarrow 在y-x=0上方, y-1=0下方\\
+&\Rightarrow 在y=x上方, y=1下方\\
+\end{aligned}\\
+
+---------------- \\
+\ \\
+\begin{aligned}
+&1 \le x+y \le 2 \\
+&\Rightarrow x+y \ge 1, x+y\le 2\\
+&\Rightarrow x+y-1 \ge 0, x+y-2\le 0\\
+&\Rightarrow 在x+y-1 = 0上方, x+y-2 = 0下方\\
+\end{aligned}
 
 $$
+
