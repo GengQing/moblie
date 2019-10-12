@@ -437,14 +437,21 @@ $$
 ### 二重积分区间关于$y=x$对称>
 
 $$
+\iint_D f(x,y)dxdy = \frac 1 2\iint_D [f(x,y) + f(y,x)]dxdy\\
 \iint_D f(x,y)dxdy=\iint_D f(y,x)dxdy\\
-\iint_D f(x,y)dxdy = \frac 1 2\iint_D [f(x,y) + f(y,x)]dxdy
+\iint_{D_{上}} f(x,y)dxdy=\iint_{D_{下}} f(y,x)dxdy\\
 $$
 
 ### 二重积分区间关于$y=x$对称且$f(x,y)=f(y,x)$
 
 $$
-\iint_{D_{11}} f(x,y)dxdy=\iint_{D_{12}} f(y,x)dxdy
+
+\iint_{D_{上}} f(x,y)dxdy=\frac 1 2\iint_D f(x,y)dxdy\\
+\ \\
+\iint_D f(x,y)dxdy=2\iint_{D_{上}} f(x,y)dxdy\\
+
+D_{1上} 是y=x上方积分区间,\\
+D_{1下} 是y=x下方积分区间
 $$
 
 ### 函数多项式商的极限
