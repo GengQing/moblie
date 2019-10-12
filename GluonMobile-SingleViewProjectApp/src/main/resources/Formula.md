@@ -434,10 +434,11 @@ $$
 
 $$
 
-### 二重积分区间关于$y=x$对称
+### 二重积分区间关于$y=x$对称>
 
 $$
-\iint f(x,y)dxdy=\iint f(y,x)dxdy
+\iint_D f(x,y)dxdy=\iint_D f(y,x)dxdy\\
+\iint_D f(x,y)dxdy = \frac 1 2\iint_D [f(x,y) + f(y,x)]dxdy
 $$
 
 ### 二重积分区间关于$y=x$对称且$f(x,y)=f(y,x)$
