@@ -245,7 +245,12 @@ $$
 $$
 \int \sin^2 x dx = \frac12 x- \frac14 \sin 2x +C\\
 
-\int \cos^2 x dx = \frac12 x+ \frac14 \sin 2x +C
+\int \cos^2 x dx = \frac12 x+ \frac14 \sin 2x +C\\
+
+\int xe^x dx = xe^x-e^x + C\\
+
+\int \frac 1 {\sqrt x} = 2 \sqrt x + C 
+
 $$
 
 ### 华里士公式

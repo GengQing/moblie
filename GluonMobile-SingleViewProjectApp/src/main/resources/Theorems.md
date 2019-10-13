@@ -946,7 +946,9 @@ z=f(\varphi(t),\psi(t))\\
 2. 多元函数与多元函数复合\\
 u = \varphi(x,y), v = \psi(x,y)\\
 z=f(\varphi(x,y),\psi(x,y))\\
-\frac {\partial z} {\partial x}= \frac{\partial z}{\partial u} \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \frac{\partial v}{\partial x}\\
+\frac {\partial z} {\partial x}= \frac{\partial z}{\partial u} \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \frac{\partial v}{\partial x}(a)\\
+同理求\frac {\partial z} {\partial x}(b)\\
+由(a)(b)可得\frac{\partial z}{\partial u},\frac{\partial z}{\partial v},带入某些表达式中.
 $$
 
 ### 多元函数全微分形式的不变性
