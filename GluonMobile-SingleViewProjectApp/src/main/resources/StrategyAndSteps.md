@@ -401,7 +401,7 @@ $$
 
 有水平渐近线基本初等函数有$(a^x, y=0),(\arctan x, y=\pm \frac{\pi}{2}),(\mathrm{arccot}\ x, y=0和\pi)$
 
-### 不等式证明
+### 不等式证明-函数大小比较
 
 证明$f(x)\ge g(x), 令\varphi (x)=f(x)-g(x),x \in I$
 
