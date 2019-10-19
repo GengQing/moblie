@@ -40,7 +40,7 @@ $\theta$积分区间等式转换,如
 
 $$
 \begin{aligned}
-0 \le \theta \le \frac {\pi} 4\\
+&0 \le \theta \le \frac {\pi} 4\\
 \Rightarrow &\theta=0,\theta=\frac {\pi} 4\\
 \Rightarrow &\tan \theta=0, \tan\theta= 1\\
 \Rightarrow &\frac y x=0, \frac y x= 1\\
@@ -51,12 +51,14 @@ $$
 $r$积分区间转换,如
 
 $$
-0 \le r \le \frac 1 {\cos \theta}\\
-\Rightarrow r=0, r = \frac 1 {\cos \theta}\\
-\Rightarrow r=0, r\cos  \theta= 1\\
-\Rightarrow r=0, r\cos  \theta= 1\\
-\Rightarrow \sqrt{x^2+y^2}=0, x= 1\\
-\Rightarrow (x=0\&y=0), x= 1\\
+\begin{aligned}
+&0 \le r \le \frac 1 {\cos \theta}\\
+\Rightarrow &r=0, r = \frac 1 {\cos \theta}\\
+\Rightarrow &r=0, r\cos  \theta= 1\\
+\Rightarrow &r=0, r\cos  \theta= 1\\
+\Rightarrow &\sqrt{x^2+y^2}=0, x= 1\\
+\Rightarrow &(x=0\&y=0), x= 1\\
+\end{aligned}
 $$
 
 直角坐标积分区间上下限为
