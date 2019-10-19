@@ -1011,7 +1011,7 @@ $a_1x_1+a_2x_2+a_3x_3=0$的基础解系就是
 若基础解析正交,可将特征向量单位化,得<u>正交矩阵</u>$Q$,  
 $\Lambda=Q^\intercal AQ \Rightarrow  A=Q\Lambda Q^\intercal$
 
-### 简单方方方阵的幂
+### 简单方阵的幂
 
 $$
 
