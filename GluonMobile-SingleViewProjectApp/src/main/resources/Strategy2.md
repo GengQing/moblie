@@ -9,3 +9,59 @@
 1 尝试将$C$写成已知行列式的矩阵的乘积,  
 2 $C$左乘右乘已知行列式的矩阵后,可先求积行列式,再求$|C|$,  
 3 使用分配律,特殊情况交换律,有限穷尽尝试方法1和2
+
+### 定积分极坐标转直角坐标
+
+第一步 写出变量关系
+
+$$
+r^2=x^2+y^2\\
+\tan \theta=\frac y x \\
+r \cos \theta=x\\
+r \sin \theta=y\\
+rdrd\theta=dxdy
+$$
+
+第二步 转换被积函数为以下形式
+
+$$
+\iint f(r,\theta)drd\theta=\iint F(r\cos \theta, r\sin \theta, \tan \theta, r)rdrd\theta
+$$
+
+第三步 把变量关系带入上式,转换成直角系
+
+$$
+\iint F(x, y,\frac y x,\sqrt{x^2+y^2})dxdy
+$$
+
+第四步 依据变量关系将积分区间的$4$边界函数转换成直角坐标函数
+
+$\theta$积分区间等式转换,如  
+
+$$
+\begin{aligned}
+0 \le \theta \le \frac {\pi} 4\\
+\Rightarrow &\theta=0,\theta=\frac {\pi} 4\\
+\Rightarrow &\tan \theta=0, \tan\theta= 1\\
+\Rightarrow &\frac y x=0, \frac y x= 1\\
+\Rightarrow &y=0,  y = x\\
+\end{aligned}
+$$
+
+$r$积分区间转换,如
+
+$$
+0 \le r \le \frac 1 {\cos \theta}\\
+\Rightarrow r=0, r = \frac 1 {\cos \theta}\\
+\Rightarrow r=0, r\cos  \theta= 1\\
+\Rightarrow r=0, r\cos  \theta= 1\\
+\Rightarrow \sqrt{x^2+y^2}=0, x= 1\\
+\Rightarrow (x=0\&y=0), x= 1\\
+$$
+
+直角坐标积分区间上下限为
+
+$$
+x=0,x=1\\
+y=0,y=x\\
+$$
