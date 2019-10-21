@@ -807,7 +807,7 @@ $$
 
 2. 半径为$a$, 圆心在$y$轴上半轴且过原点的函数
 
-    $x=\sqrt{2ay-y^2},r=2a\sin \theta, $
+    $x=\sqrt{2ay-y^2},r=2a\sin \theta$
 
 ### 二重积分综合问题
 
