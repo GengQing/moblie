@@ -194,15 +194,32 @@ $\ln(x+\sqrt{1+x^2})$是奇函数.
 $$
 \begin{aligned}
 面积S&=\pi x^2\\
-体积\mathrm dV&=Sy=\pi x^2 \mathrm dy\\
-质量\mathrm dm&=\rho V=\rho \pi x^2\mathrm dy\\
-重力\mathrm dG&=mg=g\rho \pi x^2\mathrm dy\\
-做功\mathrm dW&=Gh=\rho gH(y) \pi x^2\mathrm dy\\
-W&=\int_{y_1}^{y_2} \rho gH(y) \pi x^2\mathrm dy\\
+体积\mathrm dV&=S\mathrm dy=\pi x^2 \mathrm dy\\
+质量\mathrm dm&=\rho \mathrm dV=\rho \pi x^2\mathrm dy\\
+重力\mathrm dG&=g\mathrm dm=g\rho \pi x^2\mathrm dy\\
+做功\mathrm dW&=h\mathrm dG=\rho gh(y) \pi x^2\mathrm dy\\
+W_{1/2}&=\int_{y_1}^{y_2} \rho gh(y) \pi x^2\mathrm dy\\
+W &= 2W_{1/2}
 \end{aligned}
 $$
 
-$H(y)是做功高度,是跟y关$的函数  
+$h(y)是做功高度,是跟y相关$的函数$h(y)=y+C$
 
-$x是关于y$的函数,可以是一条曲面,也可以是两条曲线,  
-当时两条曲线时,$x$则是分段函数.
+容器切面曲线$x是关于y$的函数,可以是一条曲线,也可以是两条曲线组成,  
+当时两条曲线时组成时,$x$则是分段函数.
+
+[注] 容器切面关于$y$轴对称时,按一侧计算出值后,总功 $=一半\times 2$  
+[注] 根据对称性找质心,则$功=总质量\times质心移动高度$
+
+### 液体侧压力
+
+[注] 微面积是垂直微面积$x \mathrm dy$, 关于$y$轴对称建模
+
+$$
+\begin{aligned}
+dF&=\rho gh(y) \mathrm dS\\
+dF&=\rho gh(y) x\mathrm dy\\
+F_{1/2}&=\int_{y_1}^{y_2} \rho gh(y) x\mathrm dy\\
+F &= 2_{1/2}
+\end{aligned}
+$$
