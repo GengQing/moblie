@@ -175,3 +175,34 @@ $\ln(x+\sqrt{1+x^2})$是奇函数.
 
 在闭区间上连续,开区间上可导,闭区间上是凸函数或$f''(x)\le 0且任意子区间不全0$,  
 若$f(a)=f(b)=0$,则$f(x)\gt 0 x \in(a,b)$开区间.
+
+### 物理公式
+
+做功=力$\times$距离:$W=Fs$,  
+重力做功$W=mgh$.  
+
+液体压强:$P=\rho g h$,  
+压力=压强$\times$面积,  
+液体压力$F=PS=\rho g hS$
+
+### 求抽取容器液体做功
+
+即求克服重力做功
+
+设高度方向为$y$轴,水平方向为$x$轴.
+
+$$
+\begin{aligned}
+面积S&=\pi x^2\\
+体积\mathrm dV&=Sy=\pi x^2 \mathrm dy\\
+质量\mathrm dm&=\rho V=\rho \pi x^2\mathrm dy\\
+重力\mathrm dG&=mg=g\rho \pi x^2\mathrm dy\\
+做功\mathrm dW&=Gh=\rho gH(y) \pi x^2\mathrm dy\\
+W&=\int_{y_1}^{y_2} \rho gH(y) \pi x^2\mathrm dy\\
+\end{aligned}
+$$
+
+$H(y)是做功高度,是跟y关$的函数  
+
+$x是关于y$的函数,可以是一条曲面,也可以是两条曲线,  
+当时两条曲线时,$x$则是分段函数.
