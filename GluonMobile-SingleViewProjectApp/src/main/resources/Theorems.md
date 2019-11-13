@@ -597,6 +597,7 @@ $$
 
 [注] 其他形式:  
 $f(x)=f(x_0)+f'(\xi)(x-x_0), \xi 介于x,x_0 之间$  
+$f(x)=f(0)+f'(\xi)(x), \xi 介于x,0 之间$  
 $f(x)=f(x_0)+f'(x_0+\theta(x-x_0))(x-x_0), 0 \lt \theta \lt 1$
 
 ### 柯西中值定理
@@ -614,6 +615,13 @@ $$\frac {f(b)-f(a)}{g(b)-g(a)}=\frac{f'(\xi)}{g'(\xi)}$$
 $$
 f(x)=f(x_0)+ \frac 1{1!}f'(x_0)(x-x_0)+\frac 1{2!}f''(x_0)(x-x_0)^2+\cdots+\frac {f^{(n)}(x_0)}{n!}(x-x_0)^n+R_n(x)\\
 其中R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}称为拉格朗日余项
+$$
+
+当$x_0=0$时
+
+$$
+f(x)=f(0)+ \frac 1{1!}f'(0)(x)+\frac 1{2!}f''(0)(x)^2+\cdots+\frac {f^{(n)}(0)}{n!}(x)^n+R_n(x)\\
+其中R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x)^{n+1}称为拉格朗日余项
 $$
 
 ### 佩亚诺余项泰勒公式
@@ -893,14 +901,22 @@ $$
 ### 密度均匀形心质心公式
 
 $$
-密度均匀为1的薄片y=f(x)是薄片上边界曲线,\\
+密度均匀为1的薄片y=f(x)是薄片上边界曲线,下边缘为x轴\\
 可利用对称性计算出其中一个坐标 \\
 横坐标x=\frac {\int_a^b  xf(x)dx}{S}\\
 \ \\
 纵坐标y=\frac {\frac 12 \int_a^b  f^2(x)dx}{S}\\
 \ \\
 S=\int_a^b  f(x)dx\\
-若点密度是关于x的函数,则上面所以被积函数要乘以密度函数
+若点密度是关于x的函数,则上面所以被积函数要乘以密度函数\\
+\ \\
+密度\rho(x), 当密度为1就是形心\\
+x=\frac {\int_a^b  x\rho(x)d\sigma}{\int_a^b  \rho(x)d\sigma}\\
+y=\frac {\int_a^b  \frac y2 \rho(x)d\sigma}{\int_a^b  \rho(x)d\sigma}\\
+d\sigma=dx(直线),\\
+d\sigma=ydx(上下边距离为y)\\
+d\sigma=2ydx(上下边距离为y)\\
+
 $$
 
 ### 偏导数的概念
@@ -2129,13 +2145,14 @@ $f(x)$是多项式,$f(x)=a_0+a_1x+\cdots+a_nx^n$
 
 4 上面三种情况的线性组合.
 
-### 行列式为零的充分必要条件
+### 行列式为零的充分必要条件(证明行列式为零的方法)
 
 $|A|=0$  
 $\Longleftrightarrow A$不可逆  
 $\Longleftrightarrow Ax=0$有非零解  
 $\Longleftrightarrow 0是A$特征值  
 $\Longleftrightarrow A$列(行)向量线性相关  
+$\Longleftrightarrow r(A)\lt n$
 
 ### 相似于对角矩阵推论
 
