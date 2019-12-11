@@ -256,7 +256,7 @@ $$
 
 &\arctan x=x-\frac{x^3}{3}+\cdots\\
 
-&\sin x=x-\frac{1}{3!}x^3+\cdots\\
+&\sin x=x-\frac{1}{3!}x^3+\frac{1}{5!}x^5+\cdots\\
 
 &\cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4+\cdots\\
 \end{aligned}
@@ -467,7 +467,7 @@ $$
 &\ \\
 &(\cos \alpha x)^{(n)} = \alpha^n\cos ( \frac{n\pi}{2}+\alpha x)\\
 \ \\
-&[\ln(1+ \alpha x)]^{(n)} = (-1)^{n-1}\frac{ (n-1)!}{(1+  \alpha x)^{n}}  \alpha^n\\
+&[\ln(1+ \alpha x)]^{(n)} = (-1)^{n-1} \alpha^n\frac{ (n-1)!}{(1+  \alpha x)^{n}} \\
 &((1+x)^\alpha)^{(n)} = \alpha(\alpha-1)\cdots(\alpha-n+1)(1+x)^{\alpha-n}\\
 &((1+x)^n)^{(n)} = n!,(n 为正整数)\\
 &((1+x)^n)^{(m)}=0,(m \gt n,n和m均为正整数)
@@ -493,7 +493,7 @@ $设y=f(x)有方程F(x,y)=0确定$, 对$F(x,y)=0$两边对$x$求导,解出$\frac
 ### 幂指函数求导公式
 
 $$
-[u^v]'=u^v(\frac{v}{u}u'+\ln(u)v')
+[u^v]'=u^v(v'\ln u+\frac{u'}{u}v)
 $$
 
 ### 反函数求导公式
@@ -867,7 +867,7 @@ $$
 $$
 L=\int_a^b\sqrt{1+(y')^2}dx ,y=y(x)\\
 L=\int_{t_1}^{t_2}\sqrt{(x_t')^2+(y_t')^2}dt, y=y(t), x=x(t)\\
-L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+(r')^2}d\theta,r=r(\theta)\\
+L=\int_{\theta_1}^{\theta_2} \sqrt{r^2(\theta)+(r'_\theta)^2}d\theta,r=r(\theta)\\
 $$
 
 ### 曲线绕$x$轴旋转体积
@@ -1121,7 +1121,7 @@ f(x)=e^{ax}(H_{n1}(x)\cos bx+L_{n2}(x)\sin bx),\\
  n=\max(n1,n2)\\
 k=\begin{cases}
 0, a\pm ib不是特征根\\
-1, a\pm ib 是特种根\\
+1, a\pm ib 是特征根\\
 \end{cases}
 $$
 
@@ -1161,7 +1161,8 @@ $$
 $$
 y'+p(x)y=q(x), (x'+p(y)x=q(y)) \\
 u=e^{\int p(x)dx}\\
-yu=\int q(x)u(x)dx+C
+yu=\int q(x)u(x)dx+C\\
+y= \frac 1{u(x)}[\int q(x)u(x)dx+C]
 
 $$
 
@@ -1225,7 +1226,7 @@ $$
 6. 某行(或列)有公因式$k$, 可把$k$提出行列式记号外.  
 (亦即用数$k$乘行列式等于用$k$乘它的某行(或列))
 7. 若某行(或列)是两个元素之和,则可把行列式拆成两个行列式之和:  
-$|\alpha_1+\beta,\alpha_2|=|\alpha_1,\alpha_2|+|\beta,\alpha_2|$
+$|\beta_1+\beta_2,\alpha|=|\beta_1,\alpha|+|\beta_2,\alpha|$
 8. 把某行(或列)的$k$倍加到另一行(或列),行列式的值不变
 
 ### 行列式按行(列)展开定理
@@ -1268,7 +1269,7 @@ $$
 2 副对角形行列式的值为
 
 $$
-(-1)^{mn}|A||B|,(m,n为A,B的阶)
+(-1)^{m+n}|A||B|,(m,n为A,B的阶)
 $$
 
 ### 范德蒙行列式的值
@@ -1420,7 +1421,7 @@ $$
 7. 反对称矩阵,$A^\intercal =-A,即a_{ij}=-a_{ji}, a_{ii}=0$
 8. 正交矩阵,$AA^\intercal =A^\intercal A=E,即A^\intercal =A^{-1}$
 9. 初等矩阵,单位矩阵经过一次初等变换所得到的矩阵
-10. 伴随矩阵$A^*$,$A$中所以元素由其代数余子式替换,再<u>转置</u>.
+10. 伴随矩阵$A^*$,$A$中所有元素由其代数余子式替换,再<u>转置</u>.
 
 ### 可逆矩阵主要定理
 
@@ -1458,9 +1459,9 @@ A^{-1}=\frac 1 {|A|} A^*
 $$
 
 方法二 初等行变换法 $(A|E) \longrightarrow (E|A^{-1})$  
-方法三 用定义 $AB(或BA)=E, A^{-1}=B$,对抽象矩阵要变形得$AX=E$  
-方法四 用分块矩阵  
-方法五 用初等矩阵法则
+方法三 用定义 $AB(或BA)=E, A^{-1}=B$  
+方法四 用对角分块矩阵  
+方法五 用初等矩阵法则  
 
 ### 矩阵的初等变换
 
@@ -1568,6 +1569,7 @@ $$
 
 $r(A)=r \Longleftrightarrow 矩阵A$中的非零子式的最高阶数是$r$  
 $r(A) \lt r \Longleftrightarrow A$中每一个$r$阶子式全为$0$  
+
 $r(A) \ge r \Longleftrightarrow A$中有$r$阶子式不为$0$  
 
 $r(A)=0 \Longleftrightarrow A=O$  
@@ -1576,6 +1578,9 @@ $A \neq O \Longleftrightarrow r(A) \ge 1$
 若$A$是$n$阶矩阵  
 $r(A)=n \Longleftrightarrow |A| \neq 0 \Longleftrightarrow A可逆$  
 $r(A)\lt n \Longleftrightarrow |A| = 0 \Longleftrightarrow A不可逆$
+
+如果所有k阶子式都是0，那么所有高于k阶的子式都为0,  
+因为k+1阶可展开为k阶,全为0;k+2阶可展开为k+1阶也为0,依次类推
 
 矩阵秩的公式
 
@@ -1599,9 +1604,9 @@ $r(A_{m\times n}) \le \min(m,n)$
 
 ### 分块矩阵的运算
 
-1 分开矩阵的加法,等于把对应位置的子矩阵相加  
+1 分块矩阵的加法,等于把对应位置的子矩阵相加  
 
-2 分开矩阵的乘法,先对整体做矩阵乘法,再对各个子块做矩阵乘法,如:  
+2 分块矩阵的乘法,先对整体做矩阵乘法,再对各个子块做矩阵乘法,如:  
 $A(\alpha_1,\alpha_2,\alpha_3) \Leftrightarrow (A\alpha_1,A\alpha_2,A\alpha_3),A是n阶方阵,\alpha_i是n维列向量$
 
 3 分块矩阵的转置,先对整体做转置,再把各个位置上的子矩阵转置,如:  
@@ -1616,7 +1621,7 @@ $$
 \left[ \begin{matrix} A^{-1}&O\\ O&B^{-1} \end{matrix} \right]\\
 $$
 
-6 副对角分块矩阵的逆,等于各个分块取逆运算,再交换位置
+6 副对角分块矩阵的逆,等于各个分块交换位置,再取逆运算
 
 $$
 \left[ \begin{matrix} O&B \\A&O  \end{matrix} \right]^{-1}=
@@ -1713,7 +1718,7 @@ $\Longleftrightarrow |\alpha_1,\alpha_2,\cdots,\alpha_n|=0$.
 
 ### 向量组线性无关的推论
 
-如果$n为向量组(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,  
+如果$n个向量组(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,  
 (1) 那么它的延伸组$\left(\begin{matrix} \alpha_1\\ \beta_1 \end{matrix} \right), \cdots$必线性无关,  
 即矩阵的列向量线无关,增加任意个行向量后,列序列仍线无关;  
 即方程组只有零解,增加任意个方程后,方程组仍只有零解.
@@ -1731,7 +1736,7 @@ $\Longleftrightarrow 秩r(\alpha_1,\alpha_2,\cdots,\alpha_m)=r(\alpha_1,\alpha_2
 定理一 若向量组$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性无关,而向量组$\alpha_1,\alpha_2,\cdots,\alpha_s, \beta)$  
 线性相关,则$\beta$可由$(\alpha_1,\alpha_2,\cdots,\alpha_s)$线性表出,且表示法唯一.
 
-定理二 $n$个线性无关的$n$向量组能线性表出任意一个$n$向量.
+定理二 $n$个线性无关的$n$维向量组能线性表出任意一个$n$维向量.
 
 ### 极大线性无关组和秩的概念
 
@@ -1834,7 +1839,7 @@ $$
 齐次线性方程组一定有解,至少有零解.
 
 若$\xi_1,\xi_2$是齐次线性方程组的解,  
-则$k\xi_,k_1\xi_1+k_2\xi_2$仍是齐次线性方程组的解,$k$是任意常数.
+则$k\xi_1,k_1\xi_1+k_2\xi_2$仍是齐次线性方程组的解,$k$是任意常数.
 
 同理,齐次线性方程组的解的任意线性组合仍是齐次线性方程组的解.
 
@@ -1869,11 +1874,11 @@ $\xi_{n-r}=[d_{n-r1},d_{n-r2},\cdots,d_{n-rr},0,0,\cdots,1]^\intercal$
 
 ### 非齐次方程组的解的性质
 
-设$\eta_1,\eta_2是Ax=b$的两个解,$\xi$是对应齐次方程组$Ax=0$的解,$\xi是Ax=c$的解,则
+设$\eta_1,\eta_2是Ax=b$的两个解,$\xi$是对应齐次方程组$Ax=0$的解,$\xi_2是Ax=c$的解,则
 
 1 $A(k_1\eta_1+k_2\eta_2)=(k_1+k_2)b$,其中$(k_1+k_2)=0$时$k_1\eta_1+k_2\eta_2$是齐次解,$(k_1+k_2)=1$是非齐次解,同理3个解.  
 2 $A(\eta_1+k\xi)=b$,即齐次解与非齐次解的和仍旧是非齐次解  
-3 $A(\eta_1+\xi)=b+c$
+3 $A(\eta_1+\xi_2)=b+c$
 
 ### 非齐次方程组有解的充要条件
 
@@ -1910,7 +1915,7 @@ $A$是$n$阶方阵,如果对于数$\lambda$,存在非零向量$\alpha$,使得
 $A\alpha=\lambda\alpha$
 成立,则称$\lambda是A$的特征值,$\alpha$是$A$对应$\lambda$的特征向量.
 
-$|\lambda E-A|\alpha=0$是特征方程,$|\lambda E-A|$是特征多项式,  
+$(\lambda E-A)\alpha=0$是特征方程,$|\lambda E-A|$是特征多项式,  
 $\lambda E-A$是特征矩阵.
 
 ### 矩阵与其特征值的关系
@@ -2149,9 +2154,10 @@ $$
 1 矩阵$f(A)$对有特征向量$\alpha$的和对应特征值$f(\lambda)$.  
 $f(x)$是多项式,$f(x)=a_0+a_1x+\cdots+a_nx^n$
 
-2 $A^*$有特征向量$\alpha$和特征值$\frac {|A|} \lambda$
+2 $A^{-1}$有特征向量$\alpha$和特征值$\frac 1 \lambda$
 
-3 $A^{-1}$有特征向量$\alpha$和特征值$\frac 1 \lambda$
+3 $A^*$有特征向量$\alpha$和特征值$\frac {|A|} \lambda$
+
 
 4 上面三种情况的线性组合.
 
@@ -2189,7 +2195,7 @@ $A,B,C均为n阶矩阵,且C=AB$,则
 $C可逆\Longleftrightarrow A和B都可逆$.
 
 推广到$n$个:  
-$n$可逆矩阵的乘积仍是可逆矩阵.  
+$n$个可逆矩阵的乘积仍是可逆矩阵.  
 一个可逆矩阵若能分解成$n$方阵的乘积,则这$n$个方阵均可逆.
 
 ### 伴随矩阵定理汇总
