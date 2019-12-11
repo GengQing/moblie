@@ -65,7 +65,7 @@ $$
 ### 排列组合公式=
 
 $$
-C_n^k=\frac{n(n-1)\cdots(n-k+1)}{k!}(分子从高到第取k个)\\
+C_n^k=\frac{n(n-1)\cdots(n-k+1)}{k!}(分子从高到低取k个)\\
 \ \\
 C_n^k=\frac{n!}{(n-k)!k!}\\
 \ \\
@@ -91,7 +91,7 @@ x \ge \sin x (x\ge0)\\
 ----- \\
 函数图像:,开口向上抛物线\\
 (x-a)(x-b)\gt 0 \\
-\Rightarrow x \in (-\infty,a)\cup(b, -\infty),(a \lt b)\\
+\Rightarrow x \in (-\infty,a)\cup(b, +\infty),(a \lt b)\\
 \ \\
 函数图像: 右侧上扬波浪线\\
 (x-a)(x-b)(x-c)\gt 0 \\
@@ -513,6 +513,15 @@ $$
 ### 单调无穷区间
 
 $x \in [a, +\infty) 上连续,f'(x) \lt 0, \lim_{\rightarrow +\infty} f(x)=0 \Rightarrow f(x) \gt 0$
+
+### 物理公式
+
+做功=力$\times$距离:$W=Fs$,  
+重力做功$W=mgh$.  
+
+液体压强:$P=\rho g h$,  
+压力=压强$\times$面积,  
+液体压力$F=PS=\rho g hS$
 
 ### 特殊导数
 
