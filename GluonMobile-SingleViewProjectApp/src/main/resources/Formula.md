@@ -282,7 +282,7 @@ $$
 &\int_0^{\pi} \cos^{n}xdx=
 \begin{cases}
 2\int_0^{\frac {\pi} 2}\cos^{n}xdx,(n为偶数)\\
-0,(n为偶数)
+0,(n为奇数)
 \end{cases}
 \end{aligned}
 
